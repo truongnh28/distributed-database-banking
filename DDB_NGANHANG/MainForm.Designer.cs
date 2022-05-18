@@ -112,23 +112,23 @@ namespace DDB_NGANHANG
             this.baoCaoPage = new System.Windows.Forms.TabPage();
             this.lietKeTaiKhoanPage = new System.Windows.Forms.TabControl();
             this.saoKeGiaoDichPage = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.xacNhanSKBtn = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.thoiGianKT = new System.Windows.Forms.DateTimePicker();
+            this.label26 = new System.Windows.Forms.Label();
+            this.thoiGianBD = new System.Windows.Forms.DateTimePicker();
             this.traCuuTCBtn = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.taiKhoanTCTxt = new System.Windows.Forms.TextBox();
-            this.thoiGianBD = new System.Windows.Forms.DateTimePicker();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.thoiGianKT = new System.Windows.Forms.DateTimePicker();
-            this.xacNhanSKBtn = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
-            this.chonChiNhanhLietKeTaiKhoanComboBox = new System.Windows.Forms.ComboBox();
-            this.xacNhanLietKeTaiKhoanBtn = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label29 = new System.Windows.Forms.Label();
             this.chonTGKTLietKe = new System.Windows.Forms.DateTimePicker();
             this.label30 = new System.Windows.Forms.Label();
             this.chonTGBDLietKe = new System.Windows.Forms.DateTimePicker();
+            this.xacNhanLietKeTaiKhoanBtn = new System.Windows.Forms.Button();
+            this.chonChiNhanhLietKeTaiKhoanComboBox = new System.Windows.Forms.ComboBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.xacNhanLietKeKhachHangBtn = new System.Windows.Forms.Button();
             this.chonChiNhanhLietKeKhachHangComboBox = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -465,9 +465,9 @@ namespace DDB_NGANHANG
             this.imageList1.Images.SetKeyName(3, "logout-icon.png");
             this.imageList1.Images.SetKeyName(4, "customer-icon.png");
             this.imageList1.Images.SetKeyName(5, "employee-icon.png");
-            this.imageList1.Images.SetKeyName(6, "");
-            this.imageList1.Images.SetKeyName(7, "");
-            this.imageList1.Images.SetKeyName(8, "");
+            this.imageList1.Images.SetKeyName(6, "cash-flow (1).png");
+            this.imageList1.Images.SetKeyName(7, "rating.png");
+            this.imageList1.Images.SetKeyName(8, "user (1).png");
             // 
             // quanLyPage
             // 
@@ -956,37 +956,50 @@ namespace DDB_NGANHANG
             this.saoKeGiaoDichPage.Text = "Sao kê giao dịch ";
             this.saoKeGiaoDichPage.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // xacNhanSKBtn
             // 
-            this.tabPage2.Controls.Add(this.label29);
-            this.tabPage2.Controls.Add(this.chonTGKTLietKe);
-            this.tabPage2.Controls.Add(this.label30);
-            this.tabPage2.Controls.Add(this.chonTGBDLietKe);
-            this.tabPage2.Controls.Add(this.xacNhanLietKeTaiKhoanBtn);
-            this.tabPage2.Controls.Add(this.chonChiNhanhLietKeTaiKhoanComboBox);
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.ImageIndex = 8;
-            this.tabPage2.Location = new System.Drawing.Point(4, 57);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1303, 620);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Liệt kê tài khoản";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.xacNhanSKBtn.Location = new System.Drawing.Point(589, 374);
+            this.xacNhanSKBtn.Name = "xacNhanSKBtn";
+            this.xacNhanSKBtn.Size = new System.Drawing.Size(138, 46);
+            this.xacNhanSKBtn.TabIndex = 104;
+            this.xacNhanSKBtn.Text = "Xác nhận";
+            this.xacNhanSKBtn.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // label27
             // 
-            this.tabPage3.Controls.Add(this.xacNhanLietKeKhachHangBtn);
-            this.tabPage3.Controls.Add(this.chonChiNhanhLietKeKhachHangComboBox);
-            this.tabPage3.Controls.Add(this.label33);
-            this.tabPage3.ImageIndex = 7;
-            this.tabPage3.Location = new System.Drawing.Point(4, 57);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1303, 620);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Liệt kê khách hàng ";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(328, 252);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(187, 35);
+            this.label27.TabIndex = 103;
+            this.label27.Text = "Thời gian kết thúc";
+            // 
+            // thoiGianKT
+            // 
+            this.thoiGianKT.CustomFormat = "HH:mm dd-MM-yyyy";
+            this.thoiGianKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.thoiGianKT.Location = new System.Drawing.Point(534, 252);
+            this.thoiGianKT.Name = "thoiGianKT";
+            this.thoiGianKT.Size = new System.Drawing.Size(274, 40);
+            this.thoiGianKT.TabIndex = 102;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(328, 188);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(179, 35);
+            this.label26.TabIndex = 101;
+            this.label26.Text = "Thời gian bắt đầu";
+            // 
+            // thoiGianBD
+            // 
+            this.thoiGianBD.CustomFormat = "HH:mm dd-MM-yyyy";
+            this.thoiGianBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.thoiGianBD.Location = new System.Drawing.Point(534, 188);
+            this.thoiGianBD.Name = "thoiGianBD";
+            this.thoiGianBD.Size = new System.Drawing.Size(274, 40);
+            this.thoiGianBD.TabIndex = 100;
             // 
             // traCuuTCBtn
             // 
@@ -1018,76 +1031,23 @@ namespace DDB_NGANHANG
             this.taiKhoanTCTxt.Size = new System.Drawing.Size(274, 40);
             this.taiKhoanTCTxt.TabIndex = 98;
             // 
-            // thoiGianBD
+            // tabPage2
             // 
-            this.thoiGianBD.CustomFormat = "HH:mm dd-MM-yyyy";
-            this.thoiGianBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.thoiGianBD.Location = new System.Drawing.Point(534, 188);
-            this.thoiGianBD.Name = "thoiGianBD";
-            this.thoiGianBD.Size = new System.Drawing.Size(274, 40);
-            this.thoiGianBD.TabIndex = 100;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(328, 188);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(179, 35);
-            this.label26.TabIndex = 101;
-            this.label26.Text = "Thời gian bắt đầu";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(328, 252);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(187, 35);
-            this.label27.TabIndex = 103;
-            this.label27.Text = "Thời gian kết thúc";
-            // 
-            // thoiGianKT
-            // 
-            this.thoiGianKT.CustomFormat = "HH:mm dd-MM-yyyy";
-            this.thoiGianKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.thoiGianKT.Location = new System.Drawing.Point(534, 252);
-            this.thoiGianKT.Name = "thoiGianKT";
-            this.thoiGianKT.Size = new System.Drawing.Size(274, 40);
-            this.thoiGianKT.TabIndex = 102;
-            // 
-            // xacNhanSKBtn
-            // 
-            this.xacNhanSKBtn.Location = new System.Drawing.Point(589, 374);
-            this.xacNhanSKBtn.Name = "xacNhanSKBtn";
-            this.xacNhanSKBtn.Size = new System.Drawing.Size(138, 46);
-            this.xacNhanSKBtn.TabIndex = 104;
-            this.xacNhanSKBtn.Text = "Xác nhận";
-            this.xacNhanSKBtn.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(300, 73);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(167, 35);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Chọn chi nhánh";
-            // 
-            // chonChiNhanhLietKeTaiKhoanComboBox
-            // 
-            this.chonChiNhanhLietKeTaiKhoanComboBox.FormattingEnabled = true;
-            this.chonChiNhanhLietKeTaiKhoanComboBox.Location = new System.Drawing.Point(542, 65);
-            this.chonChiNhanhLietKeTaiKhoanComboBox.Name = "chonChiNhanhLietKeTaiKhoanComboBox";
-            this.chonChiNhanhLietKeTaiKhoanComboBox.Size = new System.Drawing.Size(325, 43);
-            this.chonChiNhanhLietKeTaiKhoanComboBox.TabIndex = 1;
-            // 
-            // xacNhanLietKeTaiKhoanBtn
-            // 
-            this.xacNhanLietKeTaiKhoanBtn.Location = new System.Drawing.Point(542, 349);
-            this.xacNhanLietKeTaiKhoanBtn.Name = "xacNhanLietKeTaiKhoanBtn";
-            this.xacNhanLietKeTaiKhoanBtn.Size = new System.Drawing.Size(177, 51);
-            this.xacNhanLietKeTaiKhoanBtn.TabIndex = 2;
-            this.xacNhanLietKeTaiKhoanBtn.Text = "Xác nhận";
-            this.xacNhanLietKeTaiKhoanBtn.UseVisualStyleBackColor = true;
+            this.tabPage2.Controls.Add(this.label29);
+            this.tabPage2.Controls.Add(this.chonTGKTLietKe);
+            this.tabPage2.Controls.Add(this.label30);
+            this.tabPage2.Controls.Add(this.chonTGBDLietKe);
+            this.tabPage2.Controls.Add(this.xacNhanLietKeTaiKhoanBtn);
+            this.tabPage2.Controls.Add(this.chonChiNhanhLietKeTaiKhoanComboBox);
+            this.tabPage2.Controls.Add(this.label28);
+            this.tabPage2.ImageIndex = 8;
+            this.tabPage2.Location = new System.Drawing.Point(4, 57);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1303, 620);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Liệt kê tài khoản";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // label29
             // 
@@ -1124,6 +1084,46 @@ namespace DDB_NGANHANG
             this.chonTGBDLietKe.Name = "chonTGBDLietKe";
             this.chonTGBDLietKe.Size = new System.Drawing.Size(274, 40);
             this.chonTGBDLietKe.TabIndex = 104;
+            // 
+            // xacNhanLietKeTaiKhoanBtn
+            // 
+            this.xacNhanLietKeTaiKhoanBtn.Location = new System.Drawing.Point(542, 349);
+            this.xacNhanLietKeTaiKhoanBtn.Name = "xacNhanLietKeTaiKhoanBtn";
+            this.xacNhanLietKeTaiKhoanBtn.Size = new System.Drawing.Size(177, 51);
+            this.xacNhanLietKeTaiKhoanBtn.TabIndex = 2;
+            this.xacNhanLietKeTaiKhoanBtn.Text = "Xác nhận";
+            this.xacNhanLietKeTaiKhoanBtn.UseVisualStyleBackColor = true;
+            // 
+            // chonChiNhanhLietKeTaiKhoanComboBox
+            // 
+            this.chonChiNhanhLietKeTaiKhoanComboBox.FormattingEnabled = true;
+            this.chonChiNhanhLietKeTaiKhoanComboBox.Location = new System.Drawing.Point(542, 65);
+            this.chonChiNhanhLietKeTaiKhoanComboBox.Name = "chonChiNhanhLietKeTaiKhoanComboBox";
+            this.chonChiNhanhLietKeTaiKhoanComboBox.Size = new System.Drawing.Size(325, 43);
+            this.chonChiNhanhLietKeTaiKhoanComboBox.TabIndex = 1;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(300, 73);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(167, 35);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Chọn chi nhánh";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.xacNhanLietKeKhachHangBtn);
+            this.tabPage3.Controls.Add(this.chonChiNhanhLietKeKhachHangComboBox);
+            this.tabPage3.Controls.Add(this.label33);
+            this.tabPage3.ImageIndex = 7;
+            this.tabPage3.Location = new System.Drawing.Point(4, 57);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1303, 620);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Liệt kê khách hàng ";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // xacNhanLietKeKhachHangBtn
             // 
