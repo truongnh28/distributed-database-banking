@@ -29,5 +29,12 @@ namespace DDB_NGANHANG
         {
 
         }
+
+        private void thoatDangNhapBtn_Click(object sender, EventArgs e)
+        {
+            ChuyenChiNhanhForm fmm = new ChuyenChiNhanhForm();
+            fmm.StartPosition = FormStartPosition.CenterParent;
+            fmm.ShowDialog(this);
+        }
     }
 }

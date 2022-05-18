@@ -35,22 +35,22 @@ namespace DDB_NGANHANG
             this.heThongPage = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.dangNhapPage = new System.Windows.Forms.TabPage();
+            this.chiNhanhDangNhapComboBox = new System.Windows.Forms.ComboBox();
             this.thoatDangNhapBtn = new System.Windows.Forms.Button();
             this.xacNhanDangNhapBtn = new System.Windows.Forms.Button();
             this.matKhauDangNhapTxt = new System.Windows.Forms.TextBox();
             this.taiKhoanDangNhapTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.chiNhanhDangNhapTxt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dangXuatPage = new System.Windows.Forms.TabPage();
             this.taoTaiKhoanPage = new System.Windows.Forms.TabPage();
+            this.chiNhanhTaoTaiKhoangComboBox = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.xacNhanMatKhauTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.taiKhoanTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.matKhauTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
-            this.chiNhanhTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.thoatTaoTaiKhoanBtn = new System.Windows.Forms.Button();
             this.xacNhanTaoTaiKhoanBtn = new System.Windows.Forms.Button();
             this.nganHangTaoTaiKhoanCheckBox = new System.Windows.Forms.CheckBox();
@@ -110,6 +110,28 @@ namespace DDB_NGANHANG
             this.xoaKhachHangBtn = new System.Windows.Forms.Button();
             this.themKhachHangBtn = new System.Windows.Forms.Button();
             this.baoCaoPage = new System.Windows.Forms.TabPage();
+            this.lietKeTaiKhoanPage = new System.Windows.Forms.TabControl();
+            this.saoKeGiaoDichPage = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.traCuuTCBtn = new System.Windows.Forms.Button();
+            this.label25 = new System.Windows.Forms.Label();
+            this.taiKhoanTCTxt = new System.Windows.Forms.TextBox();
+            this.thoiGianBD = new System.Windows.Forms.DateTimePicker();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.thoiGianKT = new System.Windows.Forms.DateTimePicker();
+            this.xacNhanSKBtn = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
+            this.chonChiNhanhLietKeTaiKhoanComboBox = new System.Windows.Forms.ComboBox();
+            this.xacNhanLietKeTaiKhoanBtn = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.chonTGKTLietKe = new System.Windows.Forms.DateTimePicker();
+            this.label30 = new System.Windows.Forms.Label();
+            this.chonTGBDLietKe = new System.Windows.Forms.DateTimePicker();
+            this.xacNhanLietKeKhachHangBtn = new System.Windows.Forms.Button();
+            this.chonChiNhanhLietKeKhachHangComboBox = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.heThongPage.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -121,6 +143,11 @@ namespace DDB_NGANHANG
             ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).BeginInit();
             this.khachHangPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).BeginInit();
+            this.baoCaoPage.SuspendLayout();
+            this.lietKeTaiKhoanPage.SuspendLayout();
+            this.saoKeGiaoDichPage.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -166,12 +193,12 @@ namespace DDB_NGANHANG
             // 
             // dangNhapPage
             // 
+            this.dangNhapPage.Controls.Add(this.chiNhanhDangNhapComboBox);
             this.dangNhapPage.Controls.Add(this.thoatDangNhapBtn);
             this.dangNhapPage.Controls.Add(this.xacNhanDangNhapBtn);
             this.dangNhapPage.Controls.Add(this.matKhauDangNhapTxt);
             this.dangNhapPage.Controls.Add(this.taiKhoanDangNhapTxt);
             this.dangNhapPage.Controls.Add(this.label4);
-            this.dangNhapPage.Controls.Add(this.chiNhanhDangNhapTxt);
             this.dangNhapPage.Controls.Add(this.label3);
             this.dangNhapPage.Controls.Add(this.label2);
             this.dangNhapPage.Controls.Add(this.label1);
@@ -184,6 +211,14 @@ namespace DDB_NGANHANG
             this.dangNhapPage.Text = "ĐĂNG NHẬP";
             this.dangNhapPage.UseVisualStyleBackColor = true;
             // 
+            // chiNhanhDangNhapComboBox
+            // 
+            this.chiNhanhDangNhapComboBox.FormattingEnabled = true;
+            this.chiNhanhDangNhapComboBox.Location = new System.Drawing.Point(558, 213);
+            this.chiNhanhDangNhapComboBox.Name = "chiNhanhDangNhapComboBox";
+            this.chiNhanhDangNhapComboBox.Size = new System.Drawing.Size(329, 39);
+            this.chiNhanhDangNhapComboBox.TabIndex = 9;
+            // 
             // thoatDangNhapBtn
             // 
             this.thoatDangNhapBtn.Location = new System.Drawing.Point(672, 456);
@@ -192,6 +227,7 @@ namespace DDB_NGANHANG
             this.thoatDangNhapBtn.TabIndex = 8;
             this.thoatDangNhapBtn.Text = "THOÁT";
             this.thoatDangNhapBtn.UseVisualStyleBackColor = true;
+            this.thoatDangNhapBtn.Click += new System.EventHandler(this.thoatDangNhapBtn_Click);
             // 
             // xacNhanDangNhapBtn
             // 
@@ -224,13 +260,6 @@ namespace DDB_NGANHANG
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(186, 164);
             this.label4.TabIndex = 4;
-            // 
-            // chiNhanhDangNhapTxt
-            // 
-            this.chiNhanhDangNhapTxt.Location = new System.Drawing.Point(558, 216);
-            this.chiNhanhDangNhapTxt.Name = "chiNhanhDangNhapTxt";
-            this.chiNhanhDangNhapTxt.Size = new System.Drawing.Size(329, 36);
-            this.chiNhanhDangNhapTxt.TabIndex = 3;
             // 
             // label3
             // 
@@ -272,11 +301,11 @@ namespace DDB_NGANHANG
             // 
             // taoTaiKhoanPage
             // 
+            this.taoTaiKhoanPage.Controls.Add(this.chiNhanhTaoTaiKhoangComboBox);
             this.taoTaiKhoanPage.Controls.Add(this.label10);
             this.taoTaiKhoanPage.Controls.Add(this.xacNhanMatKhauTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.taiKhoanTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.matKhauTaoTaiKhoanTxt);
-            this.taoTaiKhoanPage.Controls.Add(this.chiNhanhTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.thoatTaoTaiKhoanBtn);
             this.taoTaiKhoanPage.Controls.Add(this.xacNhanTaoTaiKhoanBtn);
             this.taoTaiKhoanPage.Controls.Add(this.nganHangTaoTaiKhoanCheckBox);
@@ -294,6 +323,14 @@ namespace DDB_NGANHANG
             this.taoTaiKhoanPage.TabIndex = 2;
             this.taoTaiKhoanPage.Text = "TẠO TÀI KHOẢN";
             this.taoTaiKhoanPage.UseVisualStyleBackColor = true;
+            // 
+            // chiNhanhTaoTaiKhoangComboBox
+            // 
+            this.chiNhanhTaoTaiKhoangComboBox.FormattingEnabled = true;
+            this.chiNhanhTaoTaiKhoangComboBox.Location = new System.Drawing.Point(558, 201);
+            this.chiNhanhTaoTaiKhoangComboBox.Name = "chiNhanhTaoTaiKhoangComboBox";
+            this.chiNhanhTaoTaiKhoangComboBox.Size = new System.Drawing.Size(352, 39);
+            this.chiNhanhTaoTaiKhoangComboBox.TabIndex = 14;
             // 
             // label10
             // 
@@ -324,13 +361,6 @@ namespace DDB_NGANHANG
             this.matKhauTaoTaiKhoanTxt.Name = "matKhauTaoTaiKhoanTxt";
             this.matKhauTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
             this.matKhauTaoTaiKhoanTxt.TabIndex = 9;
-            // 
-            // chiNhanhTaoTaiKhoanTxt
-            // 
-            this.chiNhanhTaoTaiKhoanTxt.Location = new System.Drawing.Point(558, 195);
-            this.chiNhanhTaoTaiKhoanTxt.Name = "chiNhanhTaoTaiKhoanTxt";
-            this.chiNhanhTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
-            this.chiNhanhTaoTaiKhoanTxt.TabIndex = 8;
             // 
             // thoatTaoTaiKhoanBtn
             // 
@@ -435,6 +465,9 @@ namespace DDB_NGANHANG
             this.imageList1.Images.SetKeyName(3, "logout-icon.png");
             this.imageList1.Images.SetKeyName(4, "customer-icon.png");
             this.imageList1.Images.SetKeyName(5, "employee-icon.png");
+            this.imageList1.Images.SetKeyName(6, "");
+            this.imageList1.Images.SetKeyName(7, "");
+            this.imageList1.Images.SetKeyName(8, "");
             // 
             // quanLyPage
             // 
@@ -884,6 +917,7 @@ namespace DDB_NGANHANG
             // 
             // baoCaoPage
             // 
+            this.baoCaoPage.Controls.Add(this.lietKeTaiKhoanPage);
             this.baoCaoPage.Location = new System.Drawing.Point(4, 57);
             this.baoCaoPage.Name = "baoCaoPage";
             this.baoCaoPage.Size = new System.Drawing.Size(1307, 677);
@@ -891,7 +925,233 @@ namespace DDB_NGANHANG
             this.baoCaoPage.Text = "BÁO CÁO";
             this.baoCaoPage.UseVisualStyleBackColor = true;
             // 
-            // XtraForm1
+            // lietKeTaiKhoanPage
+            // 
+            this.lietKeTaiKhoanPage.Controls.Add(this.saoKeGiaoDichPage);
+            this.lietKeTaiKhoanPage.Controls.Add(this.tabPage2);
+            this.lietKeTaiKhoanPage.Controls.Add(this.tabPage3);
+            this.lietKeTaiKhoanPage.ImageList = this.imageList1;
+            this.lietKeTaiKhoanPage.Location = new System.Drawing.Point(0, 0);
+            this.lietKeTaiKhoanPage.Name = "lietKeTaiKhoanPage";
+            this.lietKeTaiKhoanPage.SelectedIndex = 0;
+            this.lietKeTaiKhoanPage.Size = new System.Drawing.Size(1311, 681);
+            this.lietKeTaiKhoanPage.TabIndex = 0;
+            // 
+            // saoKeGiaoDichPage
+            // 
+            this.saoKeGiaoDichPage.Controls.Add(this.xacNhanSKBtn);
+            this.saoKeGiaoDichPage.Controls.Add(this.label27);
+            this.saoKeGiaoDichPage.Controls.Add(this.thoiGianKT);
+            this.saoKeGiaoDichPage.Controls.Add(this.label26);
+            this.saoKeGiaoDichPage.Controls.Add(this.thoiGianBD);
+            this.saoKeGiaoDichPage.Controls.Add(this.traCuuTCBtn);
+            this.saoKeGiaoDichPage.Controls.Add(this.label25);
+            this.saoKeGiaoDichPage.Controls.Add(this.taiKhoanTCTxt);
+            this.saoKeGiaoDichPage.ImageIndex = 6;
+            this.saoKeGiaoDichPage.Location = new System.Drawing.Point(4, 57);
+            this.saoKeGiaoDichPage.Name = "saoKeGiaoDichPage";
+            this.saoKeGiaoDichPage.Padding = new System.Windows.Forms.Padding(3);
+            this.saoKeGiaoDichPage.Size = new System.Drawing.Size(1303, 620);
+            this.saoKeGiaoDichPage.TabIndex = 0;
+            this.saoKeGiaoDichPage.Text = "Sao kê giao dịch ";
+            this.saoKeGiaoDichPage.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label29);
+            this.tabPage2.Controls.Add(this.chonTGKTLietKe);
+            this.tabPage2.Controls.Add(this.label30);
+            this.tabPage2.Controls.Add(this.chonTGBDLietKe);
+            this.tabPage2.Controls.Add(this.xacNhanLietKeTaiKhoanBtn);
+            this.tabPage2.Controls.Add(this.chonChiNhanhLietKeTaiKhoanComboBox);
+            this.tabPage2.Controls.Add(this.label28);
+            this.tabPage2.ImageIndex = 8;
+            this.tabPage2.Location = new System.Drawing.Point(4, 57);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1303, 620);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Liệt kê tài khoản";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.xacNhanLietKeKhachHangBtn);
+            this.tabPage3.Controls.Add(this.chonChiNhanhLietKeKhachHangComboBox);
+            this.tabPage3.Controls.Add(this.label33);
+            this.tabPage3.ImageIndex = 7;
+            this.tabPage3.Location = new System.Drawing.Point(4, 57);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1303, 620);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Liệt kê khách hàng ";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // traCuuTCBtn
+            // 
+            this.traCuuTCBtn.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.traCuuTCBtn.Location = new System.Drawing.Point(890, 116);
+            this.traCuuTCBtn.Name = "traCuuTCBtn";
+            this.traCuuTCBtn.Size = new System.Drawing.Size(134, 45);
+            this.traCuuTCBtn.TabIndex = 97;
+            this.traCuuTCBtn.Text = "Tra cứu";
+            this.traCuuTCBtn.UseVisualStyleBackColor = true;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(328, 124);
+            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(109, 35);
+            this.label25.TabIndex = 99;
+            this.label25.Text = "Tài khoản";
+            // 
+            // taiKhoanTCTxt
+            // 
+            this.taiKhoanTCTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taiKhoanTCTxt.Location = new System.Drawing.Point(534, 121);
+            this.taiKhoanTCTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.taiKhoanTCTxt.Name = "taiKhoanTCTxt";
+            this.taiKhoanTCTxt.Size = new System.Drawing.Size(274, 40);
+            this.taiKhoanTCTxt.TabIndex = 98;
+            // 
+            // thoiGianBD
+            // 
+            this.thoiGianBD.CustomFormat = "HH:mm dd-MM-yyyy";
+            this.thoiGianBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.thoiGianBD.Location = new System.Drawing.Point(534, 188);
+            this.thoiGianBD.Name = "thoiGianBD";
+            this.thoiGianBD.Size = new System.Drawing.Size(274, 40);
+            this.thoiGianBD.TabIndex = 100;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(328, 188);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(179, 35);
+            this.label26.TabIndex = 101;
+            this.label26.Text = "Thời gian bắt đầu";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(328, 252);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(187, 35);
+            this.label27.TabIndex = 103;
+            this.label27.Text = "Thời gian kết thúc";
+            // 
+            // thoiGianKT
+            // 
+            this.thoiGianKT.CustomFormat = "HH:mm dd-MM-yyyy";
+            this.thoiGianKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.thoiGianKT.Location = new System.Drawing.Point(534, 252);
+            this.thoiGianKT.Name = "thoiGianKT";
+            this.thoiGianKT.Size = new System.Drawing.Size(274, 40);
+            this.thoiGianKT.TabIndex = 102;
+            // 
+            // xacNhanSKBtn
+            // 
+            this.xacNhanSKBtn.Location = new System.Drawing.Point(589, 374);
+            this.xacNhanSKBtn.Name = "xacNhanSKBtn";
+            this.xacNhanSKBtn.Size = new System.Drawing.Size(138, 46);
+            this.xacNhanSKBtn.TabIndex = 104;
+            this.xacNhanSKBtn.Text = "Xác nhận";
+            this.xacNhanSKBtn.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(300, 73);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(167, 35);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Chọn chi nhánh";
+            // 
+            // chonChiNhanhLietKeTaiKhoanComboBox
+            // 
+            this.chonChiNhanhLietKeTaiKhoanComboBox.FormattingEnabled = true;
+            this.chonChiNhanhLietKeTaiKhoanComboBox.Location = new System.Drawing.Point(542, 65);
+            this.chonChiNhanhLietKeTaiKhoanComboBox.Name = "chonChiNhanhLietKeTaiKhoanComboBox";
+            this.chonChiNhanhLietKeTaiKhoanComboBox.Size = new System.Drawing.Size(325, 43);
+            this.chonChiNhanhLietKeTaiKhoanComboBox.TabIndex = 1;
+            // 
+            // xacNhanLietKeTaiKhoanBtn
+            // 
+            this.xacNhanLietKeTaiKhoanBtn.Location = new System.Drawing.Point(542, 349);
+            this.xacNhanLietKeTaiKhoanBtn.Name = "xacNhanLietKeTaiKhoanBtn";
+            this.xacNhanLietKeTaiKhoanBtn.Size = new System.Drawing.Size(177, 51);
+            this.xacNhanLietKeTaiKhoanBtn.TabIndex = 2;
+            this.xacNhanLietKeTaiKhoanBtn.Text = "Xác nhận";
+            this.xacNhanLietKeTaiKhoanBtn.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(300, 216);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(187, 35);
+            this.label29.TabIndex = 107;
+            this.label29.Text = "Thời gian kết thúc";
+            // 
+            // chonTGKTLietKe
+            // 
+            this.chonTGKTLietKe.CustomFormat = "HH:mm dd-MM-yyyy";
+            this.chonTGKTLietKe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.chonTGKTLietKe.Location = new System.Drawing.Point(542, 216);
+            this.chonTGKTLietKe.Name = "chonTGKTLietKe";
+            this.chonTGKTLietKe.Size = new System.Drawing.Size(274, 40);
+            this.chonTGKTLietKe.TabIndex = 106;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(300, 152);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(179, 35);
+            this.label30.TabIndex = 105;
+            this.label30.Text = "Thời gian bắt đầu";
+            // 
+            // chonTGBDLietKe
+            // 
+            this.chonTGBDLietKe.CustomFormat = "HH:mm dd-MM-yyyy";
+            this.chonTGBDLietKe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.chonTGBDLietKe.Location = new System.Drawing.Point(542, 147);
+            this.chonTGBDLietKe.Name = "chonTGBDLietKe";
+            this.chonTGBDLietKe.Size = new System.Drawing.Size(274, 40);
+            this.chonTGBDLietKe.TabIndex = 104;
+            // 
+            // xacNhanLietKeKhachHangBtn
+            // 
+            this.xacNhanLietKeKhachHangBtn.Location = new System.Drawing.Point(610, 278);
+            this.xacNhanLietKeKhachHangBtn.Name = "xacNhanLietKeKhachHangBtn";
+            this.xacNhanLietKeKhachHangBtn.Size = new System.Drawing.Size(177, 51);
+            this.xacNhanLietKeKhachHangBtn.TabIndex = 110;
+            this.xacNhanLietKeKhachHangBtn.Text = "Xác nhận";
+            this.xacNhanLietKeKhachHangBtn.UseVisualStyleBackColor = true;
+            // 
+            // chonChiNhanhLietKeKhachHangComboBox
+            // 
+            this.chonChiNhanhLietKeKhachHangComboBox.FormattingEnabled = true;
+            this.chonChiNhanhLietKeKhachHangComboBox.Location = new System.Drawing.Point(610, 143);
+            this.chonChiNhanhLietKeKhachHangComboBox.Name = "chonChiNhanhLietKeKhachHangComboBox";
+            this.chonChiNhanhLietKeKhachHangComboBox.Size = new System.Drawing.Size(325, 43);
+            this.chonChiNhanhLietKeKhachHangComboBox.TabIndex = 109;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(368, 151);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(167, 35);
+            this.label33.TabIndex = 108;
+            this.label33.Text = "Chọn chi nhánh";
+            // 
+            // MainForm
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 25F);
@@ -901,7 +1161,7 @@ namespace DDB_NGANHANG
             this.Font = new System.Drawing.Font("Markazi Text Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "XtraForm1";
+            this.Name = "MainForm";
             this.Text = "XtraForm1";
             this.Load += new System.EventHandler(this.XtraForm1_Load);
             this.tabControl1.ResumeLayout(false);
@@ -919,6 +1179,14 @@ namespace DDB_NGANHANG
             this.khachHangPage.ResumeLayout(false);
             this.khachHangPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).EndInit();
+            this.baoCaoPage.ResumeLayout(false);
+            this.lietKeTaiKhoanPage.ResumeLayout(false);
+            this.saoKeGiaoDichPage.ResumeLayout(false);
+            this.saoKeGiaoDichPage.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -936,7 +1204,6 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.TabPage taoTaiKhoanPage;
         private System.Windows.Forms.TabPage thoatPage;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox chiNhanhDangNhapTxt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -944,7 +1211,6 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button xacNhanDangNhapBtn;
         private System.Windows.Forms.TextBox matKhauDangNhapTxt;
         private System.Windows.Forms.TextBox taiKhoanDangNhapTxt;
-        private System.Windows.Forms.TextBox chiNhanhTaoTaiKhoanTxt;
         private System.Windows.Forms.Button thoatTaoTaiKhoanBtn;
         private System.Windows.Forms.Button xacNhanTaoTaiKhoanBtn;
         private System.Windows.Forms.CheckBox nganHangTaoTaiKhoanCheckBox;
@@ -1004,5 +1270,29 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button xoaKhachHangBtn;
         private System.Windows.Forms.Button themKhachHangBtn;
         private System.Windows.Forms.Button giaoDichKhachHangBtn;
+        private System.Windows.Forms.ComboBox chiNhanhDangNhapComboBox;
+        private System.Windows.Forms.ComboBox chiNhanhTaoTaiKhoangComboBox;
+        private System.Windows.Forms.TabControl lietKeTaiKhoanPage;
+        private System.Windows.Forms.TabPage saoKeGiaoDichPage;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.DateTimePicker thoiGianKT;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.DateTimePicker thoiGianBD;
+        private System.Windows.Forms.Button traCuuTCBtn;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox taiKhoanTCTxt;
+        private System.Windows.Forms.Button xacNhanSKBtn;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.DateTimePicker chonTGKTLietKe;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.DateTimePicker chonTGBDLietKe;
+        private System.Windows.Forms.Button xacNhanLietKeTaiKhoanBtn;
+        private System.Windows.Forms.ComboBox chonChiNhanhLietKeTaiKhoanComboBox;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button xacNhanLietKeKhachHangBtn;
+        private System.Windows.Forms.ComboBox chonChiNhanhLietKeKhachHangComboBox;
+        private System.Windows.Forms.Label label33;
     }
 }

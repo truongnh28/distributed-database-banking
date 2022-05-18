@@ -29,20 +29,13 @@ namespace DDB_NGANHANG
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3GD = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.diaChiGDTxt = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.hoGDTxt = new System.Windows.Forms.TextBox();
             this.tenGDTxt = new System.Windows.Forms.TextBox();
             this.cmndGDTxt = new System.Windows.Forms.TextBox();
-            this.sdtGDTxt = new System.Windows.Forms.TextBox();
-            this.gioiTinhTxt = new System.Windows.Forms.TextBox();
             this.chiNhanhGDTxt = new System.Windows.Forms.TextBox();
             this.GDTabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -62,52 +55,23 @@ namespace DDB_NGANHANG
             this.thoatChuyenGDBtn = new System.Windows.Forms.Button();
             this.xacNhanChuyenGDBtn = new System.Windows.Forms.Button();
             this.label4GD = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.taiKhoanGDTxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.traCuuGDBtn = new System.Windows.Forms.Button();
+            this.soDuGDTxt = new System.Windows.Forms.TextBox();
+            this.label3GD = new System.Windows.Forms.Label();
             this.GDTabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label3GD
-            // 
-            this.label3GD.Font = new System.Drawing.Font("Markazi Text", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3GD.Image = global::DDB_NGANHANG.Properties.Resources.transaction__1_;
-            this.label3GD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3GD.Location = new System.Drawing.Point(198, -3);
-            this.label3GD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3GD.Name = "label3GD";
-            this.label3GD.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label3GD.Size = new System.Drawing.Size(336, 108);
-            this.label3GD.TabIndex = 66;
-            this.label3GD.Text = "Giao dịch";
-            this.label3GD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3GD.UseCompatibleTextRendering = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(38, 348);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 35);
-            this.label5.TabIndex = 74;
-            this.label5.Text = "Địa chỉ";
-            // 
-            // diaChiGDTxt
-            // 
-            this.diaChiGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diaChiGDTxt.Location = new System.Drawing.Point(127, 343);
-            this.diaChiGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.diaChiGDTxt.Name = "diaChiGDTxt";
-            this.diaChiGDTxt.Size = new System.Drawing.Size(549, 40);
-            this.diaChiGDTxt.TabIndex = 80;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(38, 164);
+            this.label8.Location = new System.Drawing.Point(38, 124);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 35);
@@ -118,7 +82,7 @@ namespace DDB_NGANHANG
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(360, 161);
+            this.label9.Location = new System.Drawing.Point(360, 124);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 35);
@@ -129,40 +93,18 @@ namespace DDB_NGANHANG
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(38, 218);
+            this.label10.Location = new System.Drawing.Point(38, 184);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 35);
             this.label10.TabIndex = 83;
             this.label10.Text = "CMND";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(360, 218);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(100, 35);
-            this.label11.TabIndex = 84;
-            this.label11.Text = "Giới tính";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(38, 282);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(52, 35);
-            this.label12.TabIndex = 85;
-            this.label12.Text = "SDT";
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(360, 282);
+            this.label13.Location = new System.Drawing.Point(351, 184);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(115, 35);
@@ -172,7 +114,7 @@ namespace DDB_NGANHANG
             // hoGDTxt
             // 
             this.hoGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoGDTxt.Location = new System.Drawing.Point(127, 161);
+            this.hoGDTxt.Location = new System.Drawing.Point(142, 119);
             this.hoGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.hoGDTxt.Name = "hoGDTxt";
             this.hoGDTxt.Size = new System.Drawing.Size(170, 40);
@@ -181,7 +123,7 @@ namespace DDB_NGANHANG
             // tenGDTxt
             // 
             this.tenGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenGDTxt.Location = new System.Drawing.Point(506, 161);
+            this.tenGDTxt.Location = new System.Drawing.Point(506, 119);
             this.tenGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tenGDTxt.Name = "tenGDTxt";
             this.tenGDTxt.Size = new System.Drawing.Size(170, 40);
@@ -190,34 +132,16 @@ namespace DDB_NGANHANG
             // cmndGDTxt
             // 
             this.cmndGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmndGDTxt.Location = new System.Drawing.Point(127, 218);
+            this.cmndGDTxt.Location = new System.Drawing.Point(142, 179);
             this.cmndGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cmndGDTxt.Name = "cmndGDTxt";
             this.cmndGDTxt.Size = new System.Drawing.Size(170, 40);
             this.cmndGDTxt.TabIndex = 89;
             // 
-            // sdtGDTxt
-            // 
-            this.sdtGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sdtGDTxt.Location = new System.Drawing.Point(127, 279);
-            this.sdtGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.sdtGDTxt.Name = "sdtGDTxt";
-            this.sdtGDTxt.Size = new System.Drawing.Size(170, 40);
-            this.sdtGDTxt.TabIndex = 90;
-            // 
-            // gioiTinhTxt
-            // 
-            this.gioiTinhTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gioiTinhTxt.Location = new System.Drawing.Point(506, 215);
-            this.gioiTinhTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.gioiTinhTxt.Name = "gioiTinhTxt";
-            this.gioiTinhTxt.Size = new System.Drawing.Size(170, 40);
-            this.gioiTinhTxt.TabIndex = 91;
-            // 
             // chiNhanhGDTxt
             // 
             this.chiNhanhGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chiNhanhGDTxt.Location = new System.Drawing.Point(506, 279);
+            this.chiNhanhGDTxt.Location = new System.Drawing.Point(506, 179);
             this.chiNhanhGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.chiNhanhGDTxt.Name = "chiNhanhGDTxt";
             this.chiNhanhGDTxt.Size = new System.Drawing.Size(170, 40);
@@ -230,7 +154,7 @@ namespace DDB_NGANHANG
             this.GDTabControl.Controls.Add(this.tabPage3);
             this.GDTabControl.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GDTabControl.ItemSize = new System.Drawing.Size(235, 40);
-            this.GDTabControl.Location = new System.Drawing.Point(12, 410);
+            this.GDTabControl.Location = new System.Drawing.Point(8, 442);
             this.GDTabControl.Multiline = true;
             this.GDTabControl.Name = "GDTabControl";
             this.GDTabControl.SelectedIndex = 0;
@@ -400,32 +324,97 @@ namespace DDB_NGANHANG
             this.label4GD.TabIndex = 4;
             this.label4GD.Text = "Số tiền";
             // 
-            // GiaoDich
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(47, 345);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 35);
+            this.label2.TabIndex = 94;
+            this.label2.Text = "Số dư";
+            // 
+            // taiKhoanGDTxt
+            // 
+            this.taiKhoanGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.taiKhoanGDTxt.Location = new System.Drawing.Point(182, 257);
+            this.taiKhoanGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.taiKhoanGDTxt.Name = "taiKhoanGDTxt";
+            this.taiKhoanGDTxt.Size = new System.Drawing.Size(218, 40);
+            this.taiKhoanGDTxt.TabIndex = 95;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(38, 260);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 35);
+            this.label3.TabIndex = 96;
+            this.label3.Text = "Tài khoản";
+            // 
+            // traCuuGDBtn
+            // 
+            this.traCuuGDBtn.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.traCuuGDBtn.Location = new System.Drawing.Point(474, 252);
+            this.traCuuGDBtn.Name = "traCuuGDBtn";
+            this.traCuuGDBtn.Size = new System.Drawing.Size(134, 45);
+            this.traCuuGDBtn.TabIndex = 4;
+            this.traCuuGDBtn.Text = "Tra cứu";
+            this.traCuuGDBtn.UseVisualStyleBackColor = true;
+            this.traCuuGDBtn.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // soDuGDTxt
+            // 
+            this.soDuGDTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.soDuGDTxt.Location = new System.Drawing.Point(182, 340);
+            this.soDuGDTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.soDuGDTxt.Name = "soDuGDTxt";
+            this.soDuGDTxt.Size = new System.Drawing.Size(218, 40);
+            this.soDuGDTxt.TabIndex = 97;
+            // 
+            // label3GD
+            // 
+            this.label3GD.Font = new System.Drawing.Font("Markazi Text", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3GD.Image = global::DDB_NGANHANG.Properties.Resources.transaction__1_;
+            this.label3GD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label3GD.Location = new System.Drawing.Point(198, -3);
+            this.label3GD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3GD.Name = "label3GD";
+            this.label3GD.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label3GD.Size = new System.Drawing.Size(336, 108);
+            this.label3GD.TabIndex = 66;
+            this.label3GD.Text = "Giao dịch";
+            this.label3GD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label3GD.UseCompatibleTextRendering = true;
+            // 
+            // GiaoDichForm
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 677);
+            this.ClientSize = new System.Drawing.Size(730, 714);
+            this.Controls.Add(this.soDuGDTxt);
+            this.Controls.Add(this.traCuuGDBtn);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.taiKhoanGDTxt);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.GDTabControl);
             this.Controls.Add(this.chiNhanhGDTxt);
-            this.Controls.Add(this.gioiTinhTxt);
-            this.Controls.Add(this.sdtGDTxt);
             this.Controls.Add(this.cmndGDTxt);
             this.Controls.Add(this.tenGDTxt);
             this.Controls.Add(this.hoGDTxt);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.diaChiGDTxt);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3GD);
             this.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "GiaoDich";
-            this.Text = "XtraForm3";
+            this.Name = "GiaoDichForm";
+            this.Text = "GiaoDichForm";
             this.Load += new System.EventHandler(this.XtraForm3_Load);
             this.GDTabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -442,19 +431,13 @@ namespace DDB_NGANHANG
         #endregion
 
         private System.Windows.Forms.Label label3GD;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox diaChiGDTxt;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox hoGDTxt;
         private System.Windows.Forms.TextBox tenGDTxt;
         private System.Windows.Forms.TextBox cmndGDTxt;
-        private System.Windows.Forms.TextBox sdtGDTxt;
-        private System.Windows.Forms.TextBox gioiTinhTxt;
         private System.Windows.Forms.TextBox chiNhanhGDTxt;
         private System.Windows.Forms.TabControl GDTabControl;
         private System.Windows.Forms.TabPage tabPage1;
@@ -474,5 +457,10 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button thoatChuyenGDBtn;
         private System.Windows.Forms.Button xacNhanChuyenGDBtn;
         private System.Windows.Forms.Label label4GD;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox taiKhoanGDTxt;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button traCuuGDBtn;
+        private System.Windows.Forms.TextBox soDuGDTxt;
     }
 }

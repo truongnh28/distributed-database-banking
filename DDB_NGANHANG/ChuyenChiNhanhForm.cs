@@ -11,21 +11,11 @@ using System.Windows.Forms;
 
 namespace DDB_NGANHANG
 {
-    public partial class GiaoDichForm : DevExpress.XtraEditors.XtraForm
+    public partial class ChuyenChiNhanhForm : DevExpress.XtraEditors.XtraForm
     {
-        public GiaoDichForm()
+        public ChuyenChiNhanhForm()
         {
             InitializeComponent();
-        }
-
-        private void XtraForm3_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
