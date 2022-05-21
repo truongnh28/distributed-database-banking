@@ -173,6 +173,26 @@ namespace DDB_NGANHANG.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profilem {
+            get {
+                object obj = ResourceManager.GetObject("profilem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profilen {
+            get {
+                object obj = ResourceManager.GetObject("profilen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rating_icon {
             get {
                 object obj = ResourceManager.GetObject("rating-icon", resourceCulture);
@@ -206,6 +226,16 @@ namespace DDB_NGANHANG.Properties {
         internal static System.Drawing.Bitmap transaction_icon {
             get {
                 object obj = ResourceManager.GetObject("transaction-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user__1_ {
+            get {
+                object obj = ResourceManager.GetObject("user (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

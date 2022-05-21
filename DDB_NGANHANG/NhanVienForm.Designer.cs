@@ -30,21 +30,20 @@ namespace DDB_NGANHANG
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.thoatThemKhachHangTxt = new System.Windows.Forms.Button();
-            this.xacNhanThemKhachHangTxt = new System.Windows.Forms.Button();
-            this.chiNhanhThemKHTxt = new System.Windows.Forms.TextBox();
-            this.gioiTinhThemKHTxt = new System.Windows.Forms.TextBox();
-            this.sdtThemKHTxt = new System.Windows.Forms.TextBox();
-            this.cmndThemKHTxt = new System.Windows.Forms.TextBox();
-            this.tenThemKHTxt = new System.Windows.Forms.TextBox();
-            this.hoThemKHTxt = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.nuNVRadio = new System.Windows.Forms.RadioButton();
+            this.namNVRadio = new System.Windows.Forms.RadioButton();
+            this.thoatThemNVBtn = new System.Windows.Forms.Button();
+            this.xacNhanThemNVBtn = new System.Windows.Forms.Button();
+            this.sdtThemNVTxt = new System.Windows.Forms.TextBox();
+            this.maNVThemNVTxt = new System.Windows.Forms.TextBox();
+            this.tenThemNVTxt = new System.Windows.Forms.TextBox();
+            this.hoThemNVTxt = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.diaChiThemKHTxt = new System.Windows.Forms.TextBox();
+            this.diaChiThemNVTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3GD = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -52,21 +51,20 @@ namespace DDB_NGANHANG
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.thoatThemKhachHangTxt);
-            this.panel1.Controls.Add(this.xacNhanThemKhachHangTxt);
-            this.panel1.Controls.Add(this.chiNhanhThemKHTxt);
-            this.panel1.Controls.Add(this.gioiTinhThemKHTxt);
-            this.panel1.Controls.Add(this.sdtThemKHTxt);
-            this.panel1.Controls.Add(this.cmndThemKHTxt);
-            this.panel1.Controls.Add(this.tenThemKHTxt);
-            this.panel1.Controls.Add(this.hoThemKHTxt);
-            this.panel1.Controls.Add(this.label13);
+            this.panel1.Controls.Add(this.nuNVRadio);
+            this.panel1.Controls.Add(this.namNVRadio);
+            this.panel1.Controls.Add(this.thoatThemNVBtn);
+            this.panel1.Controls.Add(this.xacNhanThemNVBtn);
+            this.panel1.Controls.Add(this.sdtThemNVTxt);
+            this.panel1.Controls.Add(this.maNVThemNVTxt);
+            this.panel1.Controls.Add(this.tenThemNVTxt);
+            this.panel1.Controls.Add(this.hoThemNVTxt);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.diaChiThemKHTxt);
+            this.panel1.Controls.Add(this.diaChiThemNVTxt);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3GD);
             this.panel1.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,88 +73,82 @@ namespace DDB_NGANHANG
             this.panel1.Size = new System.Drawing.Size(732, 486);
             this.panel1.TabIndex = 0;
             // 
-            // thoatThemKhachHangTxt
+            // nuNVRadio
             // 
-            this.thoatThemKhachHangTxt.Location = new System.Drawing.Point(452, 409);
-            this.thoatThemKhachHangTxt.Name = "thoatThemKhachHangTxt";
-            this.thoatThemKhachHangTxt.Size = new System.Drawing.Size(134, 45);
-            this.thoatThemKhachHangTxt.TabIndex = 133;
-            this.thoatThemKhachHangTxt.Text = "Thoát";
-            this.thoatThemKhachHangTxt.UseVisualStyleBackColor = true;
+            this.nuNVRadio.AutoSize = true;
+            this.nuNVRadio.Location = new System.Drawing.Point(593, 205);
+            this.nuNVRadio.Name = "nuNVRadio";
+            this.nuNVRadio.Size = new System.Drawing.Size(59, 39);
+            this.nuNVRadio.TabIndex = 135;
+            this.nuNVRadio.TabStop = true;
+            this.nuNVRadio.Text = "Nữ";
+            this.nuNVRadio.UseVisualStyleBackColor = true;
             // 
-            // xacNhanThemKhachHangTxt
+            // namNVRadio
             // 
-            this.xacNhanThemKhachHangTxt.Location = new System.Drawing.Point(228, 409);
-            this.xacNhanThemKhachHangTxt.Name = "xacNhanThemKhachHangTxt";
-            this.xacNhanThemKhachHangTxt.Size = new System.Drawing.Size(134, 45);
-            this.xacNhanThemKhachHangTxt.TabIndex = 132;
-            this.xacNhanThemKhachHangTxt.Text = "Xác nhận";
-            this.xacNhanThemKhachHangTxt.UseVisualStyleBackColor = true;
+            this.namNVRadio.AutoSize = true;
+            this.namNVRadio.Location = new System.Drawing.Point(489, 205);
+            this.namNVRadio.Name = "namNVRadio";
+            this.namNVRadio.Size = new System.Drawing.Size(77, 39);
+            this.namNVRadio.TabIndex = 134;
+            this.namNVRadio.TabStop = true;
+            this.namNVRadio.Text = "Nam";
+            this.namNVRadio.UseVisualStyleBackColor = true;
             // 
-            // chiNhanhThemKHTxt
+            // thoatThemNVBtn
             // 
-            this.chiNhanhThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chiNhanhThemKHTxt.Location = new System.Drawing.Point(515, 265);
-            this.chiNhanhThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.chiNhanhThemKHTxt.Name = "chiNhanhThemKHTxt";
-            this.chiNhanhThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.chiNhanhThemKHTxt.TabIndex = 129;
+            this.thoatThemNVBtn.Location = new System.Drawing.Point(438, 374);
+            this.thoatThemNVBtn.Name = "thoatThemNVBtn";
+            this.thoatThemNVBtn.Size = new System.Drawing.Size(134, 45);
+            this.thoatThemNVBtn.TabIndex = 133;
+            this.thoatThemNVBtn.Text = "Thoát";
+            this.thoatThemNVBtn.UseVisualStyleBackColor = true;
+            this.thoatThemNVBtn.Click += new System.EventHandler(this.thoatThemNVBtn_Click);
             // 
-            // gioiTinhThemKHTxt
+            // xacNhanThemNVBtn
             // 
-            this.gioiTinhThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gioiTinhThemKHTxt.Location = new System.Drawing.Point(515, 202);
-            this.gioiTinhThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.gioiTinhThemKHTxt.Name = "gioiTinhThemKHTxt";
-            this.gioiTinhThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.gioiTinhThemKHTxt.TabIndex = 128;
+            this.xacNhanThemNVBtn.Location = new System.Drawing.Point(214, 374);
+            this.xacNhanThemNVBtn.Name = "xacNhanThemNVBtn";
+            this.xacNhanThemNVBtn.Size = new System.Drawing.Size(134, 45);
+            this.xacNhanThemNVBtn.TabIndex = 132;
+            this.xacNhanThemNVBtn.Text = "Xác nhận";
+            this.xacNhanThemNVBtn.UseVisualStyleBackColor = true;
             // 
-            // sdtThemKHTxt
+            // sdtThemNVTxt
             // 
-            this.sdtThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sdtThemKHTxt.Location = new System.Drawing.Point(136, 265);
-            this.sdtThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.sdtThemKHTxt.Name = "sdtThemKHTxt";
-            this.sdtThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.sdtThemKHTxt.TabIndex = 127;
+            this.sdtThemNVTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sdtThemNVTxt.Location = new System.Drawing.Point(136, 265);
+            this.sdtThemNVTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.sdtThemNVTxt.Name = "sdtThemNVTxt";
+            this.sdtThemNVTxt.Size = new System.Drawing.Size(212, 40);
+            this.sdtThemNVTxt.TabIndex = 127;
             // 
-            // cmndThemKHTxt
+            // maNVThemNVTxt
             // 
-            this.cmndThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmndThemKHTxt.Location = new System.Drawing.Point(136, 202);
-            this.cmndThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.cmndThemKHTxt.Name = "cmndThemKHTxt";
-            this.cmndThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.cmndThemKHTxt.TabIndex = 126;
+            this.maNVThemNVTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maNVThemNVTxt.Location = new System.Drawing.Point(136, 202);
+            this.maNVThemNVTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.maNVThemNVTxt.Name = "maNVThemNVTxt";
+            this.maNVThemNVTxt.Size = new System.Drawing.Size(212, 40);
+            this.maNVThemNVTxt.TabIndex = 126;
             // 
-            // tenThemKHTxt
+            // tenThemNVTxt
             // 
-            this.tenThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenThemKHTxt.Location = new System.Drawing.Point(515, 140);
-            this.tenThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tenThemKHTxt.Name = "tenThemKHTxt";
-            this.tenThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.tenThemKHTxt.TabIndex = 125;
+            this.tenThemNVTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenThemNVTxt.Location = new System.Drawing.Point(473, 140);
+            this.tenThemNVTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.tenThemNVTxt.Name = "tenThemNVTxt";
+            this.tenThemNVTxt.Size = new System.Drawing.Size(212, 40);
+            this.tenThemNVTxt.TabIndex = 125;
             // 
-            // hoThemKHTxt
+            // hoThemNVTxt
             // 
-            this.hoThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoThemKHTxt.Location = new System.Drawing.Point(136, 142);
-            this.hoThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.hoThemKHTxt.Name = "hoThemKHTxt";
-            this.hoThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.hoThemKHTxt.TabIndex = 124;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(369, 268);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 35);
-            this.label13.TabIndex = 123;
-            this.label13.Text = "Chi nhánh";
+            this.hoThemNVTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoThemNVTxt.Location = new System.Drawing.Point(136, 142);
+            this.hoThemNVTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.hoThemNVTxt.Name = "hoThemNVTxt";
+            this.hoThemNVTxt.Size = new System.Drawing.Size(212, 40);
+            this.hoThemNVTxt.TabIndex = 124;
             // 
             // label12
             // 
@@ -213,20 +205,20 @@ namespace DDB_NGANHANG
             this.label8.TabIndex = 118;
             this.label8.Text = "Họ";
             // 
-            // diaChiThemKHTxt
+            // diaChiThemNVTxt
             // 
-            this.diaChiThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diaChiThemKHTxt.Location = new System.Drawing.Point(136, 326);
-            this.diaChiThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.diaChiThemKHTxt.Name = "diaChiThemKHTxt";
-            this.diaChiThemKHTxt.Size = new System.Drawing.Size(549, 40);
-            this.diaChiThemKHTxt.TabIndex = 117;
+            this.diaChiThemNVTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diaChiThemNVTxt.Location = new System.Drawing.Point(473, 279);
+            this.diaChiThemNVTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.diaChiThemNVTxt.Name = "diaChiThemNVTxt";
+            this.diaChiThemNVTxt.Size = new System.Drawing.Size(212, 40);
+            this.diaChiThemNVTxt.TabIndex = 117;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(47, 329);
+            this.label5.Location = new System.Drawing.Point(369, 279);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 35);
@@ -265,22 +257,21 @@ namespace DDB_NGANHANG
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button thoatThemKhachHangTxt;
-        private System.Windows.Forms.Button xacNhanThemKhachHangTxt;
-        private System.Windows.Forms.TextBox chiNhanhThemKHTxt;
-        private System.Windows.Forms.TextBox gioiTinhThemKHTxt;
-        private System.Windows.Forms.TextBox sdtThemKHTxt;
-        private System.Windows.Forms.TextBox cmndThemKHTxt;
-        private System.Windows.Forms.TextBox tenThemKHTxt;
-        private System.Windows.Forms.TextBox hoThemKHTxt;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button thoatThemNVBtn;
+        private System.Windows.Forms.Button xacNhanThemNVBtn;
+        private System.Windows.Forms.TextBox sdtThemNVTxt;
+        private System.Windows.Forms.TextBox maNVThemNVTxt;
+        private System.Windows.Forms.TextBox tenThemNVTxt;
+        private System.Windows.Forms.TextBox hoThemNVTxt;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox diaChiThemKHTxt;
+        private System.Windows.Forms.TextBox diaChiThemNVTxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3GD;
+        private System.Windows.Forms.RadioButton nuNVRadio;
+        private System.Windows.Forms.RadioButton namNVRadio;
     }
 }

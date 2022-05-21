@@ -2,6 +2,8 @@
 using DevExpress.UserSkins;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -17,7 +19,7 @@ namespace DDB_NGANHANG
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TraCuuKhachHangForm());
+            Application.Run(new MainForm());
         }
     }
 }

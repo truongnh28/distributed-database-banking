@@ -32,15 +32,10 @@ namespace DDB_NGANHANG
             this.panel1 = new System.Windows.Forms.Panel();
             this.thoatThemKhachHangTxt = new System.Windows.Forms.Button();
             this.xacNhanThemKhachHangTxt = new System.Windows.Forms.Button();
-            this.soDuThemKHTxt = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.chiNhanhThemKHTxt = new System.Windows.Forms.TextBox();
-            this.gioiTinhThemKHTxt = new System.Windows.Forms.TextBox();
             this.sdtThemKHTxt = new System.Windows.Forms.TextBox();
             this.cmndThemKHTxt = new System.Windows.Forms.TextBox();
             this.tenThemKHTxt = new System.Windows.Forms.TextBox();
             this.hoThemKHTxt = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -49,22 +44,21 @@ namespace DDB_NGANHANG
             this.diaChiThemKHTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3GD = new System.Windows.Forms.Label();
+            this.nuKhachHangFormRadio = new System.Windows.Forms.RadioButton();
+            this.namKhachHangFormRadio = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.nuKhachHangFormRadio);
+            this.panel1.Controls.Add(this.namKhachHangFormRadio);
             this.panel1.Controls.Add(this.thoatThemKhachHangTxt);
             this.panel1.Controls.Add(this.xacNhanThemKhachHangTxt);
-            this.panel1.Controls.Add(this.soDuThemKHTxt);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.chiNhanhThemKHTxt);
-            this.panel1.Controls.Add(this.gioiTinhThemKHTxt);
             this.panel1.Controls.Add(this.sdtThemKHTxt);
             this.panel1.Controls.Add(this.cmndThemKHTxt);
             this.panel1.Controls.Add(this.tenThemKHTxt);
             this.panel1.Controls.Add(this.hoThemKHTxt);
-            this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
@@ -76,72 +70,36 @@ namespace DDB_NGANHANG
             this.panel1.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(-1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(732, 530);
+            this.panel1.Size = new System.Drawing.Size(732, 460);
             this.panel1.TabIndex = 0;
             // 
             // thoatThemKhachHangTxt
             // 
-            this.thoatThemKhachHangTxt.Location = new System.Drawing.Point(445, 450);
+            this.thoatThemKhachHangTxt.Location = new System.Drawing.Point(435, 348);
             this.thoatThemKhachHangTxt.Name = "thoatThemKhachHangTxt";
             this.thoatThemKhachHangTxt.Size = new System.Drawing.Size(134, 45);
             this.thoatThemKhachHangTxt.TabIndex = 114;
             this.thoatThemKhachHangTxt.Text = "Thoát";
             this.thoatThemKhachHangTxt.UseVisualStyleBackColor = true;
+            this.thoatThemKhachHangTxt.Click += new System.EventHandler(this.thoatThemKhachHangTxt_Click);
             // 
             // xacNhanThemKhachHangTxt
             // 
-            this.xacNhanThemKhachHangTxt.Location = new System.Drawing.Point(221, 450);
+            this.xacNhanThemKhachHangTxt.Location = new System.Drawing.Point(211, 348);
             this.xacNhanThemKhachHangTxt.Name = "xacNhanThemKhachHangTxt";
             this.xacNhanThemKhachHangTxt.Size = new System.Drawing.Size(134, 45);
             this.xacNhanThemKhachHangTxt.TabIndex = 113;
             this.xacNhanThemKhachHangTxt.Text = "Xác nhận";
             this.xacNhanThemKhachHangTxt.UseVisualStyleBackColor = true;
-            // 
-            // soDuThemKHTxt
-            // 
-            this.soDuThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.soDuThemKHTxt.Location = new System.Drawing.Point(133, 374);
-            this.soDuThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.soDuThemKHTxt.Name = "soDuThemKHTxt";
-            this.soDuThemKHTxt.Size = new System.Drawing.Size(549, 40);
-            this.soDuThemKHTxt.TabIndex = 112;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 377);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 35);
-            this.label2.TabIndex = 111;
-            this.label2.Text = "Số dư";
-            // 
-            // chiNhanhThemKHTxt
-            // 
-            this.chiNhanhThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chiNhanhThemKHTxt.Location = new System.Drawing.Point(512, 247);
-            this.chiNhanhThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.chiNhanhThemKHTxt.Name = "chiNhanhThemKHTxt";
-            this.chiNhanhThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.chiNhanhThemKHTxt.TabIndex = 110;
-            // 
-            // gioiTinhThemKHTxt
-            // 
-            this.gioiTinhThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gioiTinhThemKHTxt.Location = new System.Drawing.Point(512, 184);
-            this.gioiTinhThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.gioiTinhThemKHTxt.Name = "gioiTinhThemKHTxt";
-            this.gioiTinhThemKHTxt.Size = new System.Drawing.Size(170, 40);
-            this.gioiTinhThemKHTxt.TabIndex = 109;
+            this.xacNhanThemKhachHangTxt.Click += new System.EventHandler(this.xacNhanThemKhachHangTxt_Click);
             // 
             // sdtThemKHTxt
             // 
             this.sdtThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sdtThemKHTxt.Location = new System.Drawing.Point(133, 247);
+            this.sdtThemKHTxt.Location = new System.Drawing.Point(133, 245);
             this.sdtThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.sdtThemKHTxt.Name = "sdtThemKHTxt";
-            this.sdtThemKHTxt.Size = new System.Drawing.Size(170, 40);
+            this.sdtThemKHTxt.Size = new System.Drawing.Size(212, 40);
             this.sdtThemKHTxt.TabIndex = 108;
             // 
             // cmndThemKHTxt
@@ -150,16 +108,16 @@ namespace DDB_NGANHANG
             this.cmndThemKHTxt.Location = new System.Drawing.Point(133, 184);
             this.cmndThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cmndThemKHTxt.Name = "cmndThemKHTxt";
-            this.cmndThemKHTxt.Size = new System.Drawing.Size(170, 40);
+            this.cmndThemKHTxt.Size = new System.Drawing.Size(212, 40);
             this.cmndThemKHTxt.TabIndex = 107;
             // 
             // tenThemKHTxt
             // 
             this.tenThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenThemKHTxt.Location = new System.Drawing.Point(512, 122);
+            this.tenThemKHTxt.Location = new System.Drawing.Point(484, 122);
             this.tenThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tenThemKHTxt.Name = "tenThemKHTxt";
-            this.tenThemKHTxt.Size = new System.Drawing.Size(170, 40);
+            this.tenThemKHTxt.Size = new System.Drawing.Size(212, 40);
             this.tenThemKHTxt.TabIndex = 106;
             // 
             // hoThemKHTxt
@@ -168,19 +126,8 @@ namespace DDB_NGANHANG
             this.hoThemKHTxt.Location = new System.Drawing.Point(133, 124);
             this.hoThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.hoThemKHTxt.Name = "hoThemKHTxt";
-            this.hoThemKHTxt.Size = new System.Drawing.Size(170, 40);
+            this.hoThemKHTxt.Size = new System.Drawing.Size(212, 40);
             this.hoThemKHTxt.TabIndex = 105;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(366, 250);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(115, 35);
-            this.label13.TabIndex = 104;
-            this.label13.Text = "Chi nhánh";
             // 
             // label12
             // 
@@ -240,17 +187,17 @@ namespace DDB_NGANHANG
             // diaChiThemKHTxt
             // 
             this.diaChiThemKHTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diaChiThemKHTxt.Location = new System.Drawing.Point(133, 308);
+            this.diaChiThemKHTxt.Location = new System.Drawing.Point(484, 250);
             this.diaChiThemKHTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.diaChiThemKHTxt.Name = "diaChiThemKHTxt";
-            this.diaChiThemKHTxt.Size = new System.Drawing.Size(549, 40);
+            this.diaChiThemKHTxt.Size = new System.Drawing.Size(212, 40);
             this.diaChiThemKHTxt.TabIndex = 98;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(44, 311);
+            this.label5.Location = new System.Drawing.Point(366, 250);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 35);
@@ -272,13 +219,35 @@ namespace DDB_NGANHANG
             this.label3GD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3GD.UseCompatibleTextRendering = true;
             // 
-            // ChinhSuaKhachHangForm
+            // nuKhachHangFormRadio
+            // 
+            this.nuKhachHangFormRadio.AutoSize = true;
+            this.nuKhachHangFormRadio.Location = new System.Drawing.Point(589, 185);
+            this.nuKhachHangFormRadio.Name = "nuKhachHangFormRadio";
+            this.nuKhachHangFormRadio.Size = new System.Drawing.Size(59, 39);
+            this.nuKhachHangFormRadio.TabIndex = 137;
+            this.nuKhachHangFormRadio.TabStop = true;
+            this.nuKhachHangFormRadio.Text = "Nữ";
+            this.nuKhachHangFormRadio.UseVisualStyleBackColor = true;
+            // 
+            // namKhachHangFormRadio
+            // 
+            this.namKhachHangFormRadio.AutoSize = true;
+            this.namKhachHangFormRadio.Location = new System.Drawing.Point(485, 185);
+            this.namKhachHangFormRadio.Name = "namKhachHangFormRadio";
+            this.namKhachHangFormRadio.Size = new System.Drawing.Size(77, 39);
+            this.namKhachHangFormRadio.TabIndex = 136;
+            this.namKhachHangFormRadio.TabStop = true;
+            this.namKhachHangFormRadio.Text = "Nam";
+            this.namKhachHangFormRadio.UseVisualStyleBackColor = true;
+            // 
+            // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 531);
+            this.ClientSize = new System.Drawing.Size(730, 462);
             this.Controls.Add(this.panel1);
-            this.Name = "ChinhSuaKhachHangForm";
+            this.Name = "KhachHang";
             this.Text = "KhachHangForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -289,15 +258,10 @@ namespace DDB_NGANHANG
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox soDuThemKHTxt;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox chiNhanhThemKHTxt;
-        private System.Windows.Forms.TextBox gioiTinhThemKHTxt;
         private System.Windows.Forms.TextBox sdtThemKHTxt;
         private System.Windows.Forms.TextBox cmndThemKHTxt;
         private System.Windows.Forms.TextBox tenThemKHTxt;
         private System.Windows.Forms.TextBox hoThemKHTxt;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -308,5 +272,7 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Label label3GD;
         private System.Windows.Forms.Button thoatThemKhachHangTxt;
         private System.Windows.Forms.Button xacNhanThemKhachHangTxt;
+        private System.Windows.Forms.RadioButton nuKhachHangFormRadio;
+        private System.Windows.Forms.RadioButton namKhachHangFormRadio;
     }
 }

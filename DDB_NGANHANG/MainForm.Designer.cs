@@ -31,58 +31,63 @@ namespace DDB_NGANHANG
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.systemControl = new System.Windows.Forms.TabControl();
             this.heThongPage = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.maNVToolTrip = new System.Windows.Forms.ToolStripStatusLabel();
+            this.hoTenToolTrip = new System.Windows.Forms.ToolStripStatusLabel();
+            this.nhomToolTrip = new System.Windows.Forms.ToolStripStatusLabel();
+            this.subSystemControl = new System.Windows.Forms.TabControl();
             this.dangNhapPage = new System.Windows.Forms.TabPage();
             this.chiNhanhDangNhapComboBox = new System.Windows.Forms.ComboBox();
             this.thoatDangNhapBtn = new System.Windows.Forms.Button();
             this.xacNhanDangNhapBtn = new System.Windows.Forms.Button();
             this.matKhauDangNhapTxt = new System.Windows.Forms.TextBox();
             this.taiKhoanDangNhapTxt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dangXuatPage = new System.Windows.Forms.TabPage();
+            this.xacNhanDangXuatTxt = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
             this.taoTaiKhoanPage = new System.Windows.Forms.TabPage();
-            this.chiNhanhTaoTaiKhoangComboBox = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.taiKhoanTaoTaiKhoangComboBox = new System.Windows.Forms.ComboBox();
             this.xacNhanMatKhauTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.taiKhoanTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.matKhauTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.thoatTaoTaiKhoanBtn = new System.Windows.Forms.Button();
             this.xacNhanTaoTaiKhoanBtn = new System.Windows.Forms.Button();
-            this.nganHangTaoTaiKhoanCheckBox = new System.Windows.Forms.CheckBox();
-            this.chiNhanhTaoTaiKhoanCheckBox = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.thoatPage = new System.Windows.Forms.TabPage();
+            this.xacNhanThoatBtn = new System.Windows.Forms.Button();
+            this.label38 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.quanLyPage = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
+            this.subQuanLyControl = new System.Windows.Forms.TabControl();
             this.nhanVienPage = new System.Windows.Forms.TabPage();
             this.hoanTacNhanVienBtn = new System.Windows.Forms.Button();
             this.luuNhanVienBtn = new System.Windows.Forms.Button();
             this.chuyenChiNhanhBtn = new System.Windows.Forms.Button();
-            this.chiNhanhNhanVienTxt = new System.Windows.Forms.TextBox();
             this.sdtNhanVienTxt = new System.Windows.Forms.TextBox();
-            this.gioiTinhNhanVienTxt = new System.Windows.Forms.TextBox();
             this.diaChiNhanVienTxt = new System.Windows.Forms.TextBox();
             this.tenNhanVienTxt = new System.Windows.Forms.TextBox();
             this.hoNhanVienTxt = new System.Windows.Forms.TextBox();
             this.maNhanVienTxt = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.nhanVienTable = new System.Windows.Forms.DataGridView();
             this.chinhSuaNhanVienBtn = new System.Windows.Forms.Button();
             this.xoaNhanVienBtn = new System.Windows.Forms.Button();
             this.themNhanVienBtn = new System.Windows.Forms.Button();
@@ -91,21 +96,6 @@ namespace DDB_NGANHANG
             this.hoanTacKhachHangBtn = new System.Windows.Forms.Button();
             this.luuKhachHangBtn = new System.Windows.Forms.Button();
             this.moTaiKhoangKhachHangBtn = new System.Windows.Forms.Button();
-            this.chiNhanhKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.sdtKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.gioiTinhTxt = new System.Windows.Forms.TextBox();
-            this.diaChiKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.cmndTxt = new System.Windows.Forms.TextBox();
-            this.tenKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.hoKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.khachHangTable = new System.Windows.Forms.DataGridView();
             this.chinhSuaKhachHangBtn = new System.Windows.Forms.Button();
             this.xoaKhachHangBtn = new System.Windows.Forms.Button();
             this.themKhachHangBtn = new System.Windows.Forms.Button();
@@ -132,64 +122,137 @@ namespace DDB_NGANHANG
             this.xacNhanLietKeKhachHangBtn = new System.Windows.Forms.Button();
             this.chonChiNhanhLietKeKhachHangComboBox = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.tabControl1.SuspendLayout();
+            this.namNhanVienRadio = new System.Windows.Forms.RadioButton();
+            this.nuNhanVienRadio = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.sdtKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.diaChiKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.tenKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.hoKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.cmndKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.khachHangTable = new System.Windows.Forms.DataGridView();
+            this.nhanVienTable = new System.Windows.Forms.DataGridView();
+            this.nuKhachHangRadio = new System.Windows.Forms.RadioButton();
+            this.namKhachHangRadio = new System.Windows.Forms.RadioButton();
+            this.nhanVienPanel = new System.Windows.Forms.Panel();
+            this.khachHangPanel = new System.Windows.Forms.Panel();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.maNVToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.hoTenToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.nhomToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusStrip3 = new System.Windows.Forms.StatusStrip();
+            this.maNVToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.hoTenToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.nhomToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.systemControl.SuspendLayout();
             this.heThongPage.SuspendLayout();
-            this.tabControl2.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.subSystemControl.SuspendLayout();
             this.dangNhapPage.SuspendLayout();
+            this.dangXuatPage.SuspendLayout();
             this.taoTaiKhoanPage.SuspendLayout();
+            this.thoatPage.SuspendLayout();
             this.quanLyPage.SuspendLayout();
-            this.tabControl3.SuspendLayout();
+            this.subQuanLyControl.SuspendLayout();
             this.nhanVienPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).BeginInit();
             this.khachHangPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).BeginInit();
             this.baoCaoPage.SuspendLayout();
             this.lietKeTaiKhoanPage.SuspendLayout();
             this.saoKeGiaoDichPage.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).BeginInit();
+            this.nhanVienPanel.SuspendLayout();
+            this.khachHangPanel.SuspendLayout();
+            this.statusStrip2.SuspendLayout();
+            this.statusStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // systemControl
             // 
-            this.tabControl1.Controls.Add(this.heThongPage);
-            this.tabControl1.Controls.Add(this.quanLyPage);
-            this.tabControl1.Controls.Add(this.baoCaoPage);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.ImageList = this.imageList1;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1315, 738);
-            this.tabControl1.TabIndex = 0;
+            this.systemControl.Controls.Add(this.heThongPage);
+            this.systemControl.Controls.Add(this.quanLyPage);
+            this.systemControl.Controls.Add(this.baoCaoPage);
+            this.systemControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.systemControl.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.systemControl.ImageList = this.imageList1;
+            this.systemControl.Location = new System.Drawing.Point(0, 0);
+            this.systemControl.Name = "systemControl";
+            this.systemControl.SelectedIndex = 0;
+            this.systemControl.Size = new System.Drawing.Size(1315, 775);
+            this.systemControl.TabIndex = 0;
+            this.systemControl.SelectedIndexChanged += new System.EventHandler(this.systemControl_SelectedIndexChanged);
             // 
             // heThongPage
             // 
-            this.heThongPage.Controls.Add(this.tabControl2);
+            this.heThongPage.Controls.Add(this.statusStrip1);
+            this.heThongPage.Controls.Add(this.subSystemControl);
             this.heThongPage.Location = new System.Drawing.Point(4, 57);
             this.heThongPage.Name = "heThongPage";
             this.heThongPage.Padding = new System.Windows.Forms.Padding(3);
-            this.heThongPage.Size = new System.Drawing.Size(1307, 677);
+            this.heThongPage.Size = new System.Drawing.Size(1307, 714);
             this.heThongPage.TabIndex = 0;
             this.heThongPage.Text = "HỆ THỐNG";
             this.heThongPage.UseVisualStyleBackColor = true;
             // 
-            // tabControl2
+            // statusStrip1
             // 
-            this.tabControl2.AllowDrop = true;
-            this.tabControl2.Controls.Add(this.dangNhapPage);
-            this.tabControl2.Controls.Add(this.dangXuatPage);
-            this.tabControl2.Controls.Add(this.taoTaiKhoanPage);
-            this.tabControl2.Controls.Add(this.thoatPage);
-            this.tabControl2.Font = new System.Drawing.Font("Markazi Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl2.ImageList = this.imageList1;
-            this.tabControl2.ItemSize = new System.Drawing.Size(80, 53);
-            this.tabControl2.Location = new System.Drawing.Point(0, 0);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1310, 679);
-            this.tabControl2.TabIndex = 0;
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maNVToolTrip,
+            this.hoTenToolTrip,
+            this.nhomToolTrip});
+            this.statusStrip1.Location = new System.Drawing.Point(3, 681);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1301, 30);
+            this.statusStrip1.TabIndex = 1;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // maNVToolTrip
+            // 
+            this.maNVToolTrip.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maNVToolTrip.Name = "maNVToolTrip";
+            this.maNVToolTrip.Size = new System.Drawing.Size(51, 25);
+            this.maNVToolTrip.Text = "MaNV";
+            // 
+            // hoTenToolTrip
+            // 
+            this.hoTenToolTrip.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenToolTrip.Name = "hoTenToolTrip";
+            this.hoTenToolTrip.Size = new System.Drawing.Size(55, 25);
+            this.hoTenToolTrip.Text = "Họ tên";
+            // 
+            // nhomToolTrip
+            // 
+            this.nhomToolTrip.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhomToolTrip.Name = "nhomToolTrip";
+            this.nhomToolTrip.Size = new System.Drawing.Size(52, 25);
+            this.nhomToolTrip.Text = "Nhóm";
+            // 
+            // subSystemControl
+            // 
+            this.subSystemControl.AllowDrop = true;
+            this.subSystemControl.Controls.Add(this.dangNhapPage);
+            this.subSystemControl.Controls.Add(this.dangXuatPage);
+            this.subSystemControl.Controls.Add(this.taoTaiKhoanPage);
+            this.subSystemControl.Controls.Add(this.thoatPage);
+            this.subSystemControl.Font = new System.Drawing.Font("Markazi Text", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.subSystemControl.ImageList = this.imageList1;
+            this.subSystemControl.ItemSize = new System.Drawing.Size(80, 53);
+            this.subSystemControl.Location = new System.Drawing.Point(0, 0);
+            this.subSystemControl.Name = "subSystemControl";
+            this.subSystemControl.SelectedIndex = 0;
+            this.subSystemControl.Size = new System.Drawing.Size(1310, 679);
+            this.subSystemControl.TabIndex = 0;
             // 
             // dangNhapPage
             // 
@@ -213,6 +276,7 @@ namespace DDB_NGANHANG
             // 
             // chiNhanhDangNhapComboBox
             // 
+            this.chiNhanhDangNhapComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.chiNhanhDangNhapComboBox.FormattingEnabled = true;
             this.chiNhanhDangNhapComboBox.Location = new System.Drawing.Point(558, 213);
             this.chiNhanhDangNhapComboBox.Name = "chiNhanhDangNhapComboBox";
@@ -253,14 +317,6 @@ namespace DDB_NGANHANG
             this.taiKhoanDangNhapTxt.Size = new System.Drawing.Size(329, 36);
             this.taiKhoanDangNhapTxt.TabIndex = 5;
             // 
-            // label4
-            // 
-            this.label4.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
-            this.label4.Location = new System.Drawing.Point(552, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 164);
-            this.label4.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -290,6 +346,8 @@ namespace DDB_NGANHANG
             // 
             // dangXuatPage
             // 
+            this.dangXuatPage.Controls.Add(this.xacNhanDangXuatTxt);
+            this.dangXuatPage.Controls.Add(this.label37);
             this.dangXuatPage.ImageIndex = 3;
             this.dangXuatPage.Location = new System.Drawing.Point(4, 57);
             this.dangXuatPage.Name = "dangXuatPage";
@@ -299,17 +357,34 @@ namespace DDB_NGANHANG
             this.dangXuatPage.Text = "ĐĂNG XUẤT";
             this.dangXuatPage.UseVisualStyleBackColor = true;
             // 
+            // xacNhanDangXuatTxt
+            // 
+            this.xacNhanDangXuatTxt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.xacNhanDangXuatTxt.Location = new System.Drawing.Point(588, 228);
+            this.xacNhanDangXuatTxt.Name = "xacNhanDangXuatTxt";
+            this.xacNhanDangXuatTxt.Size = new System.Drawing.Size(134, 58);
+            this.xacNhanDangXuatTxt.TabIndex = 1;
+            this.xacNhanDangXuatTxt.Text = "Xác nhận";
+            this.xacNhanDangXuatTxt.UseVisualStyleBackColor = false;
+            this.xacNhanDangXuatTxt.Click += new System.EventHandler(this.xacNhanDangXuatTxt_Click);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(516, 144);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(268, 31);
+            this.label37.TabIndex = 0;
+            this.label37.Text = "Bạn có thật sự muốn đăng xuất";
+            // 
             // taoTaiKhoanPage
             // 
-            this.taoTaiKhoanPage.Controls.Add(this.chiNhanhTaoTaiKhoangComboBox);
-            this.taoTaiKhoanPage.Controls.Add(this.label10);
+            this.taoTaiKhoanPage.Controls.Add(this.taiKhoanTaoTaiKhoangComboBox);
             this.taoTaiKhoanPage.Controls.Add(this.xacNhanMatKhauTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.taiKhoanTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.matKhauTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.thoatTaoTaiKhoanBtn);
             this.taoTaiKhoanPage.Controls.Add(this.xacNhanTaoTaiKhoanBtn);
-            this.taoTaiKhoanPage.Controls.Add(this.nganHangTaoTaiKhoanCheckBox);
-            this.taoTaiKhoanPage.Controls.Add(this.chiNhanhTaoTaiKhoanCheckBox);
             this.taoTaiKhoanPage.Controls.Add(this.label8);
             this.taoTaiKhoanPage.Controls.Add(this.label7);
             this.taoTaiKhoanPage.Controls.Add(this.label6);
@@ -324,47 +399,40 @@ namespace DDB_NGANHANG
             this.taoTaiKhoanPage.Text = "TẠO TÀI KHOẢN";
             this.taoTaiKhoanPage.UseVisualStyleBackColor = true;
             // 
-            // chiNhanhTaoTaiKhoangComboBox
+            // taiKhoanTaoTaiKhoangComboBox
             // 
-            this.chiNhanhTaoTaiKhoangComboBox.FormattingEnabled = true;
-            this.chiNhanhTaoTaiKhoangComboBox.Location = new System.Drawing.Point(558, 201);
-            this.chiNhanhTaoTaiKhoangComboBox.Name = "chiNhanhTaoTaiKhoangComboBox";
-            this.chiNhanhTaoTaiKhoangComboBox.Size = new System.Drawing.Size(352, 39);
-            this.chiNhanhTaoTaiKhoangComboBox.TabIndex = 14;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(352, 480);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 31);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Vai trò";
+            this.taiKhoanTaoTaiKhoangComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.taiKhoanTaoTaiKhoangComboBox.FormattingEnabled = true;
+            this.taiKhoanTaoTaiKhoangComboBox.Location = new System.Drawing.Point(617, 219);
+            this.taiKhoanTaoTaiKhoangComboBox.Name = "taiKhoanTaoTaiKhoangComboBox";
+            this.taiKhoanTaoTaiKhoangComboBox.Size = new System.Drawing.Size(352, 39);
+            this.taiKhoanTaoTaiKhoangComboBox.TabIndex = 14;
             // 
             // xacNhanMatKhauTaoTaiKhoanTxt
             // 
-            this.xacNhanMatKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(558, 407);
+            this.xacNhanMatKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 420);
             this.xacNhanMatKhauTaoTaiKhoanTxt.Name = "xacNhanMatKhauTaoTaiKhoanTxt";
             this.xacNhanMatKhauTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
             this.xacNhanMatKhauTaoTaiKhoanTxt.TabIndex = 11;
             // 
             // taiKhoanTaoTaiKhoanTxt
             // 
-            this.taiKhoanTaoTaiKhoanTxt.Location = new System.Drawing.Point(558, 264);
+            this.taiKhoanTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 285);
             this.taiKhoanTaoTaiKhoanTxt.Name = "taiKhoanTaoTaiKhoanTxt";
             this.taiKhoanTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
             this.taiKhoanTaoTaiKhoanTxt.TabIndex = 10;
+            this.taiKhoanTaoTaiKhoanTxt.TextChanged += new System.EventHandler(this.taiKhoanTaoTaiKhoanTxt_TextChanged);
             // 
             // matKhauTaoTaiKhoanTxt
             // 
-            this.matKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(558, 336);
+            this.matKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 349);
             this.matKhauTaoTaiKhoanTxt.Name = "matKhauTaoTaiKhoanTxt";
             this.matKhauTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
             this.matKhauTaoTaiKhoanTxt.TabIndex = 9;
             // 
             // thoatTaoTaiKhoanBtn
             // 
-            this.thoatTaoTaiKhoanBtn.Location = new System.Drawing.Point(695, 541);
+            this.thoatTaoTaiKhoanBtn.Location = new System.Drawing.Point(754, 536);
             this.thoatTaoTaiKhoanBtn.Name = "thoatTaoTaiKhoanBtn";
             this.thoatTaoTaiKhoanBtn.Size = new System.Drawing.Size(215, 41);
             this.thoatTaoTaiKhoanBtn.TabIndex = 7;
@@ -373,46 +441,26 @@ namespace DDB_NGANHANG
             // 
             // xacNhanTaoTaiKhoanBtn
             // 
-            this.xacNhanTaoTaiKhoanBtn.Location = new System.Drawing.Point(355, 541);
+            this.xacNhanTaoTaiKhoanBtn.Location = new System.Drawing.Point(417, 536);
             this.xacNhanTaoTaiKhoanBtn.Name = "xacNhanTaoTaiKhoanBtn";
             this.xacNhanTaoTaiKhoanBtn.Size = new System.Drawing.Size(215, 41);
             this.xacNhanTaoTaiKhoanBtn.TabIndex = 6;
             this.xacNhanTaoTaiKhoanBtn.Text = "XÁC NHẬN";
             this.xacNhanTaoTaiKhoanBtn.UseVisualStyleBackColor = true;
             // 
-            // nganHangTaoTaiKhoanCheckBox
-            // 
-            this.nganHangTaoTaiKhoanCheckBox.AutoSize = true;
-            this.nganHangTaoTaiKhoanCheckBox.Location = new System.Drawing.Point(773, 476);
-            this.nganHangTaoTaiKhoanCheckBox.Name = "nganHangTaoTaiKhoanCheckBox";
-            this.nganHangTaoTaiKhoanCheckBox.Size = new System.Drawing.Size(137, 35);
-            this.nganHangTaoTaiKhoanCheckBox.TabIndex = 5;
-            this.nganHangTaoTaiKhoanCheckBox.Text = "NGAN HANG";
-            this.nganHangTaoTaiKhoanCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // chiNhanhTaoTaiKhoanCheckBox
-            // 
-            this.chiNhanhTaoTaiKhoanCheckBox.AutoSize = true;
-            this.chiNhanhTaoTaiKhoanCheckBox.Location = new System.Drawing.Point(558, 476);
-            this.chiNhanhTaoTaiKhoanCheckBox.Name = "chiNhanhTaoTaiKhoanCheckBox";
-            this.chiNhanhTaoTaiKhoanCheckBox.Size = new System.Drawing.Size(131, 35);
-            this.chiNhanhTaoTaiKhoanCheckBox.TabIndex = 4;
-            this.chiNhanhTaoTaiKhoanCheckBox.Text = "CHI NHÁNH";
-            this.chiNhanhTaoTaiKhoanCheckBox.UseVisualStyleBackColor = true;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(349, 209);
+            this.label8.Location = new System.Drawing.Point(408, 290);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 31);
+            this.label8.Size = new System.Drawing.Size(136, 31);
             this.label8.TabIndex = 3;
-            this.label8.Text = "Chi nhánh";
+            this.label8.Text = "Tên đăng nhập";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(349, 412);
+            this.label7.Location = new System.Drawing.Point(408, 425);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 31);
             this.label7.TabIndex = 2;
@@ -421,7 +469,7 @@ namespace DDB_NGANHANG
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(352, 341);
+            this.label6.Location = new System.Drawing.Point(411, 354);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 31);
             this.label6.TabIndex = 1;
@@ -430,22 +478,16 @@ namespace DDB_NGANHANG
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(349, 269);
+            this.label5.Location = new System.Drawing.Point(408, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 31);
+            this.label5.Size = new System.Drawing.Size(99, 31);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Tài khoản";
-            // 
-            // label9
-            // 
-            this.label9.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
-            this.label9.Location = new System.Drawing.Point(552, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(168, 179);
-            this.label9.TabIndex = 12;
+            this.label5.Text = "Nhân viên";
             // 
             // thoatPage
             // 
+            this.thoatPage.Controls.Add(this.xacNhanThoatBtn);
+            this.thoatPage.Controls.Add(this.label38);
             this.thoatPage.ImageIndex = 0;
             this.thoatPage.Location = new System.Drawing.Point(4, 57);
             this.thoatPage.Name = "thoatPage";
@@ -454,6 +496,26 @@ namespace DDB_NGANHANG
             this.thoatPage.TabIndex = 3;
             this.thoatPage.Text = "THOÁT";
             this.thoatPage.UseVisualStyleBackColor = true;
+            // 
+            // xacNhanThoatBtn
+            // 
+            this.xacNhanThoatBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.xacNhanThoatBtn.Location = new System.Drawing.Point(589, 231);
+            this.xacNhanThoatBtn.Name = "xacNhanThoatBtn";
+            this.xacNhanThoatBtn.Size = new System.Drawing.Size(134, 58);
+            this.xacNhanThoatBtn.TabIndex = 3;
+            this.xacNhanThoatBtn.Text = "Xác nhận";
+            this.xacNhanThoatBtn.UseVisualStyleBackColor = false;
+            this.xacNhanThoatBtn.Click += new System.EventHandler(this.xacNhanThoatBtn_Click);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(540, 158);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(230, 31);
+            this.label38.TabIndex = 2;
+            this.label38.Text = "Bạn có thật sự muốn thoát";
             // 
             // imageList1
             // 
@@ -471,49 +533,46 @@ namespace DDB_NGANHANG
             // 
             // quanLyPage
             // 
-            this.quanLyPage.Controls.Add(this.tabControl3);
+            this.quanLyPage.Controls.Add(this.statusStrip2);
+            this.quanLyPage.Controls.Add(this.subQuanLyControl);
             this.quanLyPage.Location = new System.Drawing.Point(4, 57);
             this.quanLyPage.Name = "quanLyPage";
             this.quanLyPage.Padding = new System.Windows.Forms.Padding(3);
-            this.quanLyPage.Size = new System.Drawing.Size(1307, 677);
+            this.quanLyPage.Size = new System.Drawing.Size(1307, 714);
             this.quanLyPage.TabIndex = 1;
             this.quanLyPage.Text = "QUẢN LÝ";
             this.quanLyPage.UseVisualStyleBackColor = true;
             // 
-            // tabControl3
+            // subQuanLyControl
             // 
-            this.tabControl3.Controls.Add(this.nhanVienPage);
-            this.tabControl3.Controls.Add(this.khachHangPage);
-            this.tabControl3.ImageList = this.imageList1;
-            this.tabControl3.Location = new System.Drawing.Point(0, 0);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(1307, 681);
-            this.tabControl3.TabIndex = 0;
+            this.subQuanLyControl.Controls.Add(this.nhanVienPage);
+            this.subQuanLyControl.Controls.Add(this.khachHangPage);
+            this.subQuanLyControl.ImageList = this.imageList1;
+            this.subQuanLyControl.Location = new System.Drawing.Point(0, 0);
+            this.subQuanLyControl.Name = "subQuanLyControl";
+            this.subQuanLyControl.SelectedIndex = 0;
+            this.subQuanLyControl.Size = new System.Drawing.Size(1307, 681);
+            this.subQuanLyControl.TabIndex = 0;
+            this.subQuanLyControl.SelectedIndexChanged += new System.EventHandler(this.subQuanLyControl_SelectedIndexChanged);
             // 
             // nhanVienPage
             // 
-            this.nhanVienPage.Controls.Add(this.hoanTacNhanVienBtn);
-            this.nhanVienPage.Controls.Add(this.luuNhanVienBtn);
-            this.nhanVienPage.Controls.Add(this.chuyenChiNhanhBtn);
-            this.nhanVienPage.Controls.Add(this.chiNhanhNhanVienTxt);
+            this.nhanVienPage.Controls.Add(this.nhanVienPanel);
+            this.nhanVienPage.Controls.Add(this.nhanVienTable);
+            this.nhanVienPage.Controls.Add(this.label10);
+            this.nhanVienPage.Controls.Add(this.nuNhanVienRadio);
+            this.nhanVienPage.Controls.Add(this.namNhanVienRadio);
             this.nhanVienPage.Controls.Add(this.sdtNhanVienTxt);
-            this.nhanVienPage.Controls.Add(this.gioiTinhNhanVienTxt);
             this.nhanVienPage.Controls.Add(this.diaChiNhanVienTxt);
             this.nhanVienPage.Controls.Add(this.tenNhanVienTxt);
             this.nhanVienPage.Controls.Add(this.hoNhanVienTxt);
             this.nhanVienPage.Controls.Add(this.maNhanVienTxt);
-            this.nhanVienPage.Controls.Add(this.label17);
             this.nhanVienPage.Controls.Add(this.label16);
             this.nhanVienPage.Controls.Add(this.label15);
             this.nhanVienPage.Controls.Add(this.label14);
             this.nhanVienPage.Controls.Add(this.label13);
             this.nhanVienPage.Controls.Add(this.label12);
             this.nhanVienPage.Controls.Add(this.label11);
-            this.nhanVienPage.Controls.Add(this.nhanVienTable);
-            this.nhanVienPage.Controls.Add(this.chinhSuaNhanVienBtn);
-            this.nhanVienPage.Controls.Add(this.xoaNhanVienBtn);
-            this.nhanVienPage.Controls.Add(this.themNhanVienBtn);
             this.nhanVienPage.ImageIndex = 5;
             this.nhanVienPage.Location = new System.Drawing.Point(4, 57);
             this.nhanVienPage.Name = "nhanVienPage";
@@ -525,7 +584,7 @@ namespace DDB_NGANHANG
             // 
             // hoanTacNhanVienBtn
             // 
-            this.hoanTacNhanVienBtn.Location = new System.Drawing.Point(1132, 16);
+            this.hoanTacNhanVienBtn.Location = new System.Drawing.Point(1118, 12);
             this.hoanTacNhanVienBtn.Name = "hoanTacNhanVienBtn";
             this.hoanTacNhanVienBtn.Size = new System.Drawing.Size(155, 56);
             this.hoanTacNhanVienBtn.TabIndex = 20;
@@ -534,84 +593,68 @@ namespace DDB_NGANHANG
             // 
             // luuNhanVienBtn
             // 
-            this.luuNhanVienBtn.Location = new System.Drawing.Point(947, 16);
+            this.luuNhanVienBtn.Location = new System.Drawing.Point(933, 12);
             this.luuNhanVienBtn.Name = "luuNhanVienBtn";
             this.luuNhanVienBtn.Size = new System.Drawing.Size(155, 56);
             this.luuNhanVienBtn.TabIndex = 19;
             this.luuNhanVienBtn.Text = "Lưu";
             this.luuNhanVienBtn.UseVisualStyleBackColor = true;
+            this.luuNhanVienBtn.Click += new System.EventHandler(this.luuNhanVienBtn_Click);
             // 
             // chuyenChiNhanhBtn
             // 
-            this.chuyenChiNhanhBtn.Location = new System.Drawing.Point(671, 16);
+            this.chuyenChiNhanhBtn.Location = new System.Drawing.Point(657, 12);
             this.chuyenChiNhanhBtn.Name = "chuyenChiNhanhBtn";
             this.chuyenChiNhanhBtn.Size = new System.Drawing.Size(234, 56);
             this.chuyenChiNhanhBtn.TabIndex = 18;
             this.chuyenChiNhanhBtn.Text = "Chuyển chi nhánh";
             this.chuyenChiNhanhBtn.UseVisualStyleBackColor = true;
-            // 
-            // chiNhanhNhanVienTxt
-            // 
-            this.chiNhanhNhanVienTxt.Location = new System.Drawing.Point(1097, 524);
-            this.chiNhanhNhanVienTxt.Name = "chiNhanhNhanVienTxt";
-            this.chiNhanhNhanVienTxt.Size = new System.Drawing.Size(170, 40);
-            this.chiNhanhNhanVienTxt.TabIndex = 17;
+            this.chuyenChiNhanhBtn.Click += new System.EventHandler(this.chuyenChiNhanhBtn_Click);
             // 
             // sdtNhanVienTxt
             // 
-            this.sdtNhanVienTxt.Location = new System.Drawing.Point(1097, 459);
+            this.sdtNhanVienTxt.Location = new System.Drawing.Point(1042, 555);
             this.sdtNhanVienTxt.Name = "sdtNhanVienTxt";
-            this.sdtNhanVienTxt.Size = new System.Drawing.Size(170, 40);
+            this.sdtNhanVienTxt.ReadOnly = true;
+            this.sdtNhanVienTxt.Size = new System.Drawing.Size(245, 40);
             this.sdtNhanVienTxt.TabIndex = 16;
-            // 
-            // gioiTinhNhanVienTxt
-            // 
-            this.gioiTinhNhanVienTxt.Location = new System.Drawing.Point(1097, 402);
-            this.gioiTinhNhanVienTxt.Name = "gioiTinhNhanVienTxt";
-            this.gioiTinhNhanVienTxt.Size = new System.Drawing.Size(170, 40);
-            this.gioiTinhNhanVienTxt.TabIndex = 15;
             // 
             // diaChiNhanVienTxt
             // 
-            this.diaChiNhanVienTxt.Location = new System.Drawing.Point(936, 330);
+            this.diaChiNhanVienTxt.Location = new System.Drawing.Point(1042, 460);
             this.diaChiNhanVienTxt.Name = "diaChiNhanVienTxt";
-            this.diaChiNhanVienTxt.Size = new System.Drawing.Size(331, 40);
+            this.diaChiNhanVienTxt.ReadOnly = true;
+            this.diaChiNhanVienTxt.Size = new System.Drawing.Size(245, 40);
             this.diaChiNhanVienTxt.TabIndex = 14;
             // 
             // tenNhanVienTxt
             // 
-            this.tenNhanVienTxt.Location = new System.Drawing.Point(1097, 231);
+            this.tenNhanVienTxt.Location = new System.Drawing.Point(1042, 414);
             this.tenNhanVienTxt.Name = "tenNhanVienTxt";
-            this.tenNhanVienTxt.Size = new System.Drawing.Size(170, 40);
+            this.tenNhanVienTxt.ReadOnly = true;
+            this.tenNhanVienTxt.Size = new System.Drawing.Size(245, 40);
             this.tenNhanVienTxt.TabIndex = 13;
             // 
             // hoNhanVienTxt
             // 
-            this.hoNhanVienTxt.Location = new System.Drawing.Point(1097, 174);
+            this.hoNhanVienTxt.Location = new System.Drawing.Point(1042, 368);
             this.hoNhanVienTxt.Name = "hoNhanVienTxt";
-            this.hoNhanVienTxt.Size = new System.Drawing.Size(170, 40);
+            this.hoNhanVienTxt.ReadOnly = true;
+            this.hoNhanVienTxt.Size = new System.Drawing.Size(245, 40);
             this.hoNhanVienTxt.TabIndex = 12;
             // 
             // maNhanVienTxt
             // 
-            this.maNhanVienTxt.Location = new System.Drawing.Point(1097, 121);
+            this.maNhanVienTxt.Location = new System.Drawing.Point(1042, 322);
             this.maNhanVienTxt.Name = "maNhanVienTxt";
-            this.maNhanVienTxt.Size = new System.Drawing.Size(170, 40);
+            this.maNhanVienTxt.ReadOnly = true;
+            this.maNhanVienTxt.Size = new System.Drawing.Size(245, 40);
             this.maNhanVienTxt.TabIndex = 11;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(930, 529);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(115, 35);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "Chi nhánh";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(930, 464);
+            this.label16.Location = new System.Drawing.Point(928, 560);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(52, 35);
             this.label16.TabIndex = 9;
@@ -620,7 +663,7 @@ namespace DDB_NGANHANG
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(930, 407);
+            this.label15.Location = new System.Drawing.Point(926, 512);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(100, 35);
             this.label15.TabIndex = 8;
@@ -629,16 +672,16 @@ namespace DDB_NGANHANG
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(930, 124);
+            this.label14.Location = new System.Drawing.Point(926, 322);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(147, 35);
+            this.label14.Size = new System.Drawing.Size(76, 35);
             this.label14.TabIndex = 7;
-            this.label14.Text = "Mã Nhân Viên";
+            this.label14.Text = "Mã NV";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(930, 292);
+            this.label13.Location = new System.Drawing.Point(926, 463);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(81, 35);
             this.label13.TabIndex = 6;
@@ -647,7 +690,7 @@ namespace DDB_NGANHANG
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(930, 234);
+            this.label12.Location = new System.Drawing.Point(928, 414);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(50, 35);
             this.label12.TabIndex = 5;
@@ -656,72 +699,60 @@ namespace DDB_NGANHANG
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(930, 177);
+            this.label11.Location = new System.Drawing.Point(926, 368);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(42, 35);
             this.label11.TabIndex = 4;
             this.label11.Text = "Họ";
             // 
-            // nhanVienTable
-            // 
-            this.nhanVienTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.nhanVienTable.Location = new System.Drawing.Point(6, 100);
-            this.nhanVienTable.Name = "nhanVienTable";
-            this.nhanVienTable.RowTemplate.Height = 24;
-            this.nhanVienTable.Size = new System.Drawing.Size(899, 498);
-            this.nhanVienTable.TabIndex = 3;
-            // 
             // chinhSuaNhanVienBtn
             // 
-            this.chinhSuaNhanVienBtn.Location = new System.Drawing.Point(455, 16);
+            this.chinhSuaNhanVienBtn.Location = new System.Drawing.Point(441, 12);
             this.chinhSuaNhanVienBtn.Name = "chinhSuaNhanVienBtn";
             this.chinhSuaNhanVienBtn.Size = new System.Drawing.Size(167, 56);
             this.chinhSuaNhanVienBtn.TabIndex = 2;
             this.chinhSuaNhanVienBtn.Text = "Chỉnh sửa";
             this.chinhSuaNhanVienBtn.UseVisualStyleBackColor = true;
+            this.chinhSuaNhanVienBtn.Click += new System.EventHandler(this.chinhSuaNhanVienBtn_Click);
             // 
             // xoaNhanVienBtn
             // 
-            this.xoaNhanVienBtn.Location = new System.Drawing.Point(237, 16);
+            this.xoaNhanVienBtn.Location = new System.Drawing.Point(223, 12);
             this.xoaNhanVienBtn.Name = "xoaNhanVienBtn";
             this.xoaNhanVienBtn.Size = new System.Drawing.Size(167, 56);
             this.xoaNhanVienBtn.TabIndex = 1;
             this.xoaNhanVienBtn.Text = "Xóa";
             this.xoaNhanVienBtn.UseVisualStyleBackColor = true;
+            this.xoaNhanVienBtn.Click += new System.EventHandler(this.xoaNhanVienBtn_Click);
             // 
             // themNhanVienBtn
             // 
-            this.themNhanVienBtn.Location = new System.Drawing.Point(21, 16);
+            this.themNhanVienBtn.Location = new System.Drawing.Point(7, 12);
             this.themNhanVienBtn.Name = "themNhanVienBtn";
             this.themNhanVienBtn.Size = new System.Drawing.Size(167, 56);
             this.themNhanVienBtn.TabIndex = 0;
             this.themNhanVienBtn.Text = "Thêm";
             this.themNhanVienBtn.UseVisualStyleBackColor = true;
+            this.themNhanVienBtn.Click += new System.EventHandler(this.themNhanVienBtn_Click);
             // 
             // khachHangPage
             // 
-            this.khachHangPage.Controls.Add(this.giaoDichKhachHangBtn);
-            this.khachHangPage.Controls.Add(this.hoanTacKhachHangBtn);
-            this.khachHangPage.Controls.Add(this.luuKhachHangBtn);
-            this.khachHangPage.Controls.Add(this.moTaiKhoangKhachHangBtn);
-            this.khachHangPage.Controls.Add(this.chiNhanhKhachHangTxt);
+            this.khachHangPage.Controls.Add(this.khachHangPanel);
+            this.khachHangPage.Controls.Add(this.khachHangTable);
+            this.khachHangPage.Controls.Add(this.nuKhachHangRadio);
+            this.khachHangPage.Controls.Add(this.namKhachHangRadio);
+            this.khachHangPage.Controls.Add(this.label17);
             this.khachHangPage.Controls.Add(this.sdtKhachHangTxt);
-            this.khachHangPage.Controls.Add(this.gioiTinhTxt);
             this.khachHangPage.Controls.Add(this.diaChiKhachHangTxt);
-            this.khachHangPage.Controls.Add(this.cmndTxt);
             this.khachHangPage.Controls.Add(this.tenKhachHangTxt);
             this.khachHangPage.Controls.Add(this.hoKhachHangTxt);
+            this.khachHangPage.Controls.Add(this.cmndKhachHangTxt);
             this.khachHangPage.Controls.Add(this.label18);
             this.khachHangPage.Controls.Add(this.label19);
             this.khachHangPage.Controls.Add(this.label20);
             this.khachHangPage.Controls.Add(this.label21);
             this.khachHangPage.Controls.Add(this.label22);
             this.khachHangPage.Controls.Add(this.label23);
-            this.khachHangPage.Controls.Add(this.label24);
-            this.khachHangPage.Controls.Add(this.khachHangTable);
-            this.khachHangPage.Controls.Add(this.chinhSuaKhachHangBtn);
-            this.khachHangPage.Controls.Add(this.xoaKhachHangBtn);
-            this.khachHangPage.Controls.Add(this.themKhachHangBtn);
             this.khachHangPage.ImageIndex = 4;
             this.khachHangPage.Location = new System.Drawing.Point(4, 57);
             this.khachHangPage.Name = "khachHangPage";
@@ -733,7 +764,7 @@ namespace DDB_NGANHANG
             // 
             // giaoDichKhachHangBtn
             // 
-            this.giaoDichKhachHangBtn.Location = new System.Drawing.Point(753, 12);
+            this.giaoDichKhachHangBtn.Location = new System.Drawing.Point(748, 12);
             this.giaoDichKhachHangBtn.Name = "giaoDichKhachHangBtn";
             this.giaoDichKhachHangBtn.Size = new System.Drawing.Size(155, 56);
             this.giaoDichKhachHangBtn.TabIndex = 42;
@@ -742,7 +773,7 @@ namespace DDB_NGANHANG
             // 
             // hoanTacKhachHangBtn
             // 
-            this.hoanTacKhachHangBtn.Location = new System.Drawing.Point(1141, 12);
+            this.hoanTacKhachHangBtn.Location = new System.Drawing.Point(1136, 12);
             this.hoanTacKhachHangBtn.Name = "hoanTacKhachHangBtn";
             this.hoanTacKhachHangBtn.Size = new System.Drawing.Size(155, 56);
             this.hoanTacKhachHangBtn.TabIndex = 41;
@@ -751,7 +782,7 @@ namespace DDB_NGANHANG
             // 
             // luuKhachHangBtn
             // 
-            this.luuKhachHangBtn.Location = new System.Drawing.Point(939, 12);
+            this.luuKhachHangBtn.Location = new System.Drawing.Point(934, 12);
             this.luuKhachHangBtn.Name = "luuKhachHangBtn";
             this.luuKhachHangBtn.Size = new System.Drawing.Size(155, 56);
             this.luuKhachHangBtn.TabIndex = 40;
@@ -760,137 +791,16 @@ namespace DDB_NGANHANG
             // 
             // moTaiKhoangKhachHangBtn
             // 
-            this.moTaiKhoangKhachHangBtn.Location = new System.Drawing.Point(578, 12);
+            this.moTaiKhoangKhachHangBtn.Location = new System.Drawing.Point(573, 12);
             this.moTaiKhoangKhachHangBtn.Name = "moTaiKhoangKhachHangBtn";
             this.moTaiKhoangKhachHangBtn.Size = new System.Drawing.Size(149, 56);
             this.moTaiKhoangKhachHangBtn.TabIndex = 39;
             this.moTaiKhoangKhachHangBtn.Text = "Mở tài khoản";
             this.moTaiKhoangKhachHangBtn.UseVisualStyleBackColor = true;
             // 
-            // chiNhanhKhachHangTxt
-            // 
-            this.chiNhanhKhachHangTxt.Location = new System.Drawing.Point(1100, 520);
-            this.chiNhanhKhachHangTxt.Name = "chiNhanhKhachHangTxt";
-            this.chiNhanhKhachHangTxt.Size = new System.Drawing.Size(170, 40);
-            this.chiNhanhKhachHangTxt.TabIndex = 38;
-            // 
-            // sdtKhachHangTxt
-            // 
-            this.sdtKhachHangTxt.Location = new System.Drawing.Point(1100, 455);
-            this.sdtKhachHangTxt.Name = "sdtKhachHangTxt";
-            this.sdtKhachHangTxt.Size = new System.Drawing.Size(170, 40);
-            this.sdtKhachHangTxt.TabIndex = 37;
-            // 
-            // gioiTinhTxt
-            // 
-            this.gioiTinhTxt.Location = new System.Drawing.Point(1100, 398);
-            this.gioiTinhTxt.Name = "gioiTinhTxt";
-            this.gioiTinhTxt.Size = new System.Drawing.Size(170, 40);
-            this.gioiTinhTxt.TabIndex = 36;
-            // 
-            // diaChiKhachHangTxt
-            // 
-            this.diaChiKhachHangTxt.Location = new System.Drawing.Point(939, 326);
-            this.diaChiKhachHangTxt.Name = "diaChiKhachHangTxt";
-            this.diaChiKhachHangTxt.Size = new System.Drawing.Size(331, 40);
-            this.diaChiKhachHangTxt.TabIndex = 35;
-            // 
-            // cmndTxt
-            // 
-            this.cmndTxt.Location = new System.Drawing.Point(1100, 227);
-            this.cmndTxt.Name = "cmndTxt";
-            this.cmndTxt.Size = new System.Drawing.Size(170, 40);
-            this.cmndTxt.TabIndex = 34;
-            // 
-            // tenKhachHangTxt
-            // 
-            this.tenKhachHangTxt.Location = new System.Drawing.Point(1100, 170);
-            this.tenKhachHangTxt.Name = "tenKhachHangTxt";
-            this.tenKhachHangTxt.Size = new System.Drawing.Size(170, 40);
-            this.tenKhachHangTxt.TabIndex = 33;
-            // 
-            // hoKhachHangTxt
-            // 
-            this.hoKhachHangTxt.Location = new System.Drawing.Point(1100, 117);
-            this.hoKhachHangTxt.Name = "hoKhachHangTxt";
-            this.hoKhachHangTxt.Size = new System.Drawing.Size(170, 40);
-            this.hoKhachHangTxt.TabIndex = 32;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(933, 525);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(115, 35);
-            this.label18.TabIndex = 31;
-            this.label18.Text = "Chi nhánh";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(933, 460);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(52, 35);
-            this.label19.TabIndex = 30;
-            this.label19.Text = "SDT";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(933, 403);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(100, 35);
-            this.label20.TabIndex = 29;
-            this.label20.Text = "Giới tính";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(933, 120);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 35);
-            this.label21.TabIndex = 28;
-            this.label21.Text = "Họ";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(933, 288);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(81, 35);
-            this.label22.TabIndex = 27;
-            this.label22.Text = "Địa chỉ";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(933, 230);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(75, 35);
-            this.label23.TabIndex = 26;
-            this.label23.Text = "CMND";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(933, 173);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(50, 35);
-            this.label24.TabIndex = 25;
-            this.label24.Text = "Tên";
-            // 
-            // khachHangTable
-            // 
-            this.khachHangTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.khachHangTable.Location = new System.Drawing.Point(9, 94);
-            this.khachHangTable.Name = "khachHangTable";
-            this.khachHangTable.RowTemplate.Height = 24;
-            this.khachHangTable.Size = new System.Drawing.Size(899, 505);
-            this.khachHangTable.TabIndex = 24;
-            // 
             // chinhSuaKhachHangBtn
             // 
-            this.chinhSuaKhachHangBtn.Location = new System.Drawing.Point(387, 12);
+            this.chinhSuaKhachHangBtn.Location = new System.Drawing.Point(382, 12);
             this.chinhSuaKhachHangBtn.Name = "chinhSuaKhachHangBtn";
             this.chinhSuaKhachHangBtn.Size = new System.Drawing.Size(167, 56);
             this.chinhSuaKhachHangBtn.TabIndex = 23;
@@ -899,7 +809,7 @@ namespace DDB_NGANHANG
             // 
             // xoaKhachHangBtn
             // 
-            this.xoaKhachHangBtn.Location = new System.Drawing.Point(195, 12);
+            this.xoaKhachHangBtn.Location = new System.Drawing.Point(190, 12);
             this.xoaKhachHangBtn.Name = "xoaKhachHangBtn";
             this.xoaKhachHangBtn.Size = new System.Drawing.Size(167, 56);
             this.xoaKhachHangBtn.TabIndex = 22;
@@ -908,7 +818,7 @@ namespace DDB_NGANHANG
             // 
             // themKhachHangBtn
             // 
-            this.themKhachHangBtn.Location = new System.Drawing.Point(9, 12);
+            this.themKhachHangBtn.Location = new System.Drawing.Point(4, 12);
             this.themKhachHangBtn.Name = "themKhachHangBtn";
             this.themKhachHangBtn.Size = new System.Drawing.Size(167, 56);
             this.themKhachHangBtn.TabIndex = 21;
@@ -917,10 +827,11 @@ namespace DDB_NGANHANG
             // 
             // baoCaoPage
             // 
+            this.baoCaoPage.Controls.Add(this.statusStrip3);
             this.baoCaoPage.Controls.Add(this.lietKeTaiKhoanPage);
             this.baoCaoPage.Location = new System.Drawing.Point(4, 57);
             this.baoCaoPage.Name = "baoCaoPage";
-            this.baoCaoPage.Size = new System.Drawing.Size(1307, 677);
+            this.baoCaoPage.Size = new System.Drawing.Size(1307, 714);
             this.baoCaoPage.TabIndex = 0;
             this.baoCaoPage.Text = "BÁO CÁO";
             this.baoCaoPage.UseVisualStyleBackColor = true;
@@ -1010,6 +921,7 @@ namespace DDB_NGANHANG
             this.traCuuTCBtn.TabIndex = 97;
             this.traCuuTCBtn.Text = "Tra cứu";
             this.traCuuTCBtn.UseVisualStyleBackColor = true;
+            this.traCuuTCBtn.Click += new System.EventHandler(this.traCuuTCBtn_Click);
             // 
             // label25
             // 
@@ -1151,35 +1063,405 @@ namespace DDB_NGANHANG
             this.label33.TabIndex = 108;
             this.label33.Text = "Chọn chi nhánh";
             // 
+            // namNhanVienRadio
+            // 
+            this.namNhanVienRadio.AutoSize = true;
+            this.namNhanVienRadio.Location = new System.Drawing.Point(1093, 512);
+            this.namNhanVienRadio.Name = "namNhanVienRadio";
+            this.namNhanVienRadio.Size = new System.Drawing.Size(77, 39);
+            this.namNhanVienRadio.TabIndex = 21;
+            this.namNhanVienRadio.TabStop = true;
+            this.namNhanVienRadio.Text = "Nam";
+            this.namNhanVienRadio.UseVisualStyleBackColor = true;
+            // 
+            // nuNhanVienRadio
+            // 
+            this.nuNhanVienRadio.AutoSize = true;
+            this.nuNhanVienRadio.Location = new System.Drawing.Point(1228, 512);
+            this.nuNhanVienRadio.Name = "nuNhanVienRadio";
+            this.nuNhanVienRadio.Size = new System.Drawing.Size(59, 39);
+            this.nuNhanVienRadio.TabIndex = 22;
+            this.nuNhanVienRadio.TabStop = true;
+            this.nuNhanVienRadio.Text = "Nữ";
+            this.nuNhanVienRadio.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
+            this.label4.Location = new System.Drawing.Point(552, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(186, 164);
+            this.label4.TabIndex = 4;
+            // 
+            // label9
+            // 
+            this.label9.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
+            this.label9.Location = new System.Drawing.Point(572, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(168, 179);
+            this.label9.TabIndex = 12;
+            // 
+            // label10
+            // 
+            this.label10.Image = global::DDB_NGANHANG.Properties.Resources.user__1_;
+            this.label10.Location = new System.Drawing.Point(1049, 142);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(141, 155);
+            this.label10.TabIndex = 23;
+            // 
+            // label17
+            // 
+            this.label17.Image = global::DDB_NGANHANG.Properties.Resources.user__1_;
+            this.label17.Location = new System.Drawing.Point(1049, 142);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(141, 155);
+            this.label17.TabIndex = 57;
+            // 
+            // sdtKhachHangTxt
+            // 
+            this.sdtKhachHangTxt.Location = new System.Drawing.Point(1035, 558);
+            this.sdtKhachHangTxt.Name = "sdtKhachHangTxt";
+            this.sdtKhachHangTxt.ReadOnly = true;
+            this.sdtKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.sdtKhachHangTxt.TabIndex = 54;
+            // 
+            // diaChiKhachHangTxt
+            // 
+            this.diaChiKhachHangTxt.Location = new System.Drawing.Point(1035, 463);
+            this.diaChiKhachHangTxt.Name = "diaChiKhachHangTxt";
+            this.diaChiKhachHangTxt.ReadOnly = true;
+            this.diaChiKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.diaChiKhachHangTxt.TabIndex = 53;
+            // 
+            // tenKhachHangTxt
+            // 
+            this.tenKhachHangTxt.Location = new System.Drawing.Point(1035, 417);
+            this.tenKhachHangTxt.Name = "tenKhachHangTxt";
+            this.tenKhachHangTxt.ReadOnly = true;
+            this.tenKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.tenKhachHangTxt.TabIndex = 52;
+            // 
+            // hoKhachHangTxt
+            // 
+            this.hoKhachHangTxt.Location = new System.Drawing.Point(1035, 371);
+            this.hoKhachHangTxt.Name = "hoKhachHangTxt";
+            this.hoKhachHangTxt.ReadOnly = true;
+            this.hoKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.hoKhachHangTxt.TabIndex = 51;
+            // 
+            // cmndKhachHangTxt
+            // 
+            this.cmndKhachHangTxt.Location = new System.Drawing.Point(1035, 325);
+            this.cmndKhachHangTxt.Name = "cmndKhachHangTxt";
+            this.cmndKhachHangTxt.ReadOnly = true;
+            this.cmndKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.cmndKhachHangTxt.TabIndex = 50;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(931, 563);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(52, 35);
+            this.label18.TabIndex = 49;
+            this.label18.Text = "SDT";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(929, 515);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(100, 35);
+            this.label19.TabIndex = 48;
+            this.label19.Text = "Giới tính";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(929, 325);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 35);
+            this.label20.TabIndex = 47;
+            this.label20.Text = "CMND";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(929, 466);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(81, 35);
+            this.label21.TabIndex = 46;
+            this.label21.Text = "Địa chỉ";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(931, 417);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(50, 35);
+            this.label22.TabIndex = 45;
+            this.label22.Text = "Tên";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(929, 371);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(42, 35);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "Họ";
+            // 
+            // khachHangTable
+            // 
+            this.khachHangTable.AllowUserToAddRows = false;
+            this.khachHangTable.AllowUserToDeleteRows = false;
+            this.khachHangTable.AllowUserToResizeColumns = false;
+            this.khachHangTable.AllowUserToResizeRows = false;
+            this.khachHangTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.khachHangTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.khachHangTable.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.khachHangTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
+            this.khachHangTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.khachHangTable.DefaultCellStyle = dataGridViewCellStyle44;
+            this.khachHangTable.GridColor = System.Drawing.SystemColors.ScrollBar;
+            this.khachHangTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.khachHangTable.Location = new System.Drawing.Point(9, 103);
+            this.khachHangTable.MultiSelect = false;
+            this.khachHangTable.Name = "khachHangTable";
+            this.khachHangTable.ReadOnly = true;
+            this.khachHangTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.khachHangTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            this.khachHangTable.RowHeadersVisible = false;
+            this.khachHangTable.RowHeadersWidth = 60;
+            this.khachHangTable.RowTemplate.Height = 24;
+            this.khachHangTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.khachHangTable.Size = new System.Drawing.Size(899, 498);
+            this.khachHangTable.TabIndex = 43;
+            this.khachHangTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.khachHangTable_CellClick);
+            // 
+            // nhanVienTable
+            // 
+            this.nhanVienTable.AllowUserToAddRows = false;
+            this.nhanVienTable.AllowUserToDeleteRows = false;
+            this.nhanVienTable.AllowUserToResizeColumns = false;
+            this.nhanVienTable.AllowUserToResizeRows = false;
+            this.nhanVienTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.nhanVienTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.nhanVienTable.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.nhanVienTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            this.nhanVienTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.nhanVienTable.DefaultCellStyle = dataGridViewCellStyle47;
+            this.nhanVienTable.GridColor = System.Drawing.SystemColors.ScrollBar;
+            this.nhanVienTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.nhanVienTable.Location = new System.Drawing.Point(9, 103);
+            this.nhanVienTable.MultiSelect = false;
+            this.nhanVienTable.Name = "nhanVienTable";
+            this.nhanVienTable.ReadOnly = true;
+            this.nhanVienTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.nhanVienTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
+            this.nhanVienTable.RowHeadersVisible = false;
+            this.nhanVienTable.RowHeadersWidth = 50;
+            this.nhanVienTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.nhanVienTable.RowTemplate.Height = 24;
+            this.nhanVienTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.nhanVienTable.Size = new System.Drawing.Size(899, 498);
+            this.nhanVienTable.TabIndex = 44;
+            this.nhanVienTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.nhanVienTable_CellClick);
+            // 
+            // nuKhachHangRadio
+            // 
+            this.nuKhachHangRadio.AutoSize = true;
+            this.nuKhachHangRadio.Location = new System.Drawing.Point(1171, 513);
+            this.nuKhachHangRadio.Name = "nuKhachHangRadio";
+            this.nuKhachHangRadio.Size = new System.Drawing.Size(59, 39);
+            this.nuKhachHangRadio.TabIndex = 59;
+            this.nuKhachHangRadio.TabStop = true;
+            this.nuKhachHangRadio.Text = "Nữ";
+            this.nuKhachHangRadio.UseVisualStyleBackColor = true;
+            // 
+            // namKhachHangRadio
+            // 
+            this.namKhachHangRadio.AutoSize = true;
+            this.namKhachHangRadio.Location = new System.Drawing.Point(1036, 513);
+            this.namKhachHangRadio.Name = "namKhachHangRadio";
+            this.namKhachHangRadio.Size = new System.Drawing.Size(77, 39);
+            this.namKhachHangRadio.TabIndex = 58;
+            this.namKhachHangRadio.TabStop = true;
+            this.namKhachHangRadio.Text = "Nam";
+            this.namKhachHangRadio.UseVisualStyleBackColor = true;
+            // 
+            // nhanVienPanel
+            // 
+            this.nhanVienPanel.BackColor = System.Drawing.Color.Transparent;
+            this.nhanVienPanel.Controls.Add(this.chinhSuaNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.themNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.xoaNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.chuyenChiNhanhBtn);
+            this.nhanVienPanel.Controls.Add(this.luuNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.hoanTacNhanVienBtn);
+            this.nhanVienPanel.Location = new System.Drawing.Point(9, 6);
+            this.nhanVienPanel.Name = "nhanVienPanel";
+            this.nhanVienPanel.Size = new System.Drawing.Size(1278, 80);
+            this.nhanVienPanel.TabIndex = 45;
+            // 
+            // khachHangPanel
+            // 
+            this.khachHangPanel.Controls.Add(this.hoanTacKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.themKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.giaoDichKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.luuKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.xoaKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.moTaiKhoangKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.chinhSuaKhachHangBtn);
+            this.khachHangPanel.Location = new System.Drawing.Point(2, 6);
+            this.khachHangPanel.Name = "khachHangPanel";
+            this.khachHangPanel.Size = new System.Drawing.Size(1298, 80);
+            this.khachHangPanel.TabIndex = 60;
+            // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maNVToolTrip2,
+            this.hoTenToolTrip2,
+            this.nhomToolTrip2});
+            this.statusStrip2.Location = new System.Drawing.Point(3, 681);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(1301, 30);
+            this.statusStrip2.TabIndex = 2;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // maNVToolTrip2
+            // 
+            this.maNVToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maNVToolTrip2.Name = "maNVToolTrip2";
+            this.maNVToolTrip2.Size = new System.Drawing.Size(51, 25);
+            this.maNVToolTrip2.Text = "MaNV";
+            // 
+            // hoTenToolTrip2
+            // 
+            this.hoTenToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenToolTrip2.Name = "hoTenToolTrip2";
+            this.hoTenToolTrip2.Size = new System.Drawing.Size(55, 25);
+            this.hoTenToolTrip2.Text = "Họ tên";
+            // 
+            // nhomToolTrip2
+            // 
+            this.nhomToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhomToolTrip2.Name = "nhomToolTrip2";
+            this.nhomToolTrip2.Size = new System.Drawing.Size(52, 25);
+            this.nhomToolTrip2.Text = "Nhóm";
+            // 
+            // statusStrip3
+            // 
+            this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maNVToolTrip3,
+            this.hoTenToolTrip3,
+            this.nhomToolTrip3});
+            this.statusStrip3.Location = new System.Drawing.Point(0, 684);
+            this.statusStrip3.Name = "statusStrip3";
+            this.statusStrip3.Size = new System.Drawing.Size(1307, 30);
+            this.statusStrip3.TabIndex = 2;
+            this.statusStrip3.Text = "statusStrip3";
+            // 
+            // maNVToolTrip3
+            // 
+            this.maNVToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maNVToolTrip3.Name = "maNVToolTrip3";
+            this.maNVToolTrip3.Size = new System.Drawing.Size(51, 25);
+            this.maNVToolTrip3.Text = "MaNV";
+            // 
+            // hoTenToolTrip3
+            // 
+            this.hoTenToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenToolTrip3.Name = "hoTenToolTrip3";
+            this.hoTenToolTrip3.Size = new System.Drawing.Size(55, 25);
+            this.hoTenToolTrip3.Text = "Họ tên";
+            // 
+            // nhomToolTrip3
+            // 
+            this.nhomToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhomToolTrip3.Name = "nhomToolTrip3";
+            this.nhomToolTrip3.Size = new System.Drawing.Size(52, 25);
+            this.nhomToolTrip3.Text = "Nhóm";
+            // 
             // MainForm
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1315, 738);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(1315, 775);
+            this.Controls.Add(this.systemControl);
             this.Font = new System.Drawing.Font("Markazi Text Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "MainForm";
-            this.Text = "XtraForm1";
-            this.Load += new System.EventHandler(this.XtraForm1_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.Text = "MainForm";
+            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.systemControl.ResumeLayout(false);
             this.heThongPage.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
+            this.heThongPage.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.subSystemControl.ResumeLayout(false);
             this.dangNhapPage.ResumeLayout(false);
             this.dangNhapPage.PerformLayout();
+            this.dangXuatPage.ResumeLayout(false);
+            this.dangXuatPage.PerformLayout();
             this.taoTaiKhoanPage.ResumeLayout(false);
             this.taoTaiKhoanPage.PerformLayout();
+            this.thoatPage.ResumeLayout(false);
+            this.thoatPage.PerformLayout();
             this.quanLyPage.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
+            this.quanLyPage.PerformLayout();
+            this.subQuanLyControl.ResumeLayout(false);
             this.nhanVienPage.ResumeLayout(false);
             this.nhanVienPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).EndInit();
             this.khachHangPage.ResumeLayout(false);
             this.khachHangPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).EndInit();
             this.baoCaoPage.ResumeLayout(false);
+            this.baoCaoPage.PerformLayout();
             this.lietKeTaiKhoanPage.ResumeLayout(false);
             this.saoKeGiaoDichPage.ResumeLayout(false);
             this.saoKeGiaoDichPage.PerformLayout();
@@ -1187,19 +1469,27 @@ namespace DDB_NGANHANG
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).EndInit();
+            this.nhanVienPanel.ResumeLayout(false);
+            this.khachHangPanel.ResumeLayout(false);
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
+            this.statusStrip3.ResumeLayout(false);
+            this.statusStrip3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl systemControl;
         private System.Windows.Forms.TabPage baoCaoPage;
         private System.Windows.Forms.TabPage heThongPage;
         private System.Windows.Forms.TabPage dangNhapPage;
         private System.Windows.Forms.TabPage dangXuatPage;
         private System.Windows.Forms.TabPage quanLyPage;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl subSystemControl;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.TabPage taoTaiKhoanPage;
         private System.Windows.Forms.TabPage thoatPage;
@@ -1213,8 +1503,6 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.TextBox taiKhoanDangNhapTxt;
         private System.Windows.Forms.Button thoatTaoTaiKhoanBtn;
         private System.Windows.Forms.Button xacNhanTaoTaiKhoanBtn;
-        private System.Windows.Forms.CheckBox nganHangTaoTaiKhoanCheckBox;
-        private System.Windows.Forms.CheckBox chiNhanhTaoTaiKhoanCheckBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -1222,9 +1510,8 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.TextBox xacNhanMatKhauTaoTaiKhoanTxt;
         private System.Windows.Forms.TextBox taiKhoanTaoTaiKhoanTxt;
         private System.Windows.Forms.TextBox matKhauTaoTaiKhoanTxt;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TabControl tabControl3;
+        private System.Windows.Forms.TabControl subQuanLyControl;
         private System.Windows.Forms.TabPage nhanVienPage;
         private System.Windows.Forms.TabPage khachHangPage;
         private System.Windows.Forms.Button chinhSuaNhanVienBtn;
@@ -1233,45 +1520,26 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button hoanTacNhanVienBtn;
         private System.Windows.Forms.Button luuNhanVienBtn;
         private System.Windows.Forms.Button chuyenChiNhanhBtn;
-        private System.Windows.Forms.TextBox chiNhanhNhanVienTxt;
         private System.Windows.Forms.TextBox sdtNhanVienTxt;
-        private System.Windows.Forms.TextBox gioiTinhNhanVienTxt;
         private System.Windows.Forms.TextBox diaChiNhanVienTxt;
         private System.Windows.Forms.TextBox tenNhanVienTxt;
         private System.Windows.Forms.TextBox hoNhanVienTxt;
         private System.Windows.Forms.TextBox maNhanVienTxt;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView nhanVienTable;
         private System.Windows.Forms.Button hoanTacKhachHangBtn;
         private System.Windows.Forms.Button luuKhachHangBtn;
         private System.Windows.Forms.Button moTaiKhoangKhachHangBtn;
-        private System.Windows.Forms.TextBox chiNhanhKhachHangTxt;
-        private System.Windows.Forms.TextBox sdtKhachHangTxt;
-        private System.Windows.Forms.TextBox gioiTinhTxt;
-        private System.Windows.Forms.TextBox diaChiKhachHangTxt;
-        private System.Windows.Forms.TextBox cmndTxt;
-        private System.Windows.Forms.TextBox tenKhachHangTxt;
-        private System.Windows.Forms.TextBox hoKhachHangTxt;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.DataGridView khachHangTable;
         private System.Windows.Forms.Button chinhSuaKhachHangBtn;
         private System.Windows.Forms.Button xoaKhachHangBtn;
         private System.Windows.Forms.Button themKhachHangBtn;
         private System.Windows.Forms.Button giaoDichKhachHangBtn;
         private System.Windows.Forms.ComboBox chiNhanhDangNhapComboBox;
-        private System.Windows.Forms.ComboBox chiNhanhTaoTaiKhoangComboBox;
+        private System.Windows.Forms.ComboBox taiKhoanTaoTaiKhoangComboBox;
         private System.Windows.Forms.TabControl lietKeTaiKhoanPage;
         private System.Windows.Forms.TabPage saoKeGiaoDichPage;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1294,5 +1562,42 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button xacNhanLietKeKhachHangBtn;
         private System.Windows.Forms.ComboBox chonChiNhanhLietKeKhachHangComboBox;
         private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel maNVToolTrip;
+        private System.Windows.Forms.ToolStripStatusLabel hoTenToolTrip;
+        private System.Windows.Forms.ToolStripStatusLabel nhomToolTrip;
+        private System.Windows.Forms.Button xacNhanDangXuatTxt;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Button xacNhanThoatBtn;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.RadioButton nuNhanVienRadio;
+        private System.Windows.Forms.RadioButton namNhanVienRadio;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox sdtKhachHangTxt;
+        private System.Windows.Forms.TextBox diaChiKhachHangTxt;
+        private System.Windows.Forms.TextBox tenKhachHangTxt;
+        private System.Windows.Forms.TextBox hoKhachHangTxt;
+        private System.Windows.Forms.TextBox cmndKhachHangTxt;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.DataGridView khachHangTable;
+        private System.Windows.Forms.DataGridView nhanVienTable;
+        private System.Windows.Forms.RadioButton nuKhachHangRadio;
+        private System.Windows.Forms.RadioButton namKhachHangRadio;
+        private System.Windows.Forms.Panel nhanVienPanel;
+        private System.Windows.Forms.Panel khachHangPanel;
+        private System.Windows.Forms.StatusStrip statusStrip2;
+        private System.Windows.Forms.ToolStripStatusLabel maNVToolTrip2;
+        private System.Windows.Forms.ToolStripStatusLabel hoTenToolTrip2;
+        private System.Windows.Forms.ToolStripStatusLabel nhomToolTrip2;
+        private System.Windows.Forms.StatusStrip statusStrip3;
+        private System.Windows.Forms.ToolStripStatusLabel maNVToolTrip3;
+        private System.Windows.Forms.ToolStripStatusLabel hoTenToolTrip3;
+        private System.Windows.Forms.ToolStripStatusLabel nhomToolTrip3;
     }
 }

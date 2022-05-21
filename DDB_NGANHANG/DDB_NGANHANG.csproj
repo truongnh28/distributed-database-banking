@@ -57,6 +57,7 @@
     <Compile Include="ChuyenChiNhanhForm.Designer.cs">
       <DependentUpon>ChuyenChiNhanhForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO.cs" />
     <Compile Include="NhanVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +174,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profilem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

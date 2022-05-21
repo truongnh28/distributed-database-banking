@@ -13,9 +13,26 @@ namespace DDB_NGANHANG
 {
     public partial class KhachHang : DevExpress.XtraEditors.XtraForm
     {
-        public KhachHang()
+        DataGridViewRow dt;
+        public KhachHang(DataGridViewRow dt)
         {
+            this.dt = dt;
             InitializeComponent();
+        }
+
+        private void xacNhanThemKhachHangTxt_Click(object sender, EventArgs e)
+        {
+            //if.....
+            String gioiTinh = namKhachHangFormRadio.Checked ? "Nam" : "Nữ";
+            DateTime dateTime = DateTime.ParseExact(DateTime.Today.ToString("dd'-'MM'-'yyyy HH:mm:ss"), "dd'-'MM'-'yyyy HH:mm:ss", null);
+            string date = DateTime.Now.ToString("yyyy-MM-dd");
+            String cmd = $"INSERT INTO DBO.KhachHang VALUES ({cmndThemKHTxt.Text}, {hoThemKHTxt.Text}, {tenThemKHTxt.Text}, {diaChiThemKHTxt.Text}, {gioiTinh}, {date}, {sdtThemKHTxt.Text}, {dt.Cells[2]})";
+            DAO.ExecSqlNonQuery(cmd, DAO.connstr);
+        }
+
+        private void thoatThemKhachHangTxt_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
