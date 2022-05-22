@@ -31,12 +31,12 @@ namespace DDB_NGANHANG
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.systemControl = new System.Windows.Forms.TabControl();
             this.heThongPage = new System.Windows.Forms.TabPage();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
@@ -57,7 +57,10 @@ namespace DDB_NGANHANG
             this.xacNhanDangXuatTxt = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
             this.taoTaiKhoanPage = new System.Windows.Forms.TabPage();
-            this.taiKhoanTaoTaiKhoangComboBox = new System.Windows.Forms.ComboBox();
+            this.tenNVTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.traCuuTaoTaoTaiKhoanBtn = new System.Windows.Forms.Button();
+            this.nhanVienTaoTKTxt = new System.Windows.Forms.TextBox();
             this.xacNhanMatKhauTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.taiKhoanTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
             this.matKhauTaoTaiKhoanTxt = new System.Windows.Forms.TextBox();
@@ -72,11 +75,22 @@ namespace DDB_NGANHANG
             this.label38 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.quanLyPage = new System.Windows.Forms.TabPage();
+            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
+            this.maNVToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.hoTenToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.nhomToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.subQuanLyControl = new System.Windows.Forms.TabControl();
             this.nhanVienPage = new System.Windows.Forms.TabPage();
-            this.hoanTacNhanVienBtn = new System.Windows.Forms.Button();
-            this.luuNhanVienBtn = new System.Windows.Forms.Button();
+            this.nhanVienPanel = new System.Windows.Forms.Panel();
+            this.chinhSuaNhanVienBtn = new System.Windows.Forms.Button();
+            this.themNhanVienBtn = new System.Windows.Forms.Button();
+            this.xoaNhanVienBtn = new System.Windows.Forms.Button();
             this.chuyenChiNhanhBtn = new System.Windows.Forms.Button();
+            this.luuNhanVienBtn = new System.Windows.Forms.Button();
+            this.hoanTacNhanVienBtn = new System.Windows.Forms.Button();
+            this.nhanVienTable = new System.Windows.Forms.DataGridView();
+            this.nuNhanVienRadio = new System.Windows.Forms.RadioButton();
+            this.namNhanVienRadio = new System.Windows.Forms.RadioButton();
             this.sdtNhanVienTxt = new System.Windows.Forms.TextBox();
             this.diaChiNhanVienTxt = new System.Windows.Forms.TextBox();
             this.tenNhanVienTxt = new System.Windows.Forms.TextBox();
@@ -88,18 +102,34 @@ namespace DDB_NGANHANG
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.chinhSuaNhanVienBtn = new System.Windows.Forms.Button();
-            this.xoaNhanVienBtn = new System.Windows.Forms.Button();
-            this.themNhanVienBtn = new System.Windows.Forms.Button();
             this.khachHangPage = new System.Windows.Forms.TabPage();
-            this.giaoDichKhachHangBtn = new System.Windows.Forms.Button();
+            this.khachHangPanel = new System.Windows.Forms.Panel();
             this.hoanTacKhachHangBtn = new System.Windows.Forms.Button();
+            this.themKhachHangBtn = new System.Windows.Forms.Button();
+            this.giaoDichKhachHangBtn = new System.Windows.Forms.Button();
             this.luuKhachHangBtn = new System.Windows.Forms.Button();
+            this.xoaKhachHangBtn = new System.Windows.Forms.Button();
             this.moTaiKhoangKhachHangBtn = new System.Windows.Forms.Button();
             this.chinhSuaKhachHangBtn = new System.Windows.Forms.Button();
-            this.xoaKhachHangBtn = new System.Windows.Forms.Button();
-            this.themKhachHangBtn = new System.Windows.Forms.Button();
+            this.khachHangTable = new System.Windows.Forms.DataGridView();
+            this.nuKhachHangRadio = new System.Windows.Forms.RadioButton();
+            this.namKhachHangRadio = new System.Windows.Forms.RadioButton();
+            this.sdtKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.diaChiKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.tenKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.hoKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.cmndKhachHangTxt = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.baoCaoPage = new System.Windows.Forms.TabPage();
+            this.statusStrip3 = new System.Windows.Forms.StatusStrip();
+            this.maNVToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.hoTenToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.nhomToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lietKeTaiKhoanPage = new System.Windows.Forms.TabControl();
             this.saoKeGiaoDichPage = new System.Windows.Forms.TabPage();
             this.xacNhanSKBtn = new System.Windows.Forms.Button();
@@ -122,37 +152,10 @@ namespace DDB_NGANHANG
             this.xacNhanLietKeKhachHangBtn = new System.Windows.Forms.Button();
             this.chonChiNhanhLietKeKhachHangComboBox = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.namNhanVienRadio = new System.Windows.Forms.RadioButton();
-            this.nuNhanVienRadio = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.sdtKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.diaChiKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.tenKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.hoKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.cmndKhachHangTxt = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.khachHangTable = new System.Windows.Forms.DataGridView();
-            this.nhanVienTable = new System.Windows.Forms.DataGridView();
-            this.nuKhachHangRadio = new System.Windows.Forms.RadioButton();
-            this.namKhachHangRadio = new System.Windows.Forms.RadioButton();
-            this.nhanVienPanel = new System.Windows.Forms.Panel();
-            this.khachHangPanel = new System.Windows.Forms.Panel();
-            this.statusStrip2 = new System.Windows.Forms.StatusStrip();
-            this.maNVToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.hoTenToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.nhomToolTrip2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.statusStrip3 = new System.Windows.Forms.StatusStrip();
-            this.maNVToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.hoTenToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.nhomToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.systemControl.SuspendLayout();
             this.heThongPage.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -162,20 +165,20 @@ namespace DDB_NGANHANG
             this.taoTaiKhoanPage.SuspendLayout();
             this.thoatPage.SuspendLayout();
             this.quanLyPage.SuspendLayout();
+            this.statusStrip2.SuspendLayout();
             this.subQuanLyControl.SuspendLayout();
             this.nhanVienPage.SuspendLayout();
+            this.nhanVienPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).BeginInit();
             this.khachHangPage.SuspendLayout();
+            this.khachHangPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).BeginInit();
             this.baoCaoPage.SuspendLayout();
+            this.statusStrip3.SuspendLayout();
             this.lietKeTaiKhoanPage.SuspendLayout();
             this.saoKeGiaoDichPage.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).BeginInit();
-            this.nhanVienPanel.SuspendLayout();
-            this.khachHangPanel.SuspendLayout();
-            this.statusStrip2.SuspendLayout();
-            this.statusStrip3.SuspendLayout();
             this.SuspendLayout();
             // 
             // systemControl
@@ -253,6 +256,7 @@ namespace DDB_NGANHANG
             this.subSystemControl.SelectedIndex = 0;
             this.subSystemControl.Size = new System.Drawing.Size(1310, 679);
             this.subSystemControl.TabIndex = 0;
+            this.subSystemControl.SelectedIndexChanged += new System.EventHandler(this.subSystemControl_SelectedIndexChanged);
             // 
             // dangNhapPage
             // 
@@ -379,7 +383,10 @@ namespace DDB_NGANHANG
             // 
             // taoTaiKhoanPage
             // 
-            this.taoTaiKhoanPage.Controls.Add(this.taiKhoanTaoTaiKhoangComboBox);
+            this.taoTaiKhoanPage.Controls.Add(this.tenNVTaoTaiKhoanTxt);
+            this.taoTaiKhoanPage.Controls.Add(this.label24);
+            this.taoTaiKhoanPage.Controls.Add(this.traCuuTaoTaoTaiKhoanBtn);
+            this.taoTaiKhoanPage.Controls.Add(this.nhanVienTaoTKTxt);
             this.taoTaiKhoanPage.Controls.Add(this.xacNhanMatKhauTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.taiKhoanTaoTaiKhoanTxt);
             this.taoTaiKhoanPage.Controls.Add(this.matKhauTaoTaiKhoanTxt);
@@ -399,25 +406,53 @@ namespace DDB_NGANHANG
             this.taoTaiKhoanPage.Text = "TẠO TÀI KHOẢN";
             this.taoTaiKhoanPage.UseVisualStyleBackColor = true;
             // 
-            // taiKhoanTaoTaiKhoangComboBox
+            // tenNVTaoTaiKhoanTxt
             // 
-            this.taiKhoanTaoTaiKhoangComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.taiKhoanTaoTaiKhoangComboBox.FormattingEnabled = true;
-            this.taiKhoanTaoTaiKhoangComboBox.Location = new System.Drawing.Point(617, 219);
-            this.taiKhoanTaoTaiKhoangComboBox.Name = "taiKhoanTaoTaiKhoangComboBox";
-            this.taiKhoanTaoTaiKhoangComboBox.Size = new System.Drawing.Size(352, 39);
-            this.taiKhoanTaoTaiKhoangComboBox.TabIndex = 14;
+            this.tenNVTaoTaiKhoanTxt.Enabled = false;
+            this.tenNVTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 274);
+            this.tenNVTaoTaiKhoanTxt.Name = "tenNVTaoTaiKhoanTxt";
+            this.tenNVTaoTaiKhoanTxt.ReadOnly = true;
+            this.tenNVTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
+            this.tenNVTaoTaiKhoanTxt.TabIndex = 16;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(408, 279);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(74, 31);
+            this.label24.TabIndex = 15;
+            this.label24.Text = "Tên NV";
+            // 
+            // traCuuTaoTaoTaiKhoanBtn
+            // 
+            this.traCuuTaoTaoTaiKhoanBtn.Location = new System.Drawing.Point(856, 217);
+            this.traCuuTaoTaoTaiKhoanBtn.Name = "traCuuTaoTaoTaiKhoanBtn";
+            this.traCuuTaoTaoTaiKhoanBtn.Size = new System.Drawing.Size(113, 36);
+            this.traCuuTaoTaoTaiKhoanBtn.TabIndex = 14;
+            this.traCuuTaoTaoTaiKhoanBtn.Text = "Chọn";
+            this.traCuuTaoTaoTaiKhoanBtn.UseVisualStyleBackColor = true;
+            this.traCuuTaoTaoTaiKhoanBtn.Click += new System.EventHandler(this.traCuuTaoTaoTaiKhoanBtn_Click);
+            // 
+            // nhanVienTaoTKTxt
+            // 
+            this.nhanVienTaoTKTxt.Enabled = false;
+            this.nhanVienTaoTKTxt.Location = new System.Drawing.Point(617, 217);
+            this.nhanVienTaoTKTxt.Name = "nhanVienTaoTKTxt";
+            this.nhanVienTaoTKTxt.ReadOnly = true;
+            this.nhanVienTaoTKTxt.Size = new System.Drawing.Size(227, 36);
+            this.nhanVienTaoTKTxt.TabIndex = 13;
             // 
             // xacNhanMatKhauTaoTaiKhoanTxt
             // 
-            this.xacNhanMatKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 420);
+            this.xacNhanMatKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 433);
             this.xacNhanMatKhauTaoTaiKhoanTxt.Name = "xacNhanMatKhauTaoTaiKhoanTxt";
             this.xacNhanMatKhauTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
             this.xacNhanMatKhauTaoTaiKhoanTxt.TabIndex = 11;
             // 
             // taiKhoanTaoTaiKhoanTxt
             // 
-            this.taiKhoanTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 285);
+            this.taiKhoanTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 326);
             this.taiKhoanTaoTaiKhoanTxt.Name = "taiKhoanTaoTaiKhoanTxt";
             this.taiKhoanTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
             this.taiKhoanTaoTaiKhoanTxt.TabIndex = 10;
@@ -425,7 +460,7 @@ namespace DDB_NGANHANG
             // 
             // matKhauTaoTaiKhoanTxt
             // 
-            this.matKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 349);
+            this.matKhauTaoTaiKhoanTxt.Location = new System.Drawing.Point(617, 378);
             this.matKhauTaoTaiKhoanTxt.Name = "matKhauTaoTaiKhoanTxt";
             this.matKhauTaoTaiKhoanTxt.Size = new System.Drawing.Size(352, 36);
             this.matKhauTaoTaiKhoanTxt.TabIndex = 9;
@@ -438,6 +473,7 @@ namespace DDB_NGANHANG
             this.thoatTaoTaiKhoanBtn.TabIndex = 7;
             this.thoatTaoTaiKhoanBtn.Text = "THOÁT";
             this.thoatTaoTaiKhoanBtn.UseVisualStyleBackColor = true;
+            this.thoatTaoTaiKhoanBtn.Click += new System.EventHandler(this.thoatTaoTaiKhoanBtn_Click);
             // 
             // xacNhanTaoTaiKhoanBtn
             // 
@@ -447,11 +483,12 @@ namespace DDB_NGANHANG
             this.xacNhanTaoTaiKhoanBtn.TabIndex = 6;
             this.xacNhanTaoTaiKhoanBtn.Text = "XÁC NHẬN";
             this.xacNhanTaoTaiKhoanBtn.UseVisualStyleBackColor = true;
+            this.xacNhanTaoTaiKhoanBtn.Click += new System.EventHandler(this.xacNhanTaoTaiKhoanBtn_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(408, 290);
+            this.label8.Location = new System.Drawing.Point(408, 331);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(136, 31);
             this.label8.TabIndex = 3;
@@ -460,7 +497,7 @@ namespace DDB_NGANHANG
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(408, 425);
+            this.label7.Location = new System.Drawing.Point(408, 438);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 31);
             this.label7.TabIndex = 2;
@@ -469,7 +506,7 @@ namespace DDB_NGANHANG
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(411, 354);
+            this.label6.Location = new System.Drawing.Point(411, 383);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(93, 31);
             this.label6.TabIndex = 1;
@@ -480,9 +517,9 @@ namespace DDB_NGANHANG
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(408, 222);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 31);
+            this.label5.Size = new System.Drawing.Size(69, 31);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Nhân viên";
+            this.label5.Text = "Mã NV";
             // 
             // thoatPage
             // 
@@ -543,6 +580,39 @@ namespace DDB_NGANHANG
             this.quanLyPage.Text = "QUẢN LÝ";
             this.quanLyPage.UseVisualStyleBackColor = true;
             // 
+            // statusStrip2
+            // 
+            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maNVToolTrip2,
+            this.hoTenToolTrip2,
+            this.nhomToolTrip2});
+            this.statusStrip2.Location = new System.Drawing.Point(3, 681);
+            this.statusStrip2.Name = "statusStrip2";
+            this.statusStrip2.Size = new System.Drawing.Size(1301, 30);
+            this.statusStrip2.TabIndex = 2;
+            this.statusStrip2.Text = "statusStrip2";
+            // 
+            // maNVToolTrip2
+            // 
+            this.maNVToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maNVToolTrip2.Name = "maNVToolTrip2";
+            this.maNVToolTrip2.Size = new System.Drawing.Size(51, 25);
+            this.maNVToolTrip2.Text = "MaNV";
+            // 
+            // hoTenToolTrip2
+            // 
+            this.hoTenToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenToolTrip2.Name = "hoTenToolTrip2";
+            this.hoTenToolTrip2.Size = new System.Drawing.Size(55, 25);
+            this.hoTenToolTrip2.Text = "Họ tên";
+            // 
+            // nhomToolTrip2
+            // 
+            this.nhomToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhomToolTrip2.Name = "nhomToolTrip2";
+            this.nhomToolTrip2.Size = new System.Drawing.Size(52, 25);
+            this.nhomToolTrip2.Text = "Nhóm";
+            // 
             // subQuanLyControl
             // 
             this.subQuanLyControl.Controls.Add(this.nhanVienPage);
@@ -582,24 +652,49 @@ namespace DDB_NGANHANG
             this.nhanVienPage.Text = "NHÂN VIÊN";
             this.nhanVienPage.UseVisualStyleBackColor = true;
             // 
-            // hoanTacNhanVienBtn
+            // nhanVienPanel
             // 
-            this.hoanTacNhanVienBtn.Location = new System.Drawing.Point(1118, 12);
-            this.hoanTacNhanVienBtn.Name = "hoanTacNhanVienBtn";
-            this.hoanTacNhanVienBtn.Size = new System.Drawing.Size(155, 56);
-            this.hoanTacNhanVienBtn.TabIndex = 20;
-            this.hoanTacNhanVienBtn.Text = "Hoàn tác";
-            this.hoanTacNhanVienBtn.UseVisualStyleBackColor = true;
+            this.nhanVienPanel.BackColor = System.Drawing.Color.Transparent;
+            this.nhanVienPanel.Controls.Add(this.chinhSuaNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.themNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.xoaNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.chuyenChiNhanhBtn);
+            this.nhanVienPanel.Controls.Add(this.luuNhanVienBtn);
+            this.nhanVienPanel.Controls.Add(this.hoanTacNhanVienBtn);
+            this.nhanVienPanel.Location = new System.Drawing.Point(9, 6);
+            this.nhanVienPanel.Name = "nhanVienPanel";
+            this.nhanVienPanel.Size = new System.Drawing.Size(1278, 80);
+            this.nhanVienPanel.TabIndex = 45;
             // 
-            // luuNhanVienBtn
+            // chinhSuaNhanVienBtn
             // 
-            this.luuNhanVienBtn.Location = new System.Drawing.Point(933, 12);
-            this.luuNhanVienBtn.Name = "luuNhanVienBtn";
-            this.luuNhanVienBtn.Size = new System.Drawing.Size(155, 56);
-            this.luuNhanVienBtn.TabIndex = 19;
-            this.luuNhanVienBtn.Text = "Lưu";
-            this.luuNhanVienBtn.UseVisualStyleBackColor = true;
-            this.luuNhanVienBtn.Click += new System.EventHandler(this.luuNhanVienBtn_Click);
+            this.chinhSuaNhanVienBtn.Location = new System.Drawing.Point(441, 12);
+            this.chinhSuaNhanVienBtn.Name = "chinhSuaNhanVienBtn";
+            this.chinhSuaNhanVienBtn.Size = new System.Drawing.Size(167, 56);
+            this.chinhSuaNhanVienBtn.TabIndex = 2;
+            this.chinhSuaNhanVienBtn.Text = "Chỉnh sửa";
+            this.chinhSuaNhanVienBtn.UseVisualStyleBackColor = true;
+            this.chinhSuaNhanVienBtn.Click += new System.EventHandler(this.chinhSuaNhanVienBtn_Click);
+            // 
+            // themNhanVienBtn
+            // 
+            this.themNhanVienBtn.Location = new System.Drawing.Point(7, 12);
+            this.themNhanVienBtn.Name = "themNhanVienBtn";
+            this.themNhanVienBtn.Size = new System.Drawing.Size(167, 56);
+            this.themNhanVienBtn.TabIndex = 0;
+            this.themNhanVienBtn.Text = "Thêm";
+            this.themNhanVienBtn.UseVisualStyleBackColor = true;
+            this.themNhanVienBtn.Click += new System.EventHandler(this.themNhanVienBtn_Click);
+            // 
+            // xoaNhanVienBtn
+            // 
+            this.xoaNhanVienBtn.Location = new System.Drawing.Point(223, 12);
+            this.xoaNhanVienBtn.Name = "xoaNhanVienBtn";
+            this.xoaNhanVienBtn.Size = new System.Drawing.Size(167, 56);
+            this.xoaNhanVienBtn.TabIndex = 1;
+            this.xoaNhanVienBtn.Text = "Xóa";
+            this.xoaNhanVienBtn.UseVisualStyleBackColor = true;
+            this.xoaNhanVienBtn.Click += new System.EventHandler(this.xoaNhanVienBtn_Click);
             // 
             // chuyenChiNhanhBtn
             // 
@@ -610,6 +705,97 @@ namespace DDB_NGANHANG
             this.chuyenChiNhanhBtn.Text = "Chuyển chi nhánh";
             this.chuyenChiNhanhBtn.UseVisualStyleBackColor = true;
             this.chuyenChiNhanhBtn.Click += new System.EventHandler(this.chuyenChiNhanhBtn_Click);
+            // 
+            // luuNhanVienBtn
+            // 
+            this.luuNhanVienBtn.Location = new System.Drawing.Point(933, 12);
+            this.luuNhanVienBtn.Name = "luuNhanVienBtn";
+            this.luuNhanVienBtn.Size = new System.Drawing.Size(155, 56);
+            this.luuNhanVienBtn.TabIndex = 19;
+            this.luuNhanVienBtn.Text = "Cập nhật";
+            this.luuNhanVienBtn.UseVisualStyleBackColor = true;
+            this.luuNhanVienBtn.Click += new System.EventHandler(this.luuNhanVienBtn_Click);
+            // 
+            // hoanTacNhanVienBtn
+            // 
+            this.hoanTacNhanVienBtn.Location = new System.Drawing.Point(1118, 12);
+            this.hoanTacNhanVienBtn.Name = "hoanTacNhanVienBtn";
+            this.hoanTacNhanVienBtn.Size = new System.Drawing.Size(155, 56);
+            this.hoanTacNhanVienBtn.TabIndex = 20;
+            this.hoanTacNhanVienBtn.Text = "Hoàn tác";
+            this.hoanTacNhanVienBtn.UseVisualStyleBackColor = true;
+            // 
+            // nhanVienTable
+            // 
+            this.nhanVienTable.AllowUserToAddRows = false;
+            this.nhanVienTable.AllowUserToDeleteRows = false;
+            this.nhanVienTable.AllowUserToResizeColumns = false;
+            this.nhanVienTable.AllowUserToResizeRows = false;
+            this.nhanVienTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.nhanVienTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.nhanVienTable.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.nhanVienTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.nhanVienTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.nhanVienTable.DefaultCellStyle = dataGridViewCellStyle2;
+            this.nhanVienTable.GridColor = System.Drawing.SystemColors.ScrollBar;
+            this.nhanVienTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.nhanVienTable.Location = new System.Drawing.Point(9, 103);
+            this.nhanVienTable.MultiSelect = false;
+            this.nhanVienTable.Name = "nhanVienTable";
+            this.nhanVienTable.ReadOnly = true;
+            this.nhanVienTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.nhanVienTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.nhanVienTable.RowHeadersVisible = false;
+            this.nhanVienTable.RowHeadersWidth = 50;
+            this.nhanVienTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.nhanVienTable.RowTemplate.Height = 24;
+            this.nhanVienTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.nhanVienTable.Size = new System.Drawing.Size(899, 498);
+            this.nhanVienTable.TabIndex = 44;
+            this.nhanVienTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.nhanVienTable_CellClick);
+            // 
+            // nuNhanVienRadio
+            // 
+            this.nuNhanVienRadio.AutoSize = true;
+            this.nuNhanVienRadio.Location = new System.Drawing.Point(1228, 512);
+            this.nuNhanVienRadio.Name = "nuNhanVienRadio";
+            this.nuNhanVienRadio.Size = new System.Drawing.Size(59, 39);
+            this.nuNhanVienRadio.TabIndex = 22;
+            this.nuNhanVienRadio.TabStop = true;
+            this.nuNhanVienRadio.Text = "Nữ";
+            this.nuNhanVienRadio.UseVisualStyleBackColor = true;
+            // 
+            // namNhanVienRadio
+            // 
+            this.namNhanVienRadio.AutoSize = true;
+            this.namNhanVienRadio.Location = new System.Drawing.Point(1093, 512);
+            this.namNhanVienRadio.Name = "namNhanVienRadio";
+            this.namNhanVienRadio.Size = new System.Drawing.Size(77, 39);
+            this.namNhanVienRadio.TabIndex = 21;
+            this.namNhanVienRadio.TabStop = true;
+            this.namNhanVienRadio.Text = "Nam";
+            this.namNhanVienRadio.UseVisualStyleBackColor = true;
             // 
             // sdtNhanVienTxt
             // 
@@ -705,43 +891,12 @@ namespace DDB_NGANHANG
             this.label11.TabIndex = 4;
             this.label11.Text = "Họ";
             // 
-            // chinhSuaNhanVienBtn
-            // 
-            this.chinhSuaNhanVienBtn.Location = new System.Drawing.Point(441, 12);
-            this.chinhSuaNhanVienBtn.Name = "chinhSuaNhanVienBtn";
-            this.chinhSuaNhanVienBtn.Size = new System.Drawing.Size(167, 56);
-            this.chinhSuaNhanVienBtn.TabIndex = 2;
-            this.chinhSuaNhanVienBtn.Text = "Chỉnh sửa";
-            this.chinhSuaNhanVienBtn.UseVisualStyleBackColor = true;
-            this.chinhSuaNhanVienBtn.Click += new System.EventHandler(this.chinhSuaNhanVienBtn_Click);
-            // 
-            // xoaNhanVienBtn
-            // 
-            this.xoaNhanVienBtn.Location = new System.Drawing.Point(223, 12);
-            this.xoaNhanVienBtn.Name = "xoaNhanVienBtn";
-            this.xoaNhanVienBtn.Size = new System.Drawing.Size(167, 56);
-            this.xoaNhanVienBtn.TabIndex = 1;
-            this.xoaNhanVienBtn.Text = "Xóa";
-            this.xoaNhanVienBtn.UseVisualStyleBackColor = true;
-            this.xoaNhanVienBtn.Click += new System.EventHandler(this.xoaNhanVienBtn_Click);
-            // 
-            // themNhanVienBtn
-            // 
-            this.themNhanVienBtn.Location = new System.Drawing.Point(7, 12);
-            this.themNhanVienBtn.Name = "themNhanVienBtn";
-            this.themNhanVienBtn.Size = new System.Drawing.Size(167, 56);
-            this.themNhanVienBtn.TabIndex = 0;
-            this.themNhanVienBtn.Text = "Thêm";
-            this.themNhanVienBtn.UseVisualStyleBackColor = true;
-            this.themNhanVienBtn.Click += new System.EventHandler(this.themNhanVienBtn_Click);
-            // 
             // khachHangPage
             // 
             this.khachHangPage.Controls.Add(this.khachHangPanel);
             this.khachHangPage.Controls.Add(this.khachHangTable);
             this.khachHangPage.Controls.Add(this.nuKhachHangRadio);
             this.khachHangPage.Controls.Add(this.namKhachHangRadio);
-            this.khachHangPage.Controls.Add(this.label17);
             this.khachHangPage.Controls.Add(this.sdtKhachHangTxt);
             this.khachHangPage.Controls.Add(this.diaChiKhachHangTxt);
             this.khachHangPage.Controls.Add(this.tenKhachHangTxt);
@@ -753,6 +908,7 @@ namespace DDB_NGANHANG
             this.khachHangPage.Controls.Add(this.label21);
             this.khachHangPage.Controls.Add(this.label22);
             this.khachHangPage.Controls.Add(this.label23);
+            this.khachHangPage.Controls.Add(this.label17);
             this.khachHangPage.ImageIndex = 4;
             this.khachHangPage.Location = new System.Drawing.Point(4, 57);
             this.khachHangPage.Name = "khachHangPage";
@@ -762,14 +918,19 @@ namespace DDB_NGANHANG
             this.khachHangPage.Text = "KHÁCH HÀNG";
             this.khachHangPage.UseVisualStyleBackColor = true;
             // 
-            // giaoDichKhachHangBtn
+            // khachHangPanel
             // 
-            this.giaoDichKhachHangBtn.Location = new System.Drawing.Point(748, 12);
-            this.giaoDichKhachHangBtn.Name = "giaoDichKhachHangBtn";
-            this.giaoDichKhachHangBtn.Size = new System.Drawing.Size(155, 56);
-            this.giaoDichKhachHangBtn.TabIndex = 42;
-            this.giaoDichKhachHangBtn.Text = "Giao dịch";
-            this.giaoDichKhachHangBtn.UseVisualStyleBackColor = true;
+            this.khachHangPanel.Controls.Add(this.hoanTacKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.themKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.giaoDichKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.luuKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.xoaKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.moTaiKhoangKhachHangBtn);
+            this.khachHangPanel.Controls.Add(this.chinhSuaKhachHangBtn);
+            this.khachHangPanel.Location = new System.Drawing.Point(2, 6);
+            this.khachHangPanel.Name = "khachHangPanel";
+            this.khachHangPanel.Size = new System.Drawing.Size(1298, 80);
+            this.khachHangPanel.TabIndex = 60;
             // 
             // hoanTacKhachHangBtn
             // 
@@ -780,6 +941,26 @@ namespace DDB_NGANHANG
             this.hoanTacKhachHangBtn.Text = "Hoàn tác";
             this.hoanTacKhachHangBtn.UseVisualStyleBackColor = true;
             // 
+            // themKhachHangBtn
+            // 
+            this.themKhachHangBtn.Location = new System.Drawing.Point(4, 12);
+            this.themKhachHangBtn.Name = "themKhachHangBtn";
+            this.themKhachHangBtn.Size = new System.Drawing.Size(167, 56);
+            this.themKhachHangBtn.TabIndex = 21;
+            this.themKhachHangBtn.Text = "Thêm";
+            this.themKhachHangBtn.UseVisualStyleBackColor = true;
+            this.themKhachHangBtn.Click += new System.EventHandler(this.themKhachHangBtn_Click);
+            // 
+            // giaoDichKhachHangBtn
+            // 
+            this.giaoDichKhachHangBtn.Location = new System.Drawing.Point(748, 12);
+            this.giaoDichKhachHangBtn.Name = "giaoDichKhachHangBtn";
+            this.giaoDichKhachHangBtn.Size = new System.Drawing.Size(155, 56);
+            this.giaoDichKhachHangBtn.TabIndex = 42;
+            this.giaoDichKhachHangBtn.Text = "Giao dịch";
+            this.giaoDichKhachHangBtn.UseVisualStyleBackColor = true;
+            this.giaoDichKhachHangBtn.Click += new System.EventHandler(this.giaoDichKhachHangBtn_Click);
+            // 
             // luuKhachHangBtn
             // 
             this.luuKhachHangBtn.Location = new System.Drawing.Point(934, 12);
@@ -789,6 +970,16 @@ namespace DDB_NGANHANG
             this.luuKhachHangBtn.Text = "Lưu";
             this.luuKhachHangBtn.UseVisualStyleBackColor = true;
             // 
+            // xoaKhachHangBtn
+            // 
+            this.xoaKhachHangBtn.Location = new System.Drawing.Point(190, 12);
+            this.xoaKhachHangBtn.Name = "xoaKhachHangBtn";
+            this.xoaKhachHangBtn.Size = new System.Drawing.Size(167, 56);
+            this.xoaKhachHangBtn.TabIndex = 22;
+            this.xoaKhachHangBtn.Text = "Xóa";
+            this.xoaKhachHangBtn.UseVisualStyleBackColor = true;
+            this.xoaKhachHangBtn.Click += new System.EventHandler(this.xoaKhachHangBtn_Click);
+            // 
             // moTaiKhoangKhachHangBtn
             // 
             this.moTaiKhoangKhachHangBtn.Location = new System.Drawing.Point(573, 12);
@@ -797,6 +988,7 @@ namespace DDB_NGANHANG
             this.moTaiKhoangKhachHangBtn.TabIndex = 39;
             this.moTaiKhoangKhachHangBtn.Text = "Mở tài khoản";
             this.moTaiKhoangKhachHangBtn.UseVisualStyleBackColor = true;
+            this.moTaiKhoangKhachHangBtn.Click += new System.EventHandler(this.moTaiKhoangKhachHangBtn_Click);
             // 
             // chinhSuaKhachHangBtn
             // 
@@ -806,24 +998,172 @@ namespace DDB_NGANHANG
             this.chinhSuaKhachHangBtn.TabIndex = 23;
             this.chinhSuaKhachHangBtn.Text = "Chỉnh sửa";
             this.chinhSuaKhachHangBtn.UseVisualStyleBackColor = true;
+            this.chinhSuaKhachHangBtn.Click += new System.EventHandler(this.chinhSuaKhachHangBtn_Click);
             // 
-            // xoaKhachHangBtn
+            // khachHangTable
             // 
-            this.xoaKhachHangBtn.Location = new System.Drawing.Point(190, 12);
-            this.xoaKhachHangBtn.Name = "xoaKhachHangBtn";
-            this.xoaKhachHangBtn.Size = new System.Drawing.Size(167, 56);
-            this.xoaKhachHangBtn.TabIndex = 22;
-            this.xoaKhachHangBtn.Text = "Xóa";
-            this.xoaKhachHangBtn.UseVisualStyleBackColor = true;
+            this.khachHangTable.AllowUserToAddRows = false;
+            this.khachHangTable.AllowUserToDeleteRows = false;
+            this.khachHangTable.AllowUserToResizeColumns = false;
+            this.khachHangTable.AllowUserToResizeRows = false;
+            this.khachHangTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.khachHangTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.khachHangTable.BackgroundColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.khachHangTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.khachHangTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.khachHangTable.DefaultCellStyle = dataGridViewCellStyle5;
+            this.khachHangTable.GridColor = System.Drawing.SystemColors.ScrollBar;
+            this.khachHangTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.khachHangTable.Location = new System.Drawing.Point(9, 103);
+            this.khachHangTable.MultiSelect = false;
+            this.khachHangTable.Name = "khachHangTable";
+            this.khachHangTable.ReadOnly = true;
+            this.khachHangTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.khachHangTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.khachHangTable.RowHeadersVisible = false;
+            this.khachHangTable.RowHeadersWidth = 60;
+            this.khachHangTable.RowTemplate.Height = 24;
+            this.khachHangTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.khachHangTable.Size = new System.Drawing.Size(899, 498);
+            this.khachHangTable.TabIndex = 43;
+            this.khachHangTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.khachHangTable_CellClick);
             // 
-            // themKhachHangBtn
+            // nuKhachHangRadio
             // 
-            this.themKhachHangBtn.Location = new System.Drawing.Point(4, 12);
-            this.themKhachHangBtn.Name = "themKhachHangBtn";
-            this.themKhachHangBtn.Size = new System.Drawing.Size(167, 56);
-            this.themKhachHangBtn.TabIndex = 21;
-            this.themKhachHangBtn.Text = "Thêm";
-            this.themKhachHangBtn.UseVisualStyleBackColor = true;
+            this.nuKhachHangRadio.AutoSize = true;
+            this.nuKhachHangRadio.Location = new System.Drawing.Point(1171, 513);
+            this.nuKhachHangRadio.Name = "nuKhachHangRadio";
+            this.nuKhachHangRadio.Size = new System.Drawing.Size(59, 39);
+            this.nuKhachHangRadio.TabIndex = 59;
+            this.nuKhachHangRadio.TabStop = true;
+            this.nuKhachHangRadio.Text = "Nữ";
+            this.nuKhachHangRadio.UseVisualStyleBackColor = true;
+            // 
+            // namKhachHangRadio
+            // 
+            this.namKhachHangRadio.AutoSize = true;
+            this.namKhachHangRadio.Location = new System.Drawing.Point(1036, 513);
+            this.namKhachHangRadio.Name = "namKhachHangRadio";
+            this.namKhachHangRadio.Size = new System.Drawing.Size(77, 39);
+            this.namKhachHangRadio.TabIndex = 58;
+            this.namKhachHangRadio.TabStop = true;
+            this.namKhachHangRadio.Text = "Nam";
+            this.namKhachHangRadio.UseVisualStyleBackColor = true;
+            // 
+            // sdtKhachHangTxt
+            // 
+            this.sdtKhachHangTxt.Location = new System.Drawing.Point(1035, 558);
+            this.sdtKhachHangTxt.Name = "sdtKhachHangTxt";
+            this.sdtKhachHangTxt.ReadOnly = true;
+            this.sdtKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.sdtKhachHangTxt.TabIndex = 54;
+            // 
+            // diaChiKhachHangTxt
+            // 
+            this.diaChiKhachHangTxt.Location = new System.Drawing.Point(1035, 463);
+            this.diaChiKhachHangTxt.Name = "diaChiKhachHangTxt";
+            this.diaChiKhachHangTxt.ReadOnly = true;
+            this.diaChiKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.diaChiKhachHangTxt.TabIndex = 53;
+            // 
+            // tenKhachHangTxt
+            // 
+            this.tenKhachHangTxt.Location = new System.Drawing.Point(1035, 417);
+            this.tenKhachHangTxt.Name = "tenKhachHangTxt";
+            this.tenKhachHangTxt.ReadOnly = true;
+            this.tenKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.tenKhachHangTxt.TabIndex = 52;
+            // 
+            // hoKhachHangTxt
+            // 
+            this.hoKhachHangTxt.Location = new System.Drawing.Point(1035, 371);
+            this.hoKhachHangTxt.Name = "hoKhachHangTxt";
+            this.hoKhachHangTxt.ReadOnly = true;
+            this.hoKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.hoKhachHangTxt.TabIndex = 51;
+            // 
+            // cmndKhachHangTxt
+            // 
+            this.cmndKhachHangTxt.Location = new System.Drawing.Point(1035, 325);
+            this.cmndKhachHangTxt.Name = "cmndKhachHangTxt";
+            this.cmndKhachHangTxt.ReadOnly = true;
+            this.cmndKhachHangTxt.Size = new System.Drawing.Size(255, 40);
+            this.cmndKhachHangTxt.TabIndex = 50;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(931, 563);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(52, 35);
+            this.label18.TabIndex = 49;
+            this.label18.Text = "SDT";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(929, 515);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(100, 35);
+            this.label19.TabIndex = 48;
+            this.label19.Text = "Giới tính";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(929, 325);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(75, 35);
+            this.label20.TabIndex = 47;
+            this.label20.Text = "CMND";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(929, 466);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(81, 35);
+            this.label21.TabIndex = 46;
+            this.label21.Text = "Địa chỉ";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(931, 417);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(50, 35);
+            this.label22.TabIndex = 45;
+            this.label22.Text = "Tên";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(929, 371);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(42, 35);
+            this.label23.TabIndex = 44;
+            this.label23.Text = "Họ";
             // 
             // baoCaoPage
             // 
@@ -835,6 +1175,39 @@ namespace DDB_NGANHANG
             this.baoCaoPage.TabIndex = 0;
             this.baoCaoPage.Text = "BÁO CÁO";
             this.baoCaoPage.UseVisualStyleBackColor = true;
+            // 
+            // statusStrip3
+            // 
+            this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.maNVToolTrip3,
+            this.hoTenToolTrip3,
+            this.nhomToolTrip3});
+            this.statusStrip3.Location = new System.Drawing.Point(0, 684);
+            this.statusStrip3.Name = "statusStrip3";
+            this.statusStrip3.Size = new System.Drawing.Size(1307, 30);
+            this.statusStrip3.TabIndex = 2;
+            this.statusStrip3.Text = "statusStrip3";
+            // 
+            // maNVToolTrip3
+            // 
+            this.maNVToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maNVToolTrip3.Name = "maNVToolTrip3";
+            this.maNVToolTrip3.Size = new System.Drawing.Size(51, 25);
+            this.maNVToolTrip3.Text = "MaNV";
+            // 
+            // hoTenToolTrip3
+            // 
+            this.hoTenToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoTenToolTrip3.Name = "hoTenToolTrip3";
+            this.hoTenToolTrip3.Size = new System.Drawing.Size(55, 25);
+            this.hoTenToolTrip3.Text = "Họ tên";
+            // 
+            // nhomToolTrip3
+            // 
+            this.nhomToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nhomToolTrip3.Name = "nhomToolTrip3";
+            this.nhomToolTrip3.Size = new System.Drawing.Size(52, 25);
+            this.nhomToolTrip3.Text = "Nhóm";
             // 
             // lietKeTaiKhoanPage
             // 
@@ -1063,28 +1436,6 @@ namespace DDB_NGANHANG
             this.label33.TabIndex = 108;
             this.label33.Text = "Chọn chi nhánh";
             // 
-            // namNhanVienRadio
-            // 
-            this.namNhanVienRadio.AutoSize = true;
-            this.namNhanVienRadio.Location = new System.Drawing.Point(1093, 512);
-            this.namNhanVienRadio.Name = "namNhanVienRadio";
-            this.namNhanVienRadio.Size = new System.Drawing.Size(77, 39);
-            this.namNhanVienRadio.TabIndex = 21;
-            this.namNhanVienRadio.TabStop = true;
-            this.namNhanVienRadio.Text = "Nam";
-            this.namNhanVienRadio.UseVisualStyleBackColor = true;
-            // 
-            // nuNhanVienRadio
-            // 
-            this.nuNhanVienRadio.AutoSize = true;
-            this.nuNhanVienRadio.Location = new System.Drawing.Point(1228, 512);
-            this.nuNhanVienRadio.Name = "nuNhanVienRadio";
-            this.nuNhanVienRadio.Size = new System.Drawing.Size(59, 39);
-            this.nuNhanVienRadio.TabIndex = 22;
-            this.nuNhanVienRadio.TabStop = true;
-            this.nuNhanVienRadio.Text = "Nữ";
-            this.nuNhanVienRadio.UseVisualStyleBackColor = true;
-            // 
             // label4
             // 
             this.label4.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
@@ -1117,315 +1468,6 @@ namespace DDB_NGANHANG
             this.label17.Size = new System.Drawing.Size(141, 155);
             this.label17.TabIndex = 57;
             // 
-            // sdtKhachHangTxt
-            // 
-            this.sdtKhachHangTxt.Location = new System.Drawing.Point(1035, 558);
-            this.sdtKhachHangTxt.Name = "sdtKhachHangTxt";
-            this.sdtKhachHangTxt.ReadOnly = true;
-            this.sdtKhachHangTxt.Size = new System.Drawing.Size(255, 40);
-            this.sdtKhachHangTxt.TabIndex = 54;
-            // 
-            // diaChiKhachHangTxt
-            // 
-            this.diaChiKhachHangTxt.Location = new System.Drawing.Point(1035, 463);
-            this.diaChiKhachHangTxt.Name = "diaChiKhachHangTxt";
-            this.diaChiKhachHangTxt.ReadOnly = true;
-            this.diaChiKhachHangTxt.Size = new System.Drawing.Size(255, 40);
-            this.diaChiKhachHangTxt.TabIndex = 53;
-            // 
-            // tenKhachHangTxt
-            // 
-            this.tenKhachHangTxt.Location = new System.Drawing.Point(1035, 417);
-            this.tenKhachHangTxt.Name = "tenKhachHangTxt";
-            this.tenKhachHangTxt.ReadOnly = true;
-            this.tenKhachHangTxt.Size = new System.Drawing.Size(255, 40);
-            this.tenKhachHangTxt.TabIndex = 52;
-            // 
-            // hoKhachHangTxt
-            // 
-            this.hoKhachHangTxt.Location = new System.Drawing.Point(1035, 371);
-            this.hoKhachHangTxt.Name = "hoKhachHangTxt";
-            this.hoKhachHangTxt.ReadOnly = true;
-            this.hoKhachHangTxt.Size = new System.Drawing.Size(255, 40);
-            this.hoKhachHangTxt.TabIndex = 51;
-            // 
-            // cmndKhachHangTxt
-            // 
-            this.cmndKhachHangTxt.Location = new System.Drawing.Point(1035, 325);
-            this.cmndKhachHangTxt.Name = "cmndKhachHangTxt";
-            this.cmndKhachHangTxt.ReadOnly = true;
-            this.cmndKhachHangTxt.Size = new System.Drawing.Size(255, 40);
-            this.cmndKhachHangTxt.TabIndex = 50;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(931, 563);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(52, 35);
-            this.label18.TabIndex = 49;
-            this.label18.Text = "SDT";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(929, 515);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(100, 35);
-            this.label19.TabIndex = 48;
-            this.label19.Text = "Giới tính";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(929, 325);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(75, 35);
-            this.label20.TabIndex = 47;
-            this.label20.Text = "CMND";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(929, 466);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(81, 35);
-            this.label21.TabIndex = 46;
-            this.label21.Text = "Địa chỉ";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(931, 417);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(50, 35);
-            this.label22.TabIndex = 45;
-            this.label22.Text = "Tên";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(929, 371);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(42, 35);
-            this.label23.TabIndex = 44;
-            this.label23.Text = "Họ";
-            // 
-            // khachHangTable
-            // 
-            this.khachHangTable.AllowUserToAddRows = false;
-            this.khachHangTable.AllowUserToDeleteRows = false;
-            this.khachHangTable.AllowUserToResizeColumns = false;
-            this.khachHangTable.AllowUserToResizeRows = false;
-            this.khachHangTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.khachHangTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.khachHangTable.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.khachHangTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle43;
-            this.khachHangTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.khachHangTable.DefaultCellStyle = dataGridViewCellStyle44;
-            this.khachHangTable.GridColor = System.Drawing.SystemColors.ScrollBar;
-            this.khachHangTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.khachHangTable.Location = new System.Drawing.Point(9, 103);
-            this.khachHangTable.MultiSelect = false;
-            this.khachHangTable.Name = "khachHangTable";
-            this.khachHangTable.ReadOnly = true;
-            this.khachHangTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle45.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.khachHangTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle45;
-            this.khachHangTable.RowHeadersVisible = false;
-            this.khachHangTable.RowHeadersWidth = 60;
-            this.khachHangTable.RowTemplate.Height = 24;
-            this.khachHangTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.khachHangTable.Size = new System.Drawing.Size(899, 498);
-            this.khachHangTable.TabIndex = 43;
-            this.khachHangTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.khachHangTable_CellClick);
-            // 
-            // nhanVienTable
-            // 
-            this.nhanVienTable.AllowUserToAddRows = false;
-            this.nhanVienTable.AllowUserToDeleteRows = false;
-            this.nhanVienTable.AllowUserToResizeColumns = false;
-            this.nhanVienTable.AllowUserToResizeRows = false;
-            this.nhanVienTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.nhanVienTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.nhanVienTable.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.nhanVienTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
-            this.nhanVienTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle47.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.nhanVienTable.DefaultCellStyle = dataGridViewCellStyle47;
-            this.nhanVienTable.GridColor = System.Drawing.SystemColors.ScrollBar;
-            this.nhanVienTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.nhanVienTable.Location = new System.Drawing.Point(9, 103);
-            this.nhanVienTable.MultiSelect = false;
-            this.nhanVienTable.Name = "nhanVienTable";
-            this.nhanVienTable.ReadOnly = true;
-            this.nhanVienTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.nhanVienTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
-            this.nhanVienTable.RowHeadersVisible = false;
-            this.nhanVienTable.RowHeadersWidth = 50;
-            this.nhanVienTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.nhanVienTable.RowTemplate.Height = 24;
-            this.nhanVienTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.nhanVienTable.Size = new System.Drawing.Size(899, 498);
-            this.nhanVienTable.TabIndex = 44;
-            this.nhanVienTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.nhanVienTable_CellClick);
-            // 
-            // nuKhachHangRadio
-            // 
-            this.nuKhachHangRadio.AutoSize = true;
-            this.nuKhachHangRadio.Location = new System.Drawing.Point(1171, 513);
-            this.nuKhachHangRadio.Name = "nuKhachHangRadio";
-            this.nuKhachHangRadio.Size = new System.Drawing.Size(59, 39);
-            this.nuKhachHangRadio.TabIndex = 59;
-            this.nuKhachHangRadio.TabStop = true;
-            this.nuKhachHangRadio.Text = "Nữ";
-            this.nuKhachHangRadio.UseVisualStyleBackColor = true;
-            // 
-            // namKhachHangRadio
-            // 
-            this.namKhachHangRadio.AutoSize = true;
-            this.namKhachHangRadio.Location = new System.Drawing.Point(1036, 513);
-            this.namKhachHangRadio.Name = "namKhachHangRadio";
-            this.namKhachHangRadio.Size = new System.Drawing.Size(77, 39);
-            this.namKhachHangRadio.TabIndex = 58;
-            this.namKhachHangRadio.TabStop = true;
-            this.namKhachHangRadio.Text = "Nam";
-            this.namKhachHangRadio.UseVisualStyleBackColor = true;
-            // 
-            // nhanVienPanel
-            // 
-            this.nhanVienPanel.BackColor = System.Drawing.Color.Transparent;
-            this.nhanVienPanel.Controls.Add(this.chinhSuaNhanVienBtn);
-            this.nhanVienPanel.Controls.Add(this.themNhanVienBtn);
-            this.nhanVienPanel.Controls.Add(this.xoaNhanVienBtn);
-            this.nhanVienPanel.Controls.Add(this.chuyenChiNhanhBtn);
-            this.nhanVienPanel.Controls.Add(this.luuNhanVienBtn);
-            this.nhanVienPanel.Controls.Add(this.hoanTacNhanVienBtn);
-            this.nhanVienPanel.Location = new System.Drawing.Point(9, 6);
-            this.nhanVienPanel.Name = "nhanVienPanel";
-            this.nhanVienPanel.Size = new System.Drawing.Size(1278, 80);
-            this.nhanVienPanel.TabIndex = 45;
-            // 
-            // khachHangPanel
-            // 
-            this.khachHangPanel.Controls.Add(this.hoanTacKhachHangBtn);
-            this.khachHangPanel.Controls.Add(this.themKhachHangBtn);
-            this.khachHangPanel.Controls.Add(this.giaoDichKhachHangBtn);
-            this.khachHangPanel.Controls.Add(this.luuKhachHangBtn);
-            this.khachHangPanel.Controls.Add(this.xoaKhachHangBtn);
-            this.khachHangPanel.Controls.Add(this.moTaiKhoangKhachHangBtn);
-            this.khachHangPanel.Controls.Add(this.chinhSuaKhachHangBtn);
-            this.khachHangPanel.Location = new System.Drawing.Point(2, 6);
-            this.khachHangPanel.Name = "khachHangPanel";
-            this.khachHangPanel.Size = new System.Drawing.Size(1298, 80);
-            this.khachHangPanel.TabIndex = 60;
-            // 
-            // statusStrip2
-            // 
-            this.statusStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.maNVToolTrip2,
-            this.hoTenToolTrip2,
-            this.nhomToolTrip2});
-            this.statusStrip2.Location = new System.Drawing.Point(3, 681);
-            this.statusStrip2.Name = "statusStrip2";
-            this.statusStrip2.Size = new System.Drawing.Size(1301, 30);
-            this.statusStrip2.TabIndex = 2;
-            this.statusStrip2.Text = "statusStrip2";
-            // 
-            // maNVToolTrip2
-            // 
-            this.maNVToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maNVToolTrip2.Name = "maNVToolTrip2";
-            this.maNVToolTrip2.Size = new System.Drawing.Size(51, 25);
-            this.maNVToolTrip2.Text = "MaNV";
-            // 
-            // hoTenToolTrip2
-            // 
-            this.hoTenToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoTenToolTrip2.Name = "hoTenToolTrip2";
-            this.hoTenToolTrip2.Size = new System.Drawing.Size(55, 25);
-            this.hoTenToolTrip2.Text = "Họ tên";
-            // 
-            // nhomToolTrip2
-            // 
-            this.nhomToolTrip2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nhomToolTrip2.Name = "nhomToolTrip2";
-            this.nhomToolTrip2.Size = new System.Drawing.Size(52, 25);
-            this.nhomToolTrip2.Text = "Nhóm";
-            // 
-            // statusStrip3
-            // 
-            this.statusStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.maNVToolTrip3,
-            this.hoTenToolTrip3,
-            this.nhomToolTrip3});
-            this.statusStrip3.Location = new System.Drawing.Point(0, 684);
-            this.statusStrip3.Name = "statusStrip3";
-            this.statusStrip3.Size = new System.Drawing.Size(1307, 30);
-            this.statusStrip3.TabIndex = 2;
-            this.statusStrip3.Text = "statusStrip3";
-            // 
-            // maNVToolTrip3
-            // 
-            this.maNVToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maNVToolTrip3.Name = "maNVToolTrip3";
-            this.maNVToolTrip3.Size = new System.Drawing.Size(51, 25);
-            this.maNVToolTrip3.Text = "MaNV";
-            // 
-            // hoTenToolTrip3
-            // 
-            this.hoTenToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoTenToolTrip3.Name = "hoTenToolTrip3";
-            this.hoTenToolTrip3.Size = new System.Drawing.Size(55, 25);
-            this.hoTenToolTrip3.Text = "Họ tên";
-            // 
-            // nhomToolTrip3
-            // 
-            this.nhomToolTrip3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nhomToolTrip3.Name = "nhomToolTrip3";
-            this.nhomToolTrip3.Size = new System.Drawing.Size(52, 25);
-            this.nhomToolTrip3.Text = "Nhóm";
-            // 
             // MainForm
             // 
             this.Appearance.Options.UseFont = true;
@@ -1455,13 +1497,21 @@ namespace DDB_NGANHANG
             this.thoatPage.PerformLayout();
             this.quanLyPage.ResumeLayout(false);
             this.quanLyPage.PerformLayout();
+            this.statusStrip2.ResumeLayout(false);
+            this.statusStrip2.PerformLayout();
             this.subQuanLyControl.ResumeLayout(false);
             this.nhanVienPage.ResumeLayout(false);
             this.nhanVienPage.PerformLayout();
+            this.nhanVienPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).EndInit();
             this.khachHangPage.ResumeLayout(false);
             this.khachHangPage.PerformLayout();
+            this.khachHangPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).EndInit();
             this.baoCaoPage.ResumeLayout(false);
             this.baoCaoPage.PerformLayout();
+            this.statusStrip3.ResumeLayout(false);
+            this.statusStrip3.PerformLayout();
             this.lietKeTaiKhoanPage.ResumeLayout(false);
             this.saoKeGiaoDichPage.ResumeLayout(false);
             this.saoKeGiaoDichPage.PerformLayout();
@@ -1469,14 +1519,6 @@ namespace DDB_NGANHANG
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienTable)).EndInit();
-            this.nhanVienPanel.ResumeLayout(false);
-            this.khachHangPanel.ResumeLayout(false);
-            this.statusStrip2.ResumeLayout(false);
-            this.statusStrip2.PerformLayout();
-            this.statusStrip3.ResumeLayout(false);
-            this.statusStrip3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1539,7 +1581,6 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button themKhachHangBtn;
         private System.Windows.Forms.Button giaoDichKhachHangBtn;
         private System.Windows.Forms.ComboBox chiNhanhDangNhapComboBox;
-        private System.Windows.Forms.ComboBox taiKhoanTaoTaiKhoangComboBox;
         private System.Windows.Forms.TabControl lietKeTaiKhoanPage;
         private System.Windows.Forms.TabPage saoKeGiaoDichPage;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1599,5 +1640,9 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.ToolStripStatusLabel maNVToolTrip3;
         private System.Windows.Forms.ToolStripStatusLabel hoTenToolTrip3;
         private System.Windows.Forms.ToolStripStatusLabel nhomToolTrip3;
+        private System.Windows.Forms.Button traCuuTaoTaoTaiKhoanBtn;
+        private System.Windows.Forms.TextBox nhanVienTaoTKTxt;
+        private System.Windows.Forms.TextBox tenNVTaoTaiKhoanTxt;
+        private System.Windows.Forms.Label label24;
     }
 }

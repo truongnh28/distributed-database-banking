@@ -57,7 +57,19 @@
     <Compile Include="ChuyenChiNhanhForm.Designer.cs">
       <DependentUpon>ChuyenChiNhanhForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Extension.cs" />
     <Compile Include="DAO.cs" />
+    <Compile Include="DSNVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSNVForm.Designer.cs">
+      <DependentUpon>DSNVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NGANHANGDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +90,17 @@
     <Compile Include="GiaoDichForm.Designer.cs">
       <DependentUpon>GiaoDichForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachHang.cs">
+    <Compile Include="KhachHangForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="KhachHang.Designer.cs">
-      <DependentUpon>KhachHang.cs</DependentUpon>
+    <Compile Include="KhachHangForm.Designer.cs">
+      <DependentUpon>KhachHangForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaoSTKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoSTKForm.Designer.cs">
+      <DependentUpon>TaoSTKForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TraCuuKhachHangForm.cs">
       <SubType>Form</SubType>
@@ -92,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="ChuyenChiNhanhForm.resx">
       <DependentUpon>ChuyenChiNhanhForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSNVForm.resx">
+      <DependentUpon>DSNVForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVienForm.resx">
       <DependentUpon>NhanVienForm.cs</DependentUpon>
@@ -113,13 +134,27 @@
     <EmbeddedResource Include="GiaoDichForm.resx">
       <DependentUpon>GiaoDichForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="KhachHang.resx">
-      <DependentUpon>KhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="KhachHangForm.resx">
+      <DependentUpon>KhachHangForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoSTKForm.resx">
+      <DependentUpon>TaoSTKForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TraCuuKhachHangForm.resx">
       <DependentUpon>TraCuuKhachHangForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="NGANHANGDataSet.xsc">
+      <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NGANHANGDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NGANHANGDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NGANHANGDataSet.xss">
+      <DependentUpon>NGANHANGDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

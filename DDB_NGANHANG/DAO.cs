@@ -32,6 +32,7 @@ namespace DDB_NGANHANG
         public static int mChiNhanh;
         public static Dictionary<String, String> DSPM = new Dictionary<String, String>();
         public static DataTable chiNhanhDT = new DataTable();
+        public static DataGridViewRow nvChuaTaiKhoan = null;
         //public static frmMain frmChinh;
 
         public static BindingSource bds_dspm = new BindingSource();
@@ -207,10 +208,7 @@ namespace DDB_NGANHANG
         }
         public static int ExecSqlKiemTra1(String tenSP, String a)
         {
-            String sql = "DECLARE @return_value int " +
-                         "EXEC @return_value = [dbo].[" + tenSP + "] " +
-                         "@a " +
-                         "SELECT 'Return Value' = @return_value";
+            String sql = $"DECLARE @return_value int EXEC @return_value = [dbo].[{tenSP}] @a SELECT 'Return Value' = @return_value";
 
             SqlCommand sqlCommand = new SqlCommand(sql, conn);
             if (conn.State == ConnectionState.Closed) conn.Open();
@@ -228,7 +226,7 @@ namespace DDB_NGANHANG
             {
                 MessageBox.Show(ex.Message);
                 conn.Close();
-                return 5;
+                return -1;
             }
         }
         public static int ExecSqlKiemTra2(String tenSP, String a, Double b)
@@ -255,7 +253,7 @@ namespace DDB_NGANHANG
             {
                 MessageBox.Show(ex.Message);
                 conn.Close();
-                return 0;
+                return -1;
             }
         }
         public static void SetEnableOfButton(Form frm, Boolean Active)

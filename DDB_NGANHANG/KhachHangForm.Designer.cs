@@ -1,7 +1,7 @@
 ﻿
 namespace DDB_NGANHANG
 {
-    partial class KhachHang
+    partial class KhachHangForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,8 @@ namespace DDB_NGANHANG
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.nuKhachHangFormRadio = new System.Windows.Forms.RadioButton();
+            this.namKhachHangFormRadio = new System.Windows.Forms.RadioButton();
             this.thoatThemKhachHangTxt = new System.Windows.Forms.Button();
             this.xacNhanThemKhachHangTxt = new System.Windows.Forms.Button();
             this.sdtThemKHTxt = new System.Windows.Forms.TextBox();
@@ -44,8 +46,6 @@ namespace DDB_NGANHANG
             this.diaChiThemKHTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3GD = new System.Windows.Forms.Label();
-            this.nuKhachHangFormRadio = new System.Windows.Forms.RadioButton();
-            this.namKhachHangFormRadio = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,6 +72,28 @@ namespace DDB_NGANHANG
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(732, 460);
             this.panel1.TabIndex = 0;
+            // 
+            // nuKhachHangFormRadio
+            // 
+            this.nuKhachHangFormRadio.AutoSize = true;
+            this.nuKhachHangFormRadio.Location = new System.Drawing.Point(589, 185);
+            this.nuKhachHangFormRadio.Name = "nuKhachHangFormRadio";
+            this.nuKhachHangFormRadio.Size = new System.Drawing.Size(59, 39);
+            this.nuKhachHangFormRadio.TabIndex = 137;
+            this.nuKhachHangFormRadio.TabStop = true;
+            this.nuKhachHangFormRadio.Text = "Nữ";
+            this.nuKhachHangFormRadio.UseVisualStyleBackColor = true;
+            // 
+            // namKhachHangFormRadio
+            // 
+            this.namKhachHangFormRadio.AutoSize = true;
+            this.namKhachHangFormRadio.Location = new System.Drawing.Point(485, 185);
+            this.namKhachHangFormRadio.Name = "namKhachHangFormRadio";
+            this.namKhachHangFormRadio.Size = new System.Drawing.Size(77, 39);
+            this.namKhachHangFormRadio.TabIndex = 136;
+            this.namKhachHangFormRadio.TabStop = true;
+            this.namKhachHangFormRadio.Text = "Nam";
+            this.namKhachHangFormRadio.UseVisualStyleBackColor = true;
             // 
             // thoatThemKhachHangTxt
             // 
@@ -209,7 +231,7 @@ namespace DDB_NGANHANG
             this.label3GD.Font = new System.Drawing.Font("Markazi Text", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3GD.Image = global::DDB_NGANHANG.Properties.Resources.rating_icon;
             this.label3GD.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3GD.Location = new System.Drawing.Point(211, 0);
+            this.label3GD.Location = new System.Drawing.Point(178, 0);
             this.label3GD.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3GD.Name = "label3GD";
             this.label3GD.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -219,35 +241,13 @@ namespace DDB_NGANHANG
             this.label3GD.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label3GD.UseCompatibleTextRendering = true;
             // 
-            // nuKhachHangFormRadio
-            // 
-            this.nuKhachHangFormRadio.AutoSize = true;
-            this.nuKhachHangFormRadio.Location = new System.Drawing.Point(589, 185);
-            this.nuKhachHangFormRadio.Name = "nuKhachHangFormRadio";
-            this.nuKhachHangFormRadio.Size = new System.Drawing.Size(59, 39);
-            this.nuKhachHangFormRadio.TabIndex = 137;
-            this.nuKhachHangFormRadio.TabStop = true;
-            this.nuKhachHangFormRadio.Text = "Nữ";
-            this.nuKhachHangFormRadio.UseVisualStyleBackColor = true;
-            // 
-            // namKhachHangFormRadio
-            // 
-            this.namKhachHangFormRadio.AutoSize = true;
-            this.namKhachHangFormRadio.Location = new System.Drawing.Point(485, 185);
-            this.namKhachHangFormRadio.Name = "namKhachHangFormRadio";
-            this.namKhachHangFormRadio.Size = new System.Drawing.Size(77, 39);
-            this.namKhachHangFormRadio.TabIndex = 136;
-            this.namKhachHangFormRadio.TabStop = true;
-            this.namKhachHangFormRadio.Text = "Nam";
-            this.namKhachHangFormRadio.UseVisualStyleBackColor = true;
-            // 
-            // KhachHang
+            // KhachHangForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 462);
             this.Controls.Add(this.panel1);
-            this.Name = "KhachHang";
+            this.Name = "KhachHangForm";
             this.Text = "KhachHangForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

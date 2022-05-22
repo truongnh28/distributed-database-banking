@@ -112,5 +112,7 @@ C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_N
 C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.exe
 C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.pdb
 C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.NhanVienForm.resources
-C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.KhachHang.resources
 C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.TraCuuKhachHangForm.resources
+C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.DSNVForm.resources
+C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.KhachHangForm.resources
+C:\Users\nguye\source\repos\truongnh28\DDB_NGANHANG\DDB_NGANHANG\obj\Debug\DDB_NGANHANG.TaoSTKForm.resources

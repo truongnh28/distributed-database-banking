@@ -113,6 +113,7 @@ namespace DDB_NGANHANG
             this.xacNhanThemNVBtn.TabIndex = 132;
             this.xacNhanThemNVBtn.Text = "Xác nhận";
             this.xacNhanThemNVBtn.UseVisualStyleBackColor = true;
+            this.xacNhanThemNVBtn.Click += new System.EventHandler(this.xacNhanThemNVBtn_Click);
             // 
             // sdtThemNVTxt
             // 
@@ -208,7 +209,7 @@ namespace DDB_NGANHANG
             // diaChiThemNVTxt
             // 
             this.diaChiThemNVTxt.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.diaChiThemNVTxt.Location = new System.Drawing.Point(473, 279);
+            this.diaChiThemNVTxt.Location = new System.Drawing.Point(473, 265);
             this.diaChiThemNVTxt.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.diaChiThemNVTxt.Name = "diaChiThemNVTxt";
             this.diaChiThemNVTxt.Size = new System.Drawing.Size(212, 40);
@@ -218,7 +219,7 @@ namespace DDB_NGANHANG
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(369, 279);
+            this.label5.Location = new System.Drawing.Point(369, 268);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(81, 35);

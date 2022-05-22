@@ -33,24 +33,23 @@ namespace DDB_NGANHANG
             this.thoatChuyenBtn = new System.Windows.Forms.Button();
             this.xacNhanChuyenBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.chiNhanhChuyenComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.manvChuyenTxt = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.manvChuyenTxt);
             this.panel1.Controls.Add(this.thoatChuyenBtn);
             this.panel1.Controls.Add(this.xacNhanChuyenBtn);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.chiNhanhChuyenComboBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(659, 339);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // thoatChuyenBtn
             // 
@@ -60,6 +59,7 @@ namespace DDB_NGANHANG
             this.thoatChuyenBtn.TabIndex = 10;
             this.thoatChuyenBtn.Text = "Thoát";
             this.thoatChuyenBtn.UseVisualStyleBackColor = true;
+            this.thoatChuyenBtn.Click += new System.EventHandler(this.thoatChuyenBtn_Click);
             // 
             // xacNhanChuyenBtn
             // 
@@ -69,23 +69,16 @@ namespace DDB_NGANHANG
             this.xacNhanChuyenBtn.TabIndex = 9;
             this.xacNhanChuyenBtn.Text = "Xác nhận";
             this.xacNhanChuyenBtn.UseVisualStyleBackColor = true;
+            this.xacNhanChuyenBtn.Click += new System.EventHandler(this.xacNhanChuyenBtn_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 148);
+            this.label2.Location = new System.Drawing.Point(90, 148);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 35);
+            this.label2.Size = new System.Drawing.Size(191, 35);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Chọn chi nhánh";
-            // 
-            // chiNhanhChuyenComboBox
-            // 
-            this.chiNhanhChuyenComboBox.FormattingEnabled = true;
-            this.chiNhanhChuyenComboBox.Location = new System.Drawing.Point(289, 140);
-            this.chiNhanhChuyenComboBox.Name = "chiNhanhChuyenComboBox";
-            this.chiNhanhChuyenComboBox.Size = new System.Drawing.Size(305, 43);
-            this.chiNhanhChuyenComboBox.TabIndex = 1;
+            this.label2.Text = "Mã nhân viên mới ";
             // 
             // label1
             // 
@@ -98,6 +91,13 @@ namespace DDB_NGANHANG
             this.label1.TabIndex = 0;
             this.label1.Text = "Chuyển chi nhánh";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // manvChuyenTxt
+            // 
+            this.manvChuyenTxt.Location = new System.Drawing.Point(287, 143);
+            this.manvChuyenTxt.Name = "manvChuyenTxt";
+            this.manvChuyenTxt.Size = new System.Drawing.Size(247, 40);
+            this.manvChuyenTxt.TabIndex = 11;
             // 
             // ChuyenChiNhanhForm
             // 
@@ -120,6 +120,6 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button thoatChuyenBtn;
         private System.Windows.Forms.Button xacNhanChuyenBtn;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox chiNhanhChuyenComboBox;
+        private System.Windows.Forms.TextBox manvChuyenTxt;
     }
 }
