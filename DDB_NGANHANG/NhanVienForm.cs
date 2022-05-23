@@ -65,7 +65,7 @@ namespace DDB_NGANHANG
                 tenThemNVTxt.Focus();
                 return;
             }
-            if(isAdd)
+            if (isAdd)
             {
                 if (Regex.IsMatch(maNVThemNVTxt.Text, @"^[0-9]+$") == false)
                 {
@@ -76,13 +76,13 @@ namespace DDB_NGANHANG
                 }
                 else
                 {
-                    if(DAO.ExecSqlKiemTra1("SP_KIEMTRANHANVIEN", maNVThemNVTxt.Text) == 1)
+                    if (DAO.ExecSqlKiemTra1("SP_KIEMTRANHANVIEN", maNVThemNVTxt.Text) == 1)
                     {
                         MessageBox.Show("Mã nhân viên đã tồn tại");
                         maNVThemNVTxt.Text = "";
                         maNVThemNVTxt.Focus();
                         return;
-                    }                 
+                    }
                 }
             }
             if (Regex.IsMatch(sdtThemNVTxt.Text, @"^[0-9]+$") == false)
@@ -109,11 +109,24 @@ namespace DDB_NGANHANG
             }
             String gioiTinh = namNVRadio.Checked ? "Nam" : "Nữ";
             string date = DateTime.Now.ToString("yyyy-MM-dd");
+            String Ho = dt.Cells[1].Value.ToString();
+            String Ten = dt.Cells[2].Value.ToString();
+            String DiaChi = dt.Cells[3].Value.ToString();
+            String GioiTinh = dt.Cells[4].Value.ToString().Equals("Nam") ? "Nam" : "Nữ";
+            String SoDT = dt.Cells[5].Value.ToString();
             String cmd1 = $"INSERT INTO DBO.NhanVien (MANV, HO, TEN, DIACHI, PHAI, SODT, MACN, TrangThaiXoa) VALUES ({maNVThemNVTxt.Text}, N'{Extension.CapitalizeFirstLetter(hoThemNVTxt.Text)}', N'{Extension.CapitalizeFirstLetter(tenThemNVTxt.Text)}', N'{diaChiThemNVTxt.Text}', N'{gioiTinh}', {sdtThemNVTxt.Text}, N'{chinhanh}', {0})";
             String cmd2 = $"UPDATE DBO.NhanVien SET HO = N'{Extension.CapitalizeFirstLetter(hoThemNVTxt.Text)}', TEN = N'{Extension.CapitalizeFirstLetter(tenThemNVTxt.Text)}', DIACHI = N'{diaChiThemNVTxt.Text}', PHAI = N'{gioiTinh}', SODT = {sdtThemNVTxt.Text} WHERE MANV = {maNVThemNVTxt.Text}";
             //MessageBox.Show(cmd);
             if (DAO.ExecSqlNonQuery(isAdd ? cmd1 : cmd2, DAO.connstr) == 0)
             {
+                if (isAdd)
+                {
+                    MainForm.undoNhanVien.Push($"DELETE FROM DBO.NhanVien WHERE MANV = {maNVThemNVTxt.Text}");
+                }
+                else
+                {
+                    MainForm.undoNhanVien.Push($"UPDATE DBO.NhanVien SET HO = N'{Ho}', TEN = N'{Ten}', DIACHI = N'{DiaChi}', PHAI = N'{GioiTinh}', SODT = N'{SoDT}', MACN = N'{chinhanh}' WHERE MANV = N'{maNVThemNVTxt.Text}'");
+                }
                 MessageBox.Show("Thành công");
                 this.Close();
             }

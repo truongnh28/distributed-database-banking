@@ -50,6 +50,7 @@ namespace DDB_NGANHANG
             this.xacNhanDangNhapBtn = new System.Windows.Forms.Button();
             this.matKhauDangNhapTxt = new System.Windows.Forms.TextBox();
             this.taiKhoanDangNhapTxt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,6 +71,7 @@ namespace DDB_NGANHANG
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.thoatPage = new System.Windows.Forms.TabPage();
             this.xacNhanThoatBtn = new System.Windows.Forms.Button();
             this.label38 = new System.Windows.Forms.Label();
@@ -89,6 +91,7 @@ namespace DDB_NGANHANG
             this.luuNhanVienBtn = new System.Windows.Forms.Button();
             this.hoanTacNhanVienBtn = new System.Windows.Forms.Button();
             this.nhanVienTable = new System.Windows.Forms.DataGridView();
+            this.label10 = new System.Windows.Forms.Label();
             this.nuNhanVienRadio = new System.Windows.Forms.RadioButton();
             this.namNhanVienRadio = new System.Windows.Forms.RadioButton();
             this.sdtNhanVienTxt = new System.Windows.Forms.TextBox();
@@ -125,6 +128,7 @@ namespace DDB_NGANHANG
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.baoCaoPage = new System.Windows.Forms.TabPage();
             this.statusStrip3 = new System.Windows.Forms.StatusStrip();
             this.maNVToolTrip3 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -152,10 +156,6 @@ namespace DDB_NGANHANG
             this.xacNhanLietKeKhachHangBtn = new System.Windows.Forms.Button();
             this.chonChiNhanhLietKeKhachHangComboBox = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.systemControl.SuspendLayout();
             this.heThongPage.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -320,6 +320,14 @@ namespace DDB_NGANHANG
             this.taiKhoanDangNhapTxt.Name = "taiKhoanDangNhapTxt";
             this.taiKhoanDangNhapTxt.Size = new System.Drawing.Size(329, 36);
             this.taiKhoanDangNhapTxt.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
+            this.label4.Location = new System.Drawing.Point(552, 13);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(186, 164);
+            this.label4.TabIndex = 4;
             // 
             // label3
             // 
@@ -520,6 +528,14 @@ namespace DDB_NGANHANG
             this.label5.Size = new System.Drawing.Size(69, 31);
             this.label5.TabIndex = 0;
             this.label5.Text = "Mã NV";
+            // 
+            // label9
+            // 
+            this.label9.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
+            this.label9.Location = new System.Drawing.Point(572, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(168, 179);
+            this.label9.TabIndex = 12;
             // 
             // thoatPage
             // 
@@ -724,6 +740,7 @@ namespace DDB_NGANHANG
             this.hoanTacNhanVienBtn.TabIndex = 20;
             this.hoanTacNhanVienBtn.Text = "Hoàn tác";
             this.hoanTacNhanVienBtn.UseVisualStyleBackColor = true;
+            this.hoanTacNhanVienBtn.Click += new System.EventHandler(this.hoanTacNhanVienBtn_Click);
             // 
             // nhanVienTable
             // 
@@ -736,7 +753,7 @@ namespace DDB_NGANHANG
             this.nhanVienTable.BackgroundColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -745,7 +762,7 @@ namespace DDB_NGANHANG
             this.nhanVienTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -760,7 +777,7 @@ namespace DDB_NGANHANG
             this.nhanVienTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -774,6 +791,14 @@ namespace DDB_NGANHANG
             this.nhanVienTable.Size = new System.Drawing.Size(899, 498);
             this.nhanVienTable.TabIndex = 44;
             this.nhanVienTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.nhanVienTable_CellClick);
+            // 
+            // label10
+            // 
+            this.label10.Image = global::DDB_NGANHANG.Properties.Resources.user__1_;
+            this.label10.Location = new System.Drawing.Point(1049, 142);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(141, 155);
+            this.label10.TabIndex = 23;
             // 
             // nuNhanVienRadio
             // 
@@ -940,6 +965,7 @@ namespace DDB_NGANHANG
             this.hoanTacKhachHangBtn.TabIndex = 41;
             this.hoanTacKhachHangBtn.Text = "Hoàn tác";
             this.hoanTacKhachHangBtn.UseVisualStyleBackColor = true;
+            this.hoanTacKhachHangBtn.Click += new System.EventHandler(this.hoanTacKhachHangBtn_Click);
             // 
             // themKhachHangBtn
             // 
@@ -1011,7 +1037,7 @@ namespace DDB_NGANHANG
             this.khachHangTable.BackgroundColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1020,7 +1046,7 @@ namespace DDB_NGANHANG
             this.khachHangTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1035,7 +1061,7 @@ namespace DDB_NGANHANG
             this.khachHangTable.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Markazi Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Markazi Text", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -1165,6 +1191,14 @@ namespace DDB_NGANHANG
             this.label23.TabIndex = 44;
             this.label23.Text = "Họ";
             // 
+            // label17
+            // 
+            this.label17.Image = global::DDB_NGANHANG.Properties.Resources.user__1_;
+            this.label17.Location = new System.Drawing.Point(1049, 142);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(141, 155);
+            this.label17.TabIndex = 57;
+            // 
             // baoCaoPage
             // 
             this.baoCaoPage.Controls.Add(this.statusStrip3);
@@ -1248,6 +1282,7 @@ namespace DDB_NGANHANG
             this.xacNhanSKBtn.TabIndex = 104;
             this.xacNhanSKBtn.Text = "Xác nhận";
             this.xacNhanSKBtn.UseVisualStyleBackColor = true;
+            this.xacNhanSKBtn.Click += new System.EventHandler(this.xacNhanSKBtn_Click);
             // 
             // label27
             // 
@@ -1261,7 +1296,7 @@ namespace DDB_NGANHANG
             // thoiGianKT
             // 
             this.thoiGianKT.CustomFormat = "HH:mm dd-MM-yyyy";
-            this.thoiGianKT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.thoiGianKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.thoiGianKT.Location = new System.Drawing.Point(534, 252);
             this.thoiGianKT.Name = "thoiGianKT";
             this.thoiGianKT.Size = new System.Drawing.Size(274, 40);
@@ -1279,7 +1314,7 @@ namespace DDB_NGANHANG
             // thoiGianBD
             // 
             this.thoiGianBD.CustomFormat = "HH:mm dd-MM-yyyy";
-            this.thoiGianBD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.thoiGianBD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.thoiGianBD.Location = new System.Drawing.Point(534, 188);
             this.thoiGianBD.Name = "thoiGianBD";
             this.thoiGianBD.Size = new System.Drawing.Size(274, 40);
@@ -1346,7 +1381,7 @@ namespace DDB_NGANHANG
             // chonTGKTLietKe
             // 
             this.chonTGKTLietKe.CustomFormat = "HH:mm dd-MM-yyyy";
-            this.chonTGKTLietKe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.chonTGKTLietKe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.chonTGKTLietKe.Location = new System.Drawing.Point(542, 216);
             this.chonTGKTLietKe.Name = "chonTGKTLietKe";
             this.chonTGKTLietKe.Size = new System.Drawing.Size(274, 40);
@@ -1364,7 +1399,7 @@ namespace DDB_NGANHANG
             // chonTGBDLietKe
             // 
             this.chonTGBDLietKe.CustomFormat = "HH:mm dd-MM-yyyy";
-            this.chonTGBDLietKe.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.chonTGBDLietKe.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.chonTGBDLietKe.Location = new System.Drawing.Point(542, 147);
             this.chonTGBDLietKe.Name = "chonTGBDLietKe";
             this.chonTGBDLietKe.Size = new System.Drawing.Size(274, 40);
@@ -1378,6 +1413,7 @@ namespace DDB_NGANHANG
             this.xacNhanLietKeTaiKhoanBtn.TabIndex = 2;
             this.xacNhanLietKeTaiKhoanBtn.Text = "Xác nhận";
             this.xacNhanLietKeTaiKhoanBtn.UseVisualStyleBackColor = true;
+            this.xacNhanLietKeTaiKhoanBtn.Click += new System.EventHandler(this.xacNhanLietKeTaiKhoanBtn_Click);
             // 
             // chonChiNhanhLietKeTaiKhoanComboBox
             // 
@@ -1418,6 +1454,7 @@ namespace DDB_NGANHANG
             this.xacNhanLietKeKhachHangBtn.TabIndex = 110;
             this.xacNhanLietKeKhachHangBtn.Text = "Xác nhận";
             this.xacNhanLietKeKhachHangBtn.UseVisualStyleBackColor = true;
+            this.xacNhanLietKeKhachHangBtn.Click += new System.EventHandler(this.xacNhanLietKeKhachHangBtn_Click);
             // 
             // chonChiNhanhLietKeKhachHangComboBox
             // 
@@ -1435,38 +1472,6 @@ namespace DDB_NGANHANG
             this.label33.Size = new System.Drawing.Size(167, 35);
             this.label33.TabIndex = 108;
             this.label33.Text = "Chọn chi nhánh";
-            // 
-            // label4
-            // 
-            this.label4.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
-            this.label4.Location = new System.Drawing.Point(552, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 164);
-            this.label4.TabIndex = 4;
-            // 
-            // label9
-            // 
-            this.label9.Image = global::DDB_NGANHANG.Properties.Resources.bank_icon;
-            this.label9.Location = new System.Drawing.Point(572, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(168, 179);
-            this.label9.TabIndex = 12;
-            // 
-            // label10
-            // 
-            this.label10.Image = global::DDB_NGANHANG.Properties.Resources.user__1_;
-            this.label10.Location = new System.Drawing.Point(1049, 142);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(141, 155);
-            this.label10.TabIndex = 23;
-            // 
-            // label17
-            // 
-            this.label17.Image = global::DDB_NGANHANG.Properties.Resources.user__1_;
-            this.label17.Location = new System.Drawing.Point(1049, 142);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(141, 155);
-            this.label17.TabIndex = 57;
             // 
             // MainForm
             // 

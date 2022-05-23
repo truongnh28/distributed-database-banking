@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ namespace DDB_NGANHANG
         bool fl = false;
         int idx = 0;
         String nhom = "", chinhanh = "", manv = "";
+        public static Stack undoNhanVien = new Stack();
+        public static Stack undoKhachHang = new Stack();
         public MainForm()
         {
             InitializeComponent();
@@ -69,6 +72,22 @@ namespace DDB_NGANHANG
                 nhanVienPanel.Enabled = false;
             }
             if (!fl) return;
+            if (nhom == "ChiNhanh")
+            {
+                chonChiNhanhLietKeKhachHangComboBox.Enabled = false;
+                chonChiNhanhLietKeTaiKhoanComboBox.Enabled = false;
+            }
+            else
+            {
+                chonChiNhanhLietKeKhachHangComboBox.Enabled = true;
+                chonChiNhanhLietKeTaiKhoanComboBox.Enabled = true;
+                chonChiNhanhLietKeKhachHangComboBox.Items.Add("Chi nhánh Bến Thành");
+                chonChiNhanhLietKeKhachHangComboBox.Items.Add("Chi nhánh Tân Định");
+                chonChiNhanhLietKeTaiKhoanComboBox.Items.Add("Chi nhánh Bến Thành");
+                chonChiNhanhLietKeTaiKhoanComboBox.Items.Add("Chi nhánh Tân Định");
+                chonChiNhanhLietKeTaiKhoanComboBox.Items.Add("Toàn bộ chi nhánh");
+            }
+
             process();
         }
 
@@ -94,8 +113,8 @@ namespace DDB_NGANHANG
             cmd = "EXEC [DBO].[SP_DANHSACHKHACHHANG]";
             dt = DAO.ExecSqlDataTable(cmd, false);
             khachHangTable.DataSource = dt;
-            showInfoKhachHang();
-            showInfoNhanVien();
+            //showInfoKhachHang();
+            //showInfoNhanVien();
         }
         private void systemControl_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -169,38 +188,44 @@ namespace DDB_NGANHANG
         {
             int idx = 0;
             if (f) idx = nhanVienTable.CurrentRow.Index;
-            maNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[0].Value.ToString();
-            hoNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[1].Value.ToString();
-            tenNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[2].Value.ToString();
-            diaChiNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[3].Value.ToString();
-            sdtNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[5].Value.ToString();
-            if (nhanVienTable.Rows[idx].Cells[4].Value.ToString().Equals("Nam"))
+            if(nhanVienTable.Rows.Count > 0)
             {
-                namNhanVienRadio.Checked = true;
-                nuNhanVienRadio.Checked = !(namNhanVienRadio.Checked);
-            }
-            else
-            {
-                nuNhanVienRadio.Checked = true;
-                namNhanVienRadio.Checked = !nuNhanVienRadio.Checked;
+                maNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[0].Value.ToString();
+                hoNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[1].Value.ToString();
+                tenNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[2].Value.ToString();
+                diaChiNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[3].Value.ToString();
+                sdtNhanVienTxt.Text = nhanVienTable.Rows[idx].Cells[5].Value.ToString();
+                if (nhanVienTable.Rows[idx].Cells[4].Value.ToString().Equals("Nam"))
+                {
+                    namNhanVienRadio.Checked = true;
+                    nuNhanVienRadio.Checked = !(namNhanVienRadio.Checked);
+                }
+                else
+                {
+                    nuNhanVienRadio.Checked = true;
+                    namNhanVienRadio.Checked = !nuNhanVienRadio.Checked;
+                }
             }
         }
         private void showInfoKhachHang(bool f = false)
         {
-            cmndKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[2].Value.ToString();
-            hoKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[0].Value.ToString();
-            tenKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[1].Value.ToString();
-            diaChiKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[3].Value.ToString();
-            sdtKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[5].Value.ToString();
-            if (khachHangTable.Rows[idx].Cells[4].Value.ToString().Equals("Nam"))
+            if(khachHangTable.Rows.Count > 0)
             {
-                namKhachHangRadio.Checked = true;
-                nuKhachHangRadio.Checked = !(namKhachHangRadio.Checked);
-            }
-            else
-            {
-                nuKhachHangRadio.Checked = true;
-                namKhachHangRadio.Checked = !nuKhachHangRadio.Checked;
+                cmndKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[2].Value.ToString();
+                hoKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[0].Value.ToString();
+                tenKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[1].Value.ToString();
+                diaChiKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[3].Value.ToString();
+                sdtKhachHangTxt.Text = khachHangTable.Rows[idx].Cells[5].Value.ToString();
+                if (khachHangTable.Rows[idx].Cells[4].Value.ToString().Equals("Nam"))
+                {
+                    namKhachHangRadio.Checked = true;
+                    nuKhachHangRadio.Checked = !(namKhachHangRadio.Checked);
+                }
+                else
+                {
+                    nuKhachHangRadio.Checked = true;
+                    namKhachHangRadio.Checked = !nuKhachHangRadio.Checked;
+                }
             }
         }
         private void khachHangTable_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -238,10 +263,12 @@ namespace DDB_NGANHANG
                 }
                 else
                 {
-                    String cmd = $"UPDATE DBO.NhanVien SET TrangThaiXoa = 1 WHERE MANV = {nhanVienTable.Rows[idx].Cells[0].Value}";
+                    String MANV = nhanVienTable.Rows[idx].Cells[0].Value.ToString();
+                    String cmd = $"UPDATE DBO.NhanVien SET TrangThaiXoa = 1 WHERE MANV = {MANV}";
                     //MessageBox.Show(cmd);
                     if (DAO.ExecSqlNonQuery(cmd, DAO.connstr) == 0)
                     {
+                        undoNhanVien.Push($"UPDATE DBO.NhanVien SET TrangThaiXoa = 0 WHERE MANV = {MANV}");
                         MessageBox.Show("Thành công");
                     }
                 }
@@ -317,9 +344,13 @@ namespace DDB_NGANHANG
                 }
                 else
                 {
-                    String cmd = $"DELETE FROM DBO.KhachHang WHERE MANV = {khachHangTable.Rows[idx].Cells[2].Value.ToString()}";
+                    String cmd = $"DELETE FROM DBO.KhachHang WHERE CMND = {khachHangTable.Rows[idx].Cells[2].Value.ToString()}";
                     if (DAO.ExecSqlNonQuery(cmd, DAO.connstr) == 0)
                     {
+                        undoKhachHang.Push($"INSERT INTO DBO.KhachHang (CMND, HO, TEN, DIACHI, PHAI, NGAYCAP, SODT, MACN) VALUES (N'{khachHangTable.Rows[idx].Cells[2].Value.ToString()}', " +
+                            $"N'{khachHangTable.Rows[idx].Cells[0].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[1].Value.ToString()}', " +
+                            $"N'{khachHangTable.Rows[idx].Cells[2].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[3].Value.ToString()}', " +
+                            $"N'{khachHangTable.Rows[idx].Cells[7].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[5].Value.ToString()}', N'{chinhanh}')");
                         MessageBox.Show("Thành công");
                     }
                 }
@@ -347,6 +378,112 @@ namespace DDB_NGANHANG
             GiaoDichForm giaoDichForm = new GiaoDichForm(manv, chinhanh);
             giaoDichForm.StartPosition = FormStartPosition.CenterParent;
             giaoDichForm.ShowDialog(this);
+        }
+
+        private void hoanTacNhanVienBtn_Click(object sender, EventArgs e)
+        {
+            if (undoNhanVien.Count == 0)
+            {
+                MessageBox.Show("Không còn hành động để hoàn tác");
+                return;
+            }
+            String cmd = (String)undoNhanVien.Pop();
+            if (DAO.ExecSqlNonQuery(cmd, DAO.connstr) != 0)
+            {
+                MessageBox.Show("Lỗi hoàn tác");
+            }
+            process();
+        }
+
+        private void hoanTacKhachHangBtn_Click(object sender, EventArgs e)
+        {
+            if (undoKhachHang.Count == 0)
+            {
+                MessageBox.Show("Không còn hành động để hoàn tác");
+                return;
+            }
+            String cmd = (String)undoKhachHang.Pop();
+            if (DAO.ExecSqlNonQuery(cmd, DAO.connstr) != 0)
+            {
+                MessageBox.Show("Lỗi hoàn tác");
+            }
+            process();
+        }
+
+        private void xacNhanSKBtn_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(taiKhoanTCTxt.Text))
+            {
+                taiKhoanTCTxt.Focus();
+                MessageBox.Show("Hãy điền vào ô số tài khoản, dùng nút 'Tra cứu' để tra cứu số tài khoản");
+            }
+            string ngayBD = thoiGianBD.Text;
+            string ngayKT = thoiGianKT.Text;
+            DateTime date1 = DateTime.Parse(ngayBD);
+            DateTime date2 = DateTime.Parse(ngayKT);
+            if (date1.Date <= date2.Date)
+            {
+                string taiKhoan = taiKhoanTCTxt.Text;
+                string chiNhanhViet = (chinhanh == "TANDINH" ? "Tân Định" : "Bến Thành");
+                ReportSaoKeGiaoDichTrongKhoangThoiGian report = new ReportSaoKeGiaoDichTrongKhoangThoiGian(ngayBD, ngayKT, taiKhoan, chiNhanhViet);
+                ReportPrintTool print = new ReportPrintTool(report);
+                print.ShowPreviewDialog();
+                return;
+            }
+            thoiGianBD.Focus();
+            MessageBox.Show("Thời gian bắt đầu không thể sau thời gian kết thúc");
+            return;
+        }
+
+        private void xacNhanLietKeKhachHangBtn_Click(object sender, EventArgs e)
+        {
+            string chiNhanhViet = "";
+            ReportLietKetKhachHangTheoTungChiNhanh report;
+            ReportPrintTool print;
+            if (nhom == "ChiNhanh")
+            {
+                chiNhanhViet = (chinhanh == "TANDINH" ? "TÂN ĐỊNH" : "BẾN THÀNH");
+                report = new ReportLietKetKhachHangTheoTungChiNhanh(1, chiNhanhViet);
+                print = new ReportPrintTool(report);
+                print.ShowPreviewDialog();
+                return;
+            }
+            string localChiNhanh = (chonChiNhanhLietKeKhachHangComboBox.SelectedIndex == 0 ? "BENTHANH" : "TANDINH");
+            if (chinhanh != localChiNhanh)
+            {
+                chiNhanhViet = (localChiNhanh == "TANDINH" ? "TÂN ĐỊNH" : "BẾN THÀNH");
+                report = new ReportLietKetKhachHangTheoTungChiNhanh(2, chiNhanhViet);
+                print = new ReportPrintTool(report);
+                print.ShowPreviewDialog();
+                return;
+            }
+            chiNhanhViet = (localChiNhanh == "TANDINH" ? "TÂN ĐỊNH" : "BẾN THÀNH");
+            report = new ReportLietKetKhachHangTheoTungChiNhanh(1, chiNhanhViet);
+            print = new ReportPrintTool(report);
+            print.ShowPreviewDialog();
+            return;
+        }
+
+        private void xacNhanLietKeTaiKhoanBtn_Click(object sender, EventArgs e)
+        {
+            string chiNhanhViet;
+            ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh report;
+            ReportPrintTool print;
+            if (nhom == "ChiNhanh")
+            {
+                chiNhanhViet = (chinhanh == "TANDINH" ? "TÂN ĐỊNH" : "BẾN THÀNH");
+                report = new ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh(chonTGBDLietKe.Text, chonTGKTLietKe.Text, chinhanh, chiNhanhViet);
+                print = new ReportPrintTool(report);
+                print.ShowPreviewDialog();
+                return;
+            }
+            int index = chonChiNhanhLietKeTaiKhoanComboBox.SelectedIndex;
+            string localChiNhanh = (index == 0 ? "BENTHANH" : (index == 1 ? "TANDINH" : "HAICN"));
+            chiNhanhViet = (localChiNhanh == "BENTHANH" ? "BẾN THÀNH" : (localChiNhanh == "TANDINH" ? "TÂN ĐỊNH" : "HAI CHI NHÁNH"));
+            report = new ReportLietKeTaiKhoanTrongKhoangThoiGianChiNhanh(chonTGBDLietKe.Text, chonTGKTLietKe.Text, localChiNhanh, chiNhanhViet);
+            print = new ReportPrintTool(report);
+            print.ShowPreviewDialog();
+            return;
         }
 
         private void xacNhanTaoTaiKhoanBtn_Click(object sender, EventArgs e)
