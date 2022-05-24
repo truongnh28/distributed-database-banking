@@ -54,6 +54,10 @@ namespace DDB_NGANHANG
             }
             else
             {
+                if(STKTxt.Text.Length != 9)
+                {
+                    MessageBox.Show("Số tài khoản phải đủ 9 số");
+                }
                 if (DAO.ExecSqlKiemTra1("SP_KIEMTRASOTK", STKTxt.Text) == 1)
                 {
                     MessageBox.Show("Số tài khoản đã tồn tại tồn tại");
@@ -80,12 +84,17 @@ namespace DDB_NGANHANG
                 }
             }
             ////
-            String cmd = $"EXEC SP_TAOSOTAIKHOANGKHACCHINHANH {STKTxt.Text}, {cmndThemKHTxt.Text}, {soDuTxt.Text}, {chinhanh}";
+            String cmd = $"EXEC SP_TAOSOTAIKHOANKHACCHINHANH {STKTxt.Text}, {cmndThemKHTxt.Text}, {soDuTxt.Text}, {chinhanh}";
             if (DAO.ExecSqlNonQuery(cmd, DAO.connstr) == 0)
             {
                 MessageBox.Show("Thành công");
                 this.Close();
             }
+        }
+
+        private void thoatThemKhachHangTxt_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

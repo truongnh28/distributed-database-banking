@@ -108,6 +108,7 @@ namespace DDB_NGANHANG
             this.thoatThemKhachHangTxt.TabIndex = 114;
             this.thoatThemKhachHangTxt.Text = "Thoát";
             this.thoatThemKhachHangTxt.UseVisualStyleBackColor = true;
+            this.thoatThemKhachHangTxt.Click += new System.EventHandler(this.thoatThemKhachHangTxt_Click);
             // 
             // xacNhanThemKhachHangTxt
             // 

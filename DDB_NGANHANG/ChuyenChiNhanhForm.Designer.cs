@@ -30,16 +30,20 @@ namespace DDB_NGANHANG
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.manvChuyenTxt = new System.Windows.Forms.TextBox();
             this.thoatChuyenBtn = new System.Windows.Forms.Button();
             this.xacNhanChuyenBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.manvChuyenTxt = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.chiNhanhCombobox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.chiNhanhCombobox);
+            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.manvChuyenTxt);
             this.panel1.Controls.Add(this.thoatChuyenBtn);
             this.panel1.Controls.Add(this.xacNhanChuyenBtn);
@@ -50,6 +54,13 @@ namespace DDB_NGANHANG
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(659, 339);
             this.panel1.TabIndex = 0;
+            // 
+            // manvChuyenTxt
+            // 
+            this.manvChuyenTxt.Location = new System.Drawing.Point(289, 178);
+            this.manvChuyenTxt.Name = "manvChuyenTxt";
+            this.manvChuyenTxt.Size = new System.Drawing.Size(247, 40);
+            this.manvChuyenTxt.TabIndex = 11;
             // 
             // thoatChuyenBtn
             // 
@@ -74,7 +85,7 @@ namespace DDB_NGANHANG
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 148);
+            this.label2.Location = new System.Drawing.Point(92, 183);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(191, 35);
             this.label2.TabIndex = 2;
@@ -92,12 +103,22 @@ namespace DDB_NGANHANG
             this.label1.Text = "Chuyển chi nhánh";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // manvChuyenTxt
+            // label3
             // 
-            this.manvChuyenTxt.Location = new System.Drawing.Point(287, 143);
-            this.manvChuyenTxt.Name = "manvChuyenTxt";
-            this.manvChuyenTxt.Size = new System.Drawing.Size(247, 40);
-            this.manvChuyenTxt.TabIndex = 11;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(96, 127);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(167, 35);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Chọn chi nhánh";
+            // 
+            // chiNhanhCombobox
+            // 
+            this.chiNhanhCombobox.FormattingEnabled = true;
+            this.chiNhanhCombobox.Location = new System.Drawing.Point(289, 124);
+            this.chiNhanhCombobox.Name = "chiNhanhCombobox";
+            this.chiNhanhCombobox.Size = new System.Drawing.Size(247, 43);
+            this.chiNhanhCombobox.TabIndex = 13;
             // 
             // ChuyenChiNhanhForm
             // 
@@ -121,5 +142,7 @@ namespace DDB_NGANHANG
         private System.Windows.Forms.Button xacNhanChuyenBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox manvChuyenTxt;
+        private System.Windows.Forms.ComboBox chiNhanhCombobox;
+        private System.Windows.Forms.Label label3;
     }
 }

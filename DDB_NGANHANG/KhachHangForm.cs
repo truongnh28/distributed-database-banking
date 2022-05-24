@@ -89,9 +89,9 @@ namespace DDB_NGANHANG
             }
             else
             {
-                if (sdtThemKHTxt.Text.Length != 9)
+                if (sdtThemKHTxt.Text.Length != 10)
                 {
-                    MessageBox.Show("Số điện thoại phải có đúng 9 số");
+                    MessageBox.Show("Số điện thoại phải có đúng 10 số");
                     return;
                 }
             }

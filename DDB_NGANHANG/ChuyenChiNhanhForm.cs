@@ -20,6 +20,15 @@ namespace DDB_NGANHANG
             InitializeComponent();
             this.manv = manv;
             this.chinhanh = chinhanh;
+            if (chinhanh.Equals("BENTHANH"))
+            {
+                chiNhanhCombobox.Items.Add("Chi nhánh Tân Định");
+            }
+            else
+            {
+                chiNhanhCombobox.Items.Add("Chi nhánh Bến Thành");
+            }
+            chiNhanhCombobox.SelectedIndex = 0;
         }
 
         private void xacNhanChuyenBtn_Click(object sender, EventArgs e)

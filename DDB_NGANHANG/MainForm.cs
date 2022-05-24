@@ -87,7 +87,6 @@ namespace DDB_NGANHANG
                 chonChiNhanhLietKeTaiKhoanComboBox.Items.Add("Chi nhánh Tân Định");
                 chonChiNhanhLietKeTaiKhoanComboBox.Items.Add("Toàn bộ chi nhánh");
             }
-
             process();
         }
 
@@ -105,6 +104,7 @@ namespace DDB_NGANHANG
         }
         private void process()
         {
+            if (!fl) return;
             String cmd;
             DataTable dt;
             cmd = "EXEC [DBO].[SP_DANHSACHNHANVIEN]";
@@ -181,7 +181,7 @@ namespace DDB_NGANHANG
 
         private void subQuanLyControl_SelectedIndexChanged(object sender, EventArgs e)
         {
-            idx = 0;
+            //idx = 0;
         }
 
         private void showInfoNhanVien(bool f = false)
@@ -291,6 +291,11 @@ namespace DDB_NGANHANG
                 MessageBox.Show("Bạn không thể chuyển chính mình");
                 return;
             }
+            if(nhanVienTable.Rows[idx].Cells[7].Value.ToString() == "1")
+            {
+                MessageBox.Show("Nhân viên này đã bị xóa hoặc đã nằm ở chi nhánh khác");
+                return;
+            }
             ChuyenChiNhanhForm chuyenChiNhanhForm = new ChuyenChiNhanhForm(nhanVienTable.Rows[idx].Cells[0].Value.ToString(), chinhanh);
             chuyenChiNhanhForm.StartPosition = FormStartPosition.CenterParent;
             chuyenChiNhanhForm.ShowDialog(this);
@@ -344,14 +349,20 @@ namespace DDB_NGANHANG
                 }
                 else
                 {
+                    bool fc = false;
                     String cmd = $"DELETE FROM DBO.KhachHang WHERE CMND = {khachHangTable.Rows[idx].Cells[2].Value.ToString()}";
+                    undoKhachHang.Push($"INSERT INTO DBO.KhachHang (CMND, HO, TEN, DIACHI, PHAI, NGAYCAP, SODT, MACN) VALUES (N'{khachHangTable.Rows[idx].Cells[2].Value.ToString()}', " +
+                        $"N'{khachHangTable.Rows[idx].Cells[0].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[1].Value.ToString()}', " +
+                        $"N'{khachHangTable.Rows[idx].Cells[3].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[4].Value.ToString()}', " +
+                        $"N'{khachHangTable.Rows[idx].Cells[7].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[5].Value.ToString()}', N'{chinhanh}')");
                     if (DAO.ExecSqlNonQuery(cmd, DAO.connstr) == 0)
                     {
-                        undoKhachHang.Push($"INSERT INTO DBO.KhachHang (CMND, HO, TEN, DIACHI, PHAI, NGAYCAP, SODT, MACN) VALUES (N'{khachHangTable.Rows[idx].Cells[2].Value.ToString()}', " +
-                            $"N'{khachHangTable.Rows[idx].Cells[0].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[1].Value.ToString()}', " +
-                            $"N'{khachHangTable.Rows[idx].Cells[2].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[3].Value.ToString()}', " +
-                            $"N'{khachHangTable.Rows[idx].Cells[7].Value.ToString()}', N'{khachHangTable.Rows[idx].Cells[5].Value.ToString()}', N'{chinhanh}')");
-                        MessageBox.Show("Thành công");
+                        fc = true;
+                        MessageBox.Show("Thành công");  
+                    }
+                    if(fc == false)
+                    {
+                        undoKhachHang.Pop();
                     }
                 }
             }
